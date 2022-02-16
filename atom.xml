@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://reveroyl.github.io/"/>
-  <updated>2022-02-16T19:29:15.361Z</updated>
+  <updated>2022-02-16T22:42:14.119Z</updated>
   <id>https://reveroyl.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Update of theme</title>
+    <link href="https://reveroyl.github.io/2022/02/16/16-02-22update-of-theme/"/>
+    <id>https://reveroyl.github.io/2022/02/16/16-02-22update-of-theme/</id>
+    <published>2022-02-16T22:41:29.000Z</published>
+    <updated>2022-02-16T22:42:14.119Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Update-of-theme&quot;&gt;&lt;a href=&quot;#Update-of-theme&quot; class=&quot;headerlink&quot; title=&quot;Update of theme&quot;&gt;&lt;/a&gt;Update of theme&lt;/h1&gt;&lt;p&gt;Yesterday, I
+        
+      
+    
+    </summary>
+    
+      <category term="programming" scheme="https://reveroyl.github.io/categories/programming/"/>
+    
+    
+      <category term="Theme programming" scheme="https://reveroyl.github.io/tags/Theme-programming/"/>
+    
+  </entry>
   
   <entry>
     <title>Notes 16/02/22</title>

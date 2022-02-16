@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://reveroyl.github.io/2022/02/16/16-02-22update-of-theme/</loc>
+    
+    <lastmod>2022-02-16T22:42:14.119Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://reveroyl.github.io/about/index.html</loc>
+    
+    <lastmod>2022-02-16T21:09:03.933Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://reveroyl.github.io/2022/02/15/15-02-22/</loc>
     
     <lastmod>2022-02-16T19:29:34.489Z</lastmod>
@@ -86,13 +100,6 @@
   </url>
   
   <url>
-    <loc>https://reveroyl.github.io/about/index.html</loc>
-    
-    <lastmod>2022-02-16T19:15:32.236Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://reveroyl.github.io/tags/index.html</loc>
     
     <lastmod>2022-02-16T00:04:04.067Z</lastmod>
@@ -128,14 +135,14 @@
   </url>
   
   <url>
-    <loc>https://reveroyl.github.io/archives/index.html</loc>
+    <loc>https://reveroyl.github.io/categories/index.html</loc>
     
     <lastmod>2021-07-29T12:54:42.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://reveroyl.github.io/categories/index.html</loc>
+    <loc>https://reveroyl.github.io/archives/index.html</loc>
     
     <lastmod>2021-07-29T12:54:42.000Z</lastmod>
     
