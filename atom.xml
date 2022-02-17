@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://reveroyl.github.io/"/>
-  <updated>2022-02-16T22:42:14.119Z</updated>
+  <updated>2022-02-17T13:54:07.496Z</updated>
   <id>https://reveroyl.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="https://reveroyl.github.io/2022/02/17/23-11-21glossary/"/>
+    <id>https://reveroyl.github.io/2022/02/17/23-11-21glossary/</id>
+    <published>2022-02-17T13:45:56.073Z</published>
+    <updated>2022-02-17T13:54:07.496Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Glossary-sequenced-by-the-first-letter&quot;&gt;&lt;a href=&quot;#Glossary-sequenced-by-the-first-letter&quot; class=&quot;headerlink&quot; title=&quot;Glossary
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Update of theme</title>
@@ -228,32 +250,6 @@
   </entry>
   
   <entry>
-    <title>phenomenon of ‘Blocking’ on predicted reward</title>
-    <link href="https://reveroyl.github.io/2022/01/22/2022-01-22-phenomenon-of-blocking-on-predicted-reward/"/>
-    <id>https://reveroyl.github.io/2022/01/22/2022-01-22-phenomenon-of-blocking-on-predicted-reward/</id>
-    <published>2022-01-22T09:56:06.000Z</published>
-    <updated>2022-02-15T22:29:53.504Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1
-        
-      
-    
-    </summary>
-    
-      <category term="discussion" scheme="https://reveroyl.github.io/categories/discussion/"/>
-    
-    
-      <category term="Neuroscience" scheme="https://reveroyl.github.io/tags/Neuroscience/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Nature of dopamine dysfunction in schizophrenia</title>
     <link href="https://reveroyl.github.io/2022/01/22/2022-01-22-nature-of-dopamine-dysfunction-in-schizophrenia/"/>
     <id>https://reveroyl.github.io/2022/01/22/2022-01-22-nature-of-dopamine-dysfunction-in-schizophrenia/</id>
@@ -306,6 +302,32 @@
   </entry>
   
   <entry>
+    <title>phenomenon of ‘Blocking’ on predicted reward</title>
+    <link href="https://reveroyl.github.io/2022/01/22/2022-01-22-phenomenon-of-blocking-on-predicted-reward/"/>
+    <id>https://reveroyl.github.io/2022/01/22/2022-01-22-phenomenon-of-blocking-on-predicted-reward/</id>
+    <published>2022-01-22T09:56:06.000Z</published>
+    <updated>2022-02-15T22:29:53.504Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1
+        
+      
+    
+    </summary>
+    
+      <category term="discussion" scheme="https://reveroyl.github.io/categories/discussion/"/>
+    
+    
+      <category term="Neuroscience" scheme="https://reveroyl.github.io/tags/Neuroscience/"/>
+    
+  </entry>
+  
+  <entry>
     <title>NMDA receptor-dependent LTP roles</title>
     <link href="https://reveroyl.github.io/2022/01/18/2022-1-18-nmda-receptor-dependent-ltp-roles/"/>
     <id>https://reveroyl.github.io/2022/01/18/2022-1-18-nmda-receptor-dependent-ltp-roles/</id>
@@ -319,6 +341,32 @@
         
         
           &lt;h1
+        
+      
+    
+    </summary>
+    
+      <category term="Essay" scheme="https://reveroyl.github.io/categories/Essay/"/>
+    
+    
+      <category term="Essay Neuroscience" scheme="https://reveroyl.github.io/tags/Essay-Neuroscience/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Model proteinopathies essay</title>
+    <link href="https://reveroyl.github.io/2021/12/13/2021-12-13-lei-proteinopathies-essay/"/>
+    <id>https://reveroyl.github.io/2021/12/13/2021-12-13-lei-proteinopathies-essay/</id>
+    <published>2021-12-13T12:00:00.000Z</published>
+    <updated>2022-02-16T19:24:43.279Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;This is a comparison and contrast between two common proteinopathies (Alzheimer’s disease &amp;amp; Parkinson’s disease), discussing
         
       
     
@@ -355,32 +403,6 @@
     
     
       <category term="diary" scheme="https://reveroyl.github.io/tags/diary/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Model proteinopathies essay</title>
-    <link href="https://reveroyl.github.io/2021/12/13/2021-12-13-lei-proteinopathies-essay/"/>
-    <id>https://reveroyl.github.io/2021/12/13/2021-12-13-lei-proteinopathies-essay/</id>
-    <published>2021-12-13T12:00:00.000Z</published>
-    <updated>2022-02-16T19:24:43.279Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;This is a comparison and contrast between two common proteinopathies (Alzheimer’s disease &amp;amp; Parkinson’s disease), discussing
-        
-      
-    
-    </summary>
-    
-      <category term="Essay" scheme="https://reveroyl.github.io/categories/Essay/"/>
-    
-    
-      <category term="Essay Neuroscience" scheme="https://reveroyl.github.io/tags/Essay-Neuroscience/"/>
     
   </entry>
   
