@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://reveroyl.github.io/about/index.html</loc>
+    
+    <lastmod>2022-02-18T14:49:52.625Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://reveroyl.github.io/contact/index.html</loc>
     
     <lastmod>2022-02-18T14:45:29.885Z</lastmod>
@@ -26,13 +33,6 @@
     <loc>https://reveroyl.github.io/2022/02/16/16-02-22update-of-theme/</loc>
     
     <lastmod>2022-02-16T22:42:14.119Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://reveroyl.github.io/about/index.html</loc>
-    
-    <lastmod>2022-02-16T21:09:03.933Z</lastmod>
     
   </url>
   
