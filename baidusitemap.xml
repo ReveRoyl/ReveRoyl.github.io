@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://reveroyl.github.io/2022/01/18/2022-1-18-nmda-receptor-dependent-ltp-roles/</loc>
+    <loc>https://reveroyl.github.io/2021/11/23/23-11-21glossary/</loc>
     <lastmod>2022-02-24</lastmod>
   </url>  <url>
-    <loc>https://reveroyl.github.io/2022/11/23/23-11-21glossary/</loc>
+    <loc>https://reveroyl.github.io/2022/01/18/2022-1-18-nmda-receptor-dependent-ltp-roles/</loc>
     <lastmod>2022-02-24</lastmod>
   </url>  <url>
     <loc>https://reveroyl.github.io/2022/02/17/17-02-22/</loc>
@@ -54,5 +54,8 @@
   </url>  <url>
     <loc>https://reveroyl.github.io/2022/01/22/2022-01-22-phenomenon-of-blocking-on-predicted-reward/</loc>
     <lastmod>2022-02-15</lastmod>
+  </url>  <url>
+    <loc>https://reveroyl.github.io/2022/02/24/post/</loc>
+    <lastmod>2021-07-29</lastmod>
   </url>
 </urlset>

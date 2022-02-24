@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://reveroyl.github.io/"/>
-  <updated>2022-02-24T20:31:28.809Z</updated>
+  <updated>2021-07-29T12:54:42.000Z</updated>
   <id>https://reveroyl.github.io/</id>
   
   <author>
@@ -17,28 +17,16 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Glossary</title>
-    <link href="https://reveroyl.github.io/2022/11/23/23-11-21glossary/"/>
-    <id>https://reveroyl.github.io/2022/11/23/23-11-21glossary/</id>
-    <published>2022-11-23T12:00:00.000Z</published>
-    <updated>2022-02-24T20:31:28.809Z</updated>
+    <title>[object Object]</title>
+    <link href="https://reveroyl.github.io/2022/02/24/post/"/>
+    <id>https://reveroyl.github.io/2022/02/24/post/</id>
+    <published>2022-02-24T20:33:26.572Z</published>
+    <updated>2021-07-29T12:54:42.000Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h2 id=&quot;Glossary-sequenced-by-the-first-letter&quot;&gt;&lt;a href=&quot;#Glossary-sequenced-by-the-first-letter&quot; class=&quot;headerlink&quot; title=&quot;Glossary
-        
-      
-    
     </summary>
     
-      <category term="Neuroscience" scheme="https://reveroyl.github.io/categories/Neuroscience/"/>
-    
-    
-      <category term="glossary" scheme="https://reveroyl.github.io/tags/glossary/"/>
     
   </entry>
   
@@ -307,32 +295,6 @@
   </entry>
   
   <entry>
-    <title>Usages of animal models in the study of human brain structural connectivity</title>
-    <link href="https://reveroyl.github.io/2022/01/22/2022-01-22-usages-of-animal-models-in-the-study-of-human-brain-structural-connectivity/"/>
-    <id>https://reveroyl.github.io/2022/01/22/2022-01-22-usages-of-animal-models-in-the-study-of-human-brain-structural-connectivity/</id>
-    <published>2022-01-22T09:56:06.000Z</published>
-    <updated>2022-02-15T22:29:58.832Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;Critically-evaluate-the-use-of-animal-models-in-the-study-of-human-brain-structural-connectivity&quot;&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-      <category term="discussion" scheme="https://reveroyl.github.io/categories/discussion/"/>
-    
-    
-      <category term="Neuroscience" scheme="https://reveroyl.github.io/tags/Neuroscience/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Nature of dopamine dysfunction in schizophrenia</title>
     <link href="https://reveroyl.github.io/2022/01/22/2022-01-22-nature-of-dopamine-dysfunction-in-schizophrenia/"/>
     <id>https://reveroyl.github.io/2022/01/22/2022-01-22-nature-of-dopamine-dysfunction-in-schizophrenia/</id>
@@ -372,6 +334,32 @@
         
         
           &lt;h1
+        
+      
+    
+    </summary>
+    
+      <category term="discussion" scheme="https://reveroyl.github.io/categories/discussion/"/>
+    
+    
+      <category term="Neuroscience" scheme="https://reveroyl.github.io/tags/Neuroscience/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Usages of animal models in the study of human brain structural connectivity</title>
+    <link href="https://reveroyl.github.io/2022/01/22/2022-01-22-usages-of-animal-models-in-the-study-of-human-brain-structural-connectivity/"/>
+    <id>https://reveroyl.github.io/2022/01/22/2022-01-22-usages-of-animal-models-in-the-study-of-human-brain-structural-connectivity/</id>
+    <published>2022-01-22T09:56:06.000Z</published>
+    <updated>2022-02-15T22:29:58.832Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Critically-evaluate-the-use-of-animal-models-in-the-study-of-human-brain-structural-connectivity&quot;&gt;&lt;a
         
       
     
@@ -486,6 +474,32 @@
     
     
       <category term="Essay" scheme="https://reveroyl.github.io/tags/Essay/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Glossary</title>
+    <link href="https://reveroyl.github.io/2021/11/23/23-11-21glossary/"/>
+    <id>https://reveroyl.github.io/2021/11/23/23-11-21glossary/</id>
+    <published>2021-11-23T12:00:00.000Z</published>
+    <updated>2022-02-24T20:35:21.096Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Glossary-sequenced-by-the-first-letter&quot;&gt;&lt;a href=&quot;#Glossary-sequenced-by-the-first-letter&quot; class=&quot;headerlink&quot; title=&quot;Glossary
+        
+      
+    
+    </summary>
+    
+      <category term="Neuroscience" scheme="https://reveroyl.github.io/categories/Neuroscience/"/>
+    
+    
+      <category term="glossary" scheme="https://reveroyl.github.io/tags/glossary/"/>
     
   </entry>
   
