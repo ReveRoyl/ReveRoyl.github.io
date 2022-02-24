@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://reveroyl.github.io/"/>
-  <updated>2021-07-29T12:54:42.000Z</updated>
+  <updated>2022-02-24T20:31:19.440Z</updated>
   <id>https://reveroyl.github.io/</id>
   
   <author>
@@ -15,20 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>[object Object]</title>
-    <link href="https://reveroyl.github.io/2022/02/24/post/"/>
-    <id>https://reveroyl.github.io/2022/02/24/post/</id>
-    <published>2022-02-24T20:33:26.572Z</published>
-    <updated>2021-07-29T12:54:42.000Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
   
   <entry>
     <title>Lecture Notes 17/02/22</title>
@@ -58,11 +44,11 @@
   </entry>
   
   <entry>
-    <title>Update for RSS subscription</title>
+    <title>Update for RSS subscription and music player</title>
     <link href="https://reveroyl.github.io/2022/02/17/24-02-22update-for-rss-subscription/"/>
     <id>https://reveroyl.github.io/2022/02/17/24-02-22update-for-rss-subscription/</id>
     <published>2022-02-17T15:00:00.000Z</published>
-    <updated>2022-02-24T20:23:08.775Z</updated>
+    <updated>2022-02-24T21:46:26.638Z</updated>
     
     <summary type="html">
     
@@ -70,7 +56,7 @@
       
         
         
-          &lt;p&gt;本主题中还使用到了 &lt;a href=&quot;https://github.com/hexojs/hexo-generator-feed&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;hexo-generator-feed&lt;/a&gt; 的 Hexo 插件来做
+          &lt;h3 id=&quot;RSS-subscription&quot;&gt;&lt;a href=&quot;#RSS-subscription&quot; class=&quot;headerlink&quot; title=&quot;RSS subscription&quot;&gt;&lt;/a&gt;RSS subscription&lt;/h3&gt;&lt;p&gt;本主题中还使用到了 &lt;a
         
       
     

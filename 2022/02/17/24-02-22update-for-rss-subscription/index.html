@@ -4,14 +4,13 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="Update for RSS subscription, Lei">
+    <meta name="keywords" content="Update for RSS subscription and music player, Lei">
     <meta name="baidu-site-verification" content="fmlEuI34ir">
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48">
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7">
-    <meta name="description" content="本主题中还使用到了 hexo-generator-feed 的 Hexo 插件来做 RSS，安装命令如下：
+    <meta name="description" content="RSS subscription本主题中还使用到了 hexo-generator-feed 的 Hexo 插件来做 RSS，安装命令如下：
 npm install hexo-generator-feed --save
-发现先前版本已经存在相关文件
-npm WARN rea">
+发现先前版本已经存在相">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -19,7 +18,7 @@ npm WARN rea">
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Update for RSS subscription | Lei&#39;s Blog</title>
+    <title>Update for RSS subscription and music player | Lei&#39;s Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -314,13 +313,13 @@ npm WARN rea">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/13.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/26.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        Update for RSS subscription
+                        Update for RSS subscription and music player
                     </div>
                 </div>
             </div>
@@ -469,14 +468,14 @@ npm WARN rea">
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    252
+                    567
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>Read Times:&nbsp;&nbsp;
-                    1 Min
+                    2 Min
                 </div>
                 
                 
@@ -492,7 +491,7 @@ npm WARN rea">
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>本主题中还使用到了 <a href="https://github.com/hexojs/hexo-generator-feed" target="_blank" rel="noopener">hexo-generator-feed</a> 的 Hexo 插件来做 <code>RSS</code>，安装命令如下：</p>
+                <h3 id="RSS-subscription"><a href="#RSS-subscription" class="headerlink" title="RSS subscription"></a>RSS subscription</h3><p>本主题中还使用到了 <a href="https://github.com/hexojs/hexo-generator-feed" target="_blank" rel="noopener">hexo-generator-feed</a> 的 Hexo 插件来做 <code>RSS</code>，安装命令如下：</p>
 <pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> hexo-generator-feed --save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>发现先前版本已经存在相关文件</p>
 <pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">npm</span> WARN read-shrinkwrap This version of <span class="token function">npm</span> is compatible with lockfileVersion@1, but package-lock.json was generated <span class="token keyword">for</span> lockfileVersion@2. I'll try to <span class="token keyword">do</span> my best with it<span class="token operator">!</span>
@@ -518,6 +517,42 @@ npm WARN rea">
   <span class="token key atrule">content_limit_delim</span><span class="token punctuation">:</span> <span class="token string">' '</span>
   <span class="token key atrule">order_by</span><span class="token punctuation">:</span> <span class="token punctuation">-</span>date<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>执行 <code>hexo clean &amp;&amp; hexo g</code> 重新生成博客文件，然后在 <code>public</code> 文件夹中即可看到 <code>atom.xml</code> 文件，说明已经安装成功了。</p>
+<h3 id="配置音乐播放器"><a href="#配置音乐播放器" class="headerlink" title="配置音乐播放器"></a>配置音乐播放器</h3><p>要支持音乐播放，就必须开启音乐的播放配置和音乐数据的文件。</p>
+<p>首先，在博客 <code>source</code> 目录下的 <code>_data</code> 目录（没有的话就新建一个）中新建 <code>musics.json</code> 文件，文件内容如下所示：</p>
+<pre class="line-numbers language-json"><code class="language-json"><span class="token punctuation">[</span><span class="token punctuation">{</span>
+    <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"五月雨变奏电音"</span><span class="token punctuation">,</span>
+    <span class="token property">"artist"</span><span class="token operator">:</span> <span class="token string">"AnimeVibe"</span><span class="token punctuation">,</span>
+    <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"http://xxx.com/music1.mp3"</span><span class="token punctuation">,</span>
+    <span class="token property">"cover"</span><span class="token operator">:</span> <span class="token string">"http://xxx.com/music-cover1.png"</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"Take me hand"</span><span class="token punctuation">,</span>
+    <span class="token property">"artist"</span><span class="token operator">:</span> <span class="token string">"DAISHI DANCE,Cecile Corbel"</span><span class="token punctuation">,</span>
+    <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"/medias/music/music2.mp3"</span><span class="token punctuation">,</span>
+    <span class="token property">"cover"</span><span class="token operator">:</span> <span class="token string">"/medias/music/cover2.png"</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"Shape of You"</span><span class="token punctuation">,</span>
+    <span class="token property">"artist"</span><span class="token operator">:</span> <span class="token string">"J.Fla"</span><span class="token punctuation">,</span>
+    <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"http://xxx.com/music3.mp3"</span><span class="token punctuation">,</span>
+    <span class="token property">"cover"</span><span class="token operator">:</span> <span class="token string">"http://xxx.com/music-cover3.png"</span>
+<span class="token punctuation">}</span><span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<blockquote>
+<p><strong>注</strong>：以上 JSON 中的属性：<code>name</code>、<code>artist</code>、<code>url</code>、<code>cover</code> 分别表示音乐的名称、作者、音乐文件地址、音乐封面。</p>
+</blockquote>
+<p>然后，在主题的 <code>_config.yml</code> 配置文件中激活配置即可：</p>
+<pre class="line-numbers language-yaml"><code class="language-yaml"><span class="token comment" spellcheck="true"># 是否在首页显示音乐.</span>
+<span class="token key atrule">music</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">showTitle</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+  <span class="token key atrule">title</span><span class="token punctuation">:</span> 听听音乐
+  <span class="token key atrule">fixed</span><span class="token punctuation">:</span> <span class="token boolean important">false </span><span class="token comment" spellcheck="true"># 是否开启吸底模式</span>
+  <span class="token key atrule">autoplay</span><span class="token punctuation">:</span> <span class="token boolean important">false </span><span class="token comment" spellcheck="true"># 是否自动播放</span>
+  <span class="token key atrule">theme</span><span class="token punctuation">:</span> '<span class="token comment" spellcheck="true">#42b983'</span>
+  <span class="token key atrule">loop</span><span class="token punctuation">:</span> <span class="token string">'all'</span> <span class="token comment" spellcheck="true"># 音频循环播放, 可选值: 'all', 'one', 'none'</span>
+  <span class="token key atrule">order</span><span class="token punctuation">:</span> <span class="token string">'list'</span> <span class="token comment" spellcheck="true"># 音频循环顺序, 可选值: 'list', 'random'</span>
+  <span class="token key atrule">preload</span><span class="token punctuation">:</span> <span class="token string">'auto'</span> <span class="token comment" spellcheck="true"># 预加载，可选值: 'none', 'metadata', 'auto'</span>
+  <span class="token key atrule">volume</span><span class="token punctuation">:</span> <span class="token number">0.7 </span><span class="token comment" spellcheck="true"># 默认音量，请注意播放器会记忆用户设置，用户手动设置音量后默认音量即失效</span>
+  <span class="token key atrule">listFolded</span><span class="token punctuation">:</span> <span class="token boolean important">false </span><span class="token comment" spellcheck="true"># 列表默认折叠</span>
+  <span class="token key atrule">listMaxHeight</span><span class="token punctuation">:</span> <span class="token comment" spellcheck="true"># 列表最大高度</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
             </div>
             <hr />
@@ -552,7 +587,7 @@ npm WARN rea">
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《Update for RSS subscription》
+                    《Update for RSS subscription and music player》
                 </span> by
             <a xmlns:cc="http://creativecommons.org/ns#" href="/2022/02/17/24-02-22update-for-rss-subscription/" property="cc:attributionName"
                rel="cc:attributionURL">
@@ -1120,7 +1155,7 @@ Understand meth
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;Total words:&nbsp;
-            <span class="white-color">18.2k</span>
+            <span class="white-color">18.5k</span>
             
 
             <br>
