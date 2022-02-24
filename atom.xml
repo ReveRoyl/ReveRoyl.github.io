@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://reveroyl.github.io/"/>
-  <updated>2022-02-24T20:31:19.440Z</updated>
+  <updated>2022-02-24T21:58:11.380Z</updated>
   <id>https://reveroyl.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Update for RSS subscription and music player</title>
+    <link href="https://reveroyl.github.io/2022/02/24/24-02-22update-for-rss-subscription-and-music-player/"/>
+    <id>https://reveroyl.github.io/2022/02/24/24-02-22update-for-rss-subscription-and-music-player/</id>
+    <published>2022-02-24T21:58:00.000Z</published>
+    <updated>2022-02-24T21:58:11.380Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;RSS-subscription&quot;&gt;&lt;a href=&quot;#RSS-subscription&quot; class=&quot;headerlink&quot; title=&quot;RSS subscription&quot;&gt;&lt;/a&gt;RSS subscription&lt;/h3&gt;&lt;p&gt;本主题中还使用到了 &lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="programming" scheme="https://reveroyl.github.io/categories/programming/"/>
+    
+    
+      <category term="blog building" scheme="https://reveroyl.github.io/tags/blog-building/"/>
+    
+  </entry>
   
   <entry>
     <title>Lecture Notes 17/02/22</title>
@@ -40,32 +66,6 @@
     
     
       <category term="Lecture Note" scheme="https://reveroyl.github.io/tags/Lecture-Note/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Update for RSS subscription and music player</title>
-    <link href="https://reveroyl.github.io/2022/02/17/24-02-22update-for-rss-subscription/"/>
-    <id>https://reveroyl.github.io/2022/02/17/24-02-22update-for-rss-subscription/</id>
-    <published>2022-02-17T15:00:00.000Z</published>
-    <updated>2022-02-24T21:46:26.638Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h3 id=&quot;RSS-subscription&quot;&gt;&lt;a href=&quot;#RSS-subscription&quot; class=&quot;headerlink&quot; title=&quot;RSS subscription&quot;&gt;&lt;/a&gt;RSS subscription&lt;/h3&gt;&lt;p&gt;本主题中还使用到了 &lt;a
-        
-      
-    
-    </summary>
-    
-      <category term="programming" scheme="https://reveroyl.github.io/categories/programming/"/>
-    
-    
-      <category term="blog building" scheme="https://reveroyl.github.io/tags/blog-building/"/>
     
   </entry>
   
