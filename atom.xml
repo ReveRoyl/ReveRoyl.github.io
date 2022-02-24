@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://reveroyl.github.io/"/>
-  <updated>2022-02-17T19:56:23.598Z</updated>
+  <updated>2022-02-24T20:02:51.149Z</updated>
   <id>https://reveroyl.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
+    <title>Lecture Notes 17/02/22</title>
     <link href="https://reveroyl.github.io/2022/02/17/17-02-22/"/>
     <id>https://reveroyl.github.io/2022/02/17/17-02-22/</id>
-    <published>2022-02-17T14:04:31.236Z</published>
-    <updated>2022-02-17T19:56:23.598Z</updated>
+    <published>2022-02-17T15:00:00.000Z</published>
+    <updated>2022-02-24T20:02:51.149Z</updated>
     
     <summary type="html">
     
@@ -36,6 +36,36 @@
     
     </summary>
     
+      <category term="Note" scheme="https://reveroyl.github.io/categories/Note/"/>
+    
+    
+      <category term="Note Neuroscience" scheme="https://reveroyl.github.io/tags/Note-Neuroscience/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Lecture Notes 17/02/22</title>
+    <link href="https://reveroyl.github.io/2022/02/17/24-02-22update-for-rss-subscription/"/>
+    <id>https://reveroyl.github.io/2022/02/17/24-02-22update-for-rss-subscription/</id>
+    <published>2022-02-17T15:00:00.000Z</published>
+    <updated>2022-02-24T20:16:42.948Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;本主题中还使用到了 &lt;a href=&quot;https://github.com/hexojs/hexo-generator-feed&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;hexo-generator-feed&lt;/a&gt; 的 Hexo 插件来做
+        
+      
+    
+    </summary>
+    
+      <category term="Note" scheme="https://reveroyl.github.io/categories/Note/"/>
+    
+    
+      <category term="Note Neuroscience" scheme="https://reveroyl.github.io/tags/Note-Neuroscience/"/>
     
   </entry>
   
@@ -66,7 +96,7 @@
     <link href="https://reveroyl.github.io/2022/02/16/16-02-22update-of-theme/"/>
     <id>https://reveroyl.github.io/2022/02/16/16-02-22update-of-theme/</id>
     <published>2022-02-16T22:41:29.000Z</published>
-    <updated>2022-02-16T22:42:14.119Z</updated>
+    <updated>2022-02-24T20:07:54.815Z</updated>
     
     <summary type="html">
     
@@ -88,11 +118,11 @@
   </entry>
   
   <entry>
-    <title>Notes 16/02/22</title>
+    <title>Lecture Notes 16/02/22</title>
     <link href="https://reveroyl.github.io/2022/02/16/16-02-22/"/>
     <id>https://reveroyl.github.io/2022/02/16/16-02-22/</id>
     <published>2022-02-16T19:00:00.000Z</published>
-    <updated>2022-02-16T19:29:15.361Z</updated>
+    <updated>2022-02-24T20:01:51.551Z</updated>
     
     <summary type="html">
     
@@ -114,11 +144,11 @@
   </entry>
   
   <entry>
-    <title>Notes 15/02/22</title>
+    <title>Lecture Notes 15/02/22</title>
     <link href="https://reveroyl.github.io/2022/02/15/15-02-22/"/>
     <id>https://reveroyl.github.io/2022/02/15/15-02-22/</id>
     <published>2022-02-15T16:00:00.000Z</published>
-    <updated>2022-02-16T19:29:34.489Z</updated>
+    <updated>2022-02-24T20:01:47.206Z</updated>
     
     <summary type="html">
     
@@ -140,11 +170,11 @@
   </entry>
   
   <entry>
-    <title>Notes 14/02/22</title>
+    <title>Lecture Notes 14/02/22</title>
     <link href="https://reveroyl.github.io/2022/02/14/14-02-22/"/>
     <id>https://reveroyl.github.io/2022/02/14/14-02-22/</id>
     <published>2022-02-14T12:00:00.000Z</published>
-    <updated>2022-02-16T19:28:26.046Z</updated>
+    <updated>2022-02-24T20:01:39.238Z</updated>
     
     <summary type="html">
     
@@ -166,11 +196,11 @@
   </entry>
   
   <entry>
-    <title>Notes 10/02/22</title>
+    <title>Lecture Notes 10/02/22</title>
     <link href="https://reveroyl.github.io/2022/02/10/10-02-22/"/>
     <id>https://reveroyl.github.io/2022/02/10/10-02-22/</id>
     <published>2022-02-10T20:00:00.000Z</published>
-    <updated>2022-02-16T19:28:14.491Z</updated>
+    <updated>2022-02-24T20:01:35.079Z</updated>
     
     <summary type="html">
     
@@ -192,11 +222,11 @@
   </entry>
   
   <entry>
-    <title>Notes 09/02/22</title>
+    <title>Lecture Notes 09/02/22</title>
     <link href="https://reveroyl.github.io/2022/02/09/09-02-22/"/>
     <id>https://reveroyl.github.io/2022/02/09/09-02-22/</id>
     <published>2022-02-09T18:00:00.000Z</published>
-    <updated>2022-02-16T19:27:51.257Z</updated>
+    <updated>2022-02-24T20:01:30.285Z</updated>
     
     <summary type="html">
     
@@ -218,11 +248,11 @@
   </entry>
   
   <entry>
-    <title>Notes 08/02/22</title>
+    <title>Lecture Notes 08/02/22</title>
     <link href="https://reveroyl.github.io/2022/02/08/08-02-22/"/>
     <id>https://reveroyl.github.io/2022/02/08/08-02-22/</id>
     <published>2022-02-08T12:00:00.000Z</published>
-    <updated>2022-02-16T19:27:01.541Z</updated>
+    <updated>2022-02-24T20:01:23.519Z</updated>
     
     <summary type="html">
     
@@ -245,11 +275,11 @@
   </entry>
   
   <entry>
-    <title>Notes 07/02/22</title>
+    <title>Lecture Notes 07/02/22</title>
     <link href="https://reveroyl.github.io/2022/02/07/07-02-22/"/>
     <id>https://reveroyl.github.io/2022/02/07/07-02-22/</id>
     <published>2022-02-07T12:00:00.000Z</published>
-    <updated>2022-02-16T19:27:14.373Z</updated>
+    <updated>2022-02-24T20:01:15.111Z</updated>
     
     <summary type="html">
     

@@ -4,13 +4,50 @@
   
     
     <entry>
-      <title></title>
+      <title>Lecture Notes 17/02/22</title>
       <link href="/2022/02/17/17-02-22/"/>
       <url>/2022/02/17/17-02-22/</url>
       
         <content type="html"><![CDATA[<h2 id="Objectives"><a href="#Objectives" class="headerlink" title="Objectives"></a>Objectives</h2><ol><li>Gain familiarity with prevailing and novel accounts of atypical emotion processing in autism.</li><li>Understand methodological problems associated with the study of typical and atypical socioemotional processing.</li><li>Understand how to derive research questions and hypotheses from theory to experiment design and become familiarised with relevant analytical approaches.</li></ol><hr><h2 id="Objectives-1"><a href="#Objectives-1" class="headerlink" title="Objectives"></a>Objectives</h2><ol><li>Phenomenological continuum of sensory experience</li><li>Neurobiology of imagery and perception</li><li>Theoretical models</li></ol><p>Veridical percept:</p><p>External; outside voluntary control; vivid</p><p>Imagery percept:</p><p>Mind’s eye; volitional; vague</p><p>Some phenomena: Dream, Illusion, Pareidolia, Hallucination, Clinical illusions: Metamorphopsia, Eidetic imagery, After image, Synaesthesia, Pseudohallucination, Flashback imagery</p><p>Perception and imagery are different and happens in different brain areas.</p><p><img src="https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202202171444678.png" alt="image-20220217144413570"></p><p>The perception occurs in occipital lobe. The imaginary occurs in frontal parietal</p><p><img src="https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202202171454844.png" alt="image-20220217145445781"></p><p>Question: What if the abstract idea can be understood if one lack the ability for imaginary?</p><p>Answer: Ture, you can still make a prediction. </p><hr><p>Tip 1: Embrace academic interdisciplinarity </p><p>Tip 2: Look before you leap</p><p>Tip 3: Advanced academic leaning is a great training ground for entrepreneurs and leader just be sure to step out of the “Ivory tower”</p><p>Tip 4: Find a real world problem to solve    </p><p><img src="https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202202171659887.png" alt="image-20220217165946716"></p><p><img src="https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202202171704273.png" alt="image-20220217170402216"></p><hr><h2 id="Watermark-an-update-for-the-blog"><a href="#Watermark-an-update-for-the-blog" class="headerlink" title="Watermark (an update for the blog)"></a>Watermark (an update for the blog)</h2><p>Every time I finish writing an article, I can run <code>python3 watermark.py postname</code> to add a watermark. If I want to add a watermark to all articles in the first run, I can run <code>python3 watermark.py all</code></p>]]></content>
       
       
+      <categories>
+          
+          <category> Note </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Note Neuroscience </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Lecture Notes 17/02/22</title>
+      <link href="/2022/02/17/24-02-22update-for-rss-subscription/"/>
+      <url>/2022/02/17/24-02-22update-for-rss-subscription/</url>
+      
+        <content type="html"><![CDATA[<p>本主题中还使用到了 <a href="https://github.com/hexojs/hexo-generator-feed" target="_blank" rel="noopener">hexo-generator-feed</a> 的 Hexo 插件来做 <code>RSS</code>，安装命令如下：</p><pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> hexo-generator-feed --save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>发现先前版本已经存在相关文件</p><pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">npm</span> WARN read-shrinkwrap This version of <span class="token function">npm</span> is compatible with lockfileVersion@1, but package-lock.json was generated <span class="token keyword">for</span> lockfileVersion@2. I'll try to <span class="token keyword">do</span> my best with it<span class="token operator">!</span><span class="token function">npm</span> ERR<span class="token operator">!</span> path C:\Users\Makka Papa\blog\node_modules\.bin\eslint.cmd<span class="token function">npm</span> ERR<span class="token operator">!</span> code EEXIST<span class="token function">npm</span> ERR<span class="token operator">!</span> Refusing to delete C:\Users\Makka Papa\blog\node_modules\.bin\eslint.cmd: is outside C:\Users\Makka Papa\blog\node_modules\eslint and not a <span class="token function">link</span><span class="token function">npm</span> ERR<span class="token operator">!</span> File exists: C:\Users\Makka Papa\blog\node_modules\.bin\eslint.cmd<span class="token function">npm</span> ERR<span class="token operator">!</span> Move it away, and try again.<span class="token function">npm</span> ERR<span class="token operator">!</span> A complete log of this run can be found in:<span class="token function">npm</span> ERR<span class="token operator">!</span>     C:\Users\Makka Papa\AppData\Roaming\npm-cache\_logs\2022-02-24T20_10_57_129Z-debug.log<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>删除之</p><p>重试第一步</p><p>在 Hexo 根目录下的 <code>_config.yml</code> 文件中，新增以下的配置项：</p><pre class="line-numbers language-yaml"><code class="language-yaml"><span class="token key atrule">feed</span><span class="token punctuation">:</span>  <span class="token key atrule">type</span><span class="token punctuation">:</span> atom  <span class="token key atrule">path</span><span class="token punctuation">:</span> atom.xml  <span class="token key atrule">limit</span><span class="token punctuation">:</span> <span class="token number">20</span>  <span class="token key atrule">hub</span><span class="token punctuation">:</span>  <span class="token key atrule">content</span><span class="token punctuation">:</span>  <span class="token key atrule">content_limit</span><span class="token punctuation">:</span> <span class="token number">140</span>  <span class="token key atrule">content_limit_delim</span><span class="token punctuation">:</span> <span class="token string">' '</span>  <span class="token key atrule">order_by</span><span class="token punctuation">:</span> <span class="token punctuation">-</span>date<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>执行 <code>hexo clean &amp;&amp; hexo g</code> 重新生成博客文件，然后在 <code>public</code> 文件夹中即可看到 <code>atom.xml</code> 文件，说明已经安装成功了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Note </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Note Neuroscience </tag>
+            
+        </tags>
       
     </entry>
     
@@ -55,7 +92,7 @@
     
     
     <entry>
-      <title>Notes 16/02/22</title>
+      <title>Lecture Notes 16/02/22</title>
       <link href="/2022/02/16/16-02-22/"/>
       <url>/2022/02/16/16-02-22/</url>
       
@@ -80,7 +117,7 @@
     
     
     <entry>
-      <title>Notes 15/02/22</title>
+      <title>Lecture Notes 15/02/22</title>
       <link href="/2022/02/15/15-02-22/"/>
       <url>/2022/02/15/15-02-22/</url>
       
@@ -105,7 +142,7 @@
     
     
     <entry>
-      <title>Notes 14/02/22</title>
+      <title>Lecture Notes 14/02/22</title>
       <link href="/2022/02/14/14-02-22/"/>
       <url>/2022/02/14/14-02-22/</url>
       
@@ -130,7 +167,7 @@
     
     
     <entry>
-      <title>Notes 10/02/22</title>
+      <title>Lecture Notes 10/02/22</title>
       <link href="/2022/02/10/10-02-22/"/>
       <url>/2022/02/10/10-02-22/</url>
       
@@ -155,7 +192,7 @@
     
     
     <entry>
-      <title>Notes 09/02/22</title>
+      <title>Lecture Notes 09/02/22</title>
       <link href="/2022/02/09/09-02-22/"/>
       <url>/2022/02/09/09-02-22/</url>
       
@@ -180,7 +217,7 @@
     
     
     <entry>
-      <title>Notes 08/02/22</title>
+      <title>Lecture Notes 08/02/22</title>
       <link href="/2022/02/08/08-02-22/"/>
       <url>/2022/02/08/08-02-22/</url>
       
@@ -205,7 +242,7 @@
     
     
     <entry>
-      <title>Notes 07/02/22</title>
+      <title>Lecture Notes 07/02/22</title>
       <link href="/2022/02/07/07-02-22/"/>
       <url>/2022/02/07/07-02-22/</url>
       
