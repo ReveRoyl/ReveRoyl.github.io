@@ -44,11 +44,11 @@
   </entry>
   
   <entry>
-    <title>Lecture Notes 17/02/22</title>
+    <title>Update for RSS subscription</title>
     <link href="https://reveroyl.github.io/2022/02/17/24-02-22update-for-rss-subscription/"/>
     <id>https://reveroyl.github.io/2022/02/17/24-02-22update-for-rss-subscription/</id>
     <published>2022-02-17T15:00:00.000Z</published>
-    <updated>2022-02-24T20:16:42.948Z</updated>
+    <updated>2022-02-24T20:23:08.775Z</updated>
     
     <summary type="html">
     
@@ -62,10 +62,10 @@
     
     </summary>
     
-      <category term="Note" scheme="https://reveroyl.github.io/categories/Note/"/>
+      <category term="programming" scheme="https://reveroyl.github.io/categories/programming/"/>
     
     
-      <category term="Note Neuroscience" scheme="https://reveroyl.github.io/tags/Note-Neuroscience/"/>
+      <category term="blog building" scheme="https://reveroyl.github.io/tags/blog-building/"/>
     
   </entry>
   
@@ -96,7 +96,7 @@
     <link href="https://reveroyl.github.io/2022/02/16/16-02-22update-of-theme/"/>
     <id>https://reveroyl.github.io/2022/02/16/16-02-22update-of-theme/</id>
     <published>2022-02-16T22:41:29.000Z</published>
-    <updated>2022-02-24T20:07:54.815Z</updated>
+    <updated>2022-02-24T20:22:51.555Z</updated>
     
     <summary type="html">
     
@@ -113,7 +113,7 @@
       <category term="programming" scheme="https://reveroyl.github.io/categories/programming/"/>
     
     
-      <category term="Theme programming" scheme="https://reveroyl.github.io/tags/Theme-programming/"/>
+      <category term="blog building" scheme="https://reveroyl.github.io/tags/blog-building/"/>
     
   </entry>
   
