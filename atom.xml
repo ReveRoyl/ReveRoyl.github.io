@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://reveroyl.github.io/"/>
-  <updated>2022-02-24T20:02:51.149Z</updated>
+  <updated>2022-02-24T20:31:28.809Z</updated>
   <id>https://reveroyl.github.io/</id>
   
   <author>
@@ -17,11 +17,37 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Glossary</title>
+    <link href="https://reveroyl.github.io/2022/11/23/23-11-21glossary/"/>
+    <id>https://reveroyl.github.io/2022/11/23/23-11-21glossary/</id>
+    <published>2022-11-23T12:00:00.000Z</published>
+    <updated>2022-02-24T20:31:28.809Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Glossary-sequenced-by-the-first-letter&quot;&gt;&lt;a href=&quot;#Glossary-sequenced-by-the-first-letter&quot; class=&quot;headerlink&quot; title=&quot;Glossary
+        
+      
+    
+    </summary>
+    
+      <category term="Neuroscience" scheme="https://reveroyl.github.io/categories/Neuroscience/"/>
+    
+    
+      <category term="glossary" scheme="https://reveroyl.github.io/tags/glossary/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Lecture Notes 17/02/22</title>
     <link href="https://reveroyl.github.io/2022/02/17/17-02-22/"/>
     <id>https://reveroyl.github.io/2022/02/17/17-02-22/</id>
     <published>2022-02-17T15:00:00.000Z</published>
-    <updated>2022-02-24T20:02:51.149Z</updated>
+    <updated>2022-02-24T20:31:19.440Z</updated>
     
     <summary type="html">
     
@@ -36,10 +62,10 @@
     
     </summary>
     
-      <category term="Note" scheme="https://reveroyl.github.io/categories/Note/"/>
+      <category term="Neuroscience" scheme="https://reveroyl.github.io/categories/Neuroscience/"/>
     
     
-      <category term="Note Neuroscience" scheme="https://reveroyl.github.io/tags/Note-Neuroscience/"/>
+      <category term="Lecture Note" scheme="https://reveroyl.github.io/tags/Lecture-Note/"/>
     
   </entry>
   
@@ -66,28 +92,6 @@
     
     
       <category term="blog building" scheme="https://reveroyl.github.io/tags/blog-building/"/>
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="https://reveroyl.github.io/2022/02/17/23-11-21glossary/"/>
-    <id>https://reveroyl.github.io/2022/02/17/23-11-21glossary/</id>
-    <published>2022-02-17T13:45:56.073Z</published>
-    <updated>2022-02-17T13:54:07.496Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;Glossary-sequenced-by-the-first-letter&quot;&gt;&lt;a href=&quot;#Glossary-sequenced-by-the-first-letter&quot; class=&quot;headerlink&quot; title=&quot;Glossary
-        
-      
-    
-    </summary>
-    
     
   </entry>
   
@@ -122,7 +126,7 @@
     <link href="https://reveroyl.github.io/2022/02/16/16-02-22/"/>
     <id>https://reveroyl.github.io/2022/02/16/16-02-22/</id>
     <published>2022-02-16T19:00:00.000Z</published>
-    <updated>2022-02-24T20:01:51.551Z</updated>
+    <updated>2022-02-24T20:31:02.638Z</updated>
     
     <summary type="html">
     
@@ -136,10 +140,10 @@
     
     </summary>
     
-      <category term="Note" scheme="https://reveroyl.github.io/categories/Note/"/>
+      <category term="Neuroscience" scheme="https://reveroyl.github.io/categories/Neuroscience/"/>
     
     
-      <category term="Note Neuroscience" scheme="https://reveroyl.github.io/tags/Note-Neuroscience/"/>
+      <category term="Lecture Note" scheme="https://reveroyl.github.io/tags/Lecture-Note/"/>
     
   </entry>
   
@@ -148,7 +152,7 @@
     <link href="https://reveroyl.github.io/2022/02/15/15-02-22/"/>
     <id>https://reveroyl.github.io/2022/02/15/15-02-22/</id>
     <published>2022-02-15T16:00:00.000Z</published>
-    <updated>2022-02-24T20:01:47.206Z</updated>
+    <updated>2022-02-24T20:30:58.990Z</updated>
     
     <summary type="html">
     
@@ -162,10 +166,10 @@
     
     </summary>
     
-      <category term="Note" scheme="https://reveroyl.github.io/categories/Note/"/>
+      <category term="Neuroscience" scheme="https://reveroyl.github.io/categories/Neuroscience/"/>
     
     
-      <category term="Note Neuroscience" scheme="https://reveroyl.github.io/tags/Note-Neuroscience/"/>
+      <category term="Lecture Note" scheme="https://reveroyl.github.io/tags/Lecture-Note/"/>
     
   </entry>
   
@@ -174,7 +178,7 @@
     <link href="https://reveroyl.github.io/2022/02/14/14-02-22/"/>
     <id>https://reveroyl.github.io/2022/02/14/14-02-22/</id>
     <published>2022-02-14T12:00:00.000Z</published>
-    <updated>2022-02-24T20:01:39.238Z</updated>
+    <updated>2022-02-24T20:30:55.208Z</updated>
     
     <summary type="html">
     
@@ -188,10 +192,10 @@
     
     </summary>
     
-      <category term="Note" scheme="https://reveroyl.github.io/categories/Note/"/>
+      <category term="Neuroscience" scheme="https://reveroyl.github.io/categories/Neuroscience/"/>
     
     
-      <category term="Note Neuroscience" scheme="https://reveroyl.github.io/tags/Note-Neuroscience/"/>
+      <category term="Lecture Note" scheme="https://reveroyl.github.io/tags/Lecture-Note/"/>
     
   </entry>
   
@@ -200,7 +204,7 @@
     <link href="https://reveroyl.github.io/2022/02/10/10-02-22/"/>
     <id>https://reveroyl.github.io/2022/02/10/10-02-22/</id>
     <published>2022-02-10T20:00:00.000Z</published>
-    <updated>2022-02-24T20:01:35.079Z</updated>
+    <updated>2022-02-24T20:30:35.203Z</updated>
     
     <summary type="html">
     
@@ -214,10 +218,10 @@
     
     </summary>
     
-      <category term="Note" scheme="https://reveroyl.github.io/categories/Note/"/>
+      <category term="Neuroscience" scheme="https://reveroyl.github.io/categories/Neuroscience/"/>
     
     
-      <category term="Note Neuroscience" scheme="https://reveroyl.github.io/tags/Note-Neuroscience/"/>
+      <category term="Lecture Note" scheme="https://reveroyl.github.io/tags/Lecture-Note/"/>
     
   </entry>
   
@@ -226,7 +230,7 @@
     <link href="https://reveroyl.github.io/2022/02/09/09-02-22/"/>
     <id>https://reveroyl.github.io/2022/02/09/09-02-22/</id>
     <published>2022-02-09T18:00:00.000Z</published>
-    <updated>2022-02-24T20:01:30.285Z</updated>
+    <updated>2022-02-24T20:30:27.722Z</updated>
     
     <summary type="html">
     
@@ -240,10 +244,10 @@
     
     </summary>
     
-      <category term="Note" scheme="https://reveroyl.github.io/categories/Note/"/>
+      <category term="Neuroscience" scheme="https://reveroyl.github.io/categories/Neuroscience/"/>
     
     
-      <category term="Note Neuroscience" scheme="https://reveroyl.github.io/tags/Note-Neuroscience/"/>
+      <category term="Lecture Note" scheme="https://reveroyl.github.io/tags/Lecture-Note/"/>
     
   </entry>
   
@@ -252,7 +256,7 @@
     <link href="https://reveroyl.github.io/2022/02/08/08-02-22/"/>
     <id>https://reveroyl.github.io/2022/02/08/08-02-22/</id>
     <published>2022-02-08T12:00:00.000Z</published>
-    <updated>2022-02-24T20:01:23.519Z</updated>
+    <updated>2022-02-24T20:30:44.105Z</updated>
     
     <summary type="html">
     
@@ -267,10 +271,10 @@
     
     </summary>
     
-      <category term="Note" scheme="https://reveroyl.github.io/categories/Note/"/>
+      <category term="Neuroscience" scheme="https://reveroyl.github.io/categories/Neuroscience/"/>
     
     
-      <category term="Note Neuroscience" scheme="https://reveroyl.github.io/tags/Note-Neuroscience/"/>
+      <category term="Lecture Note" scheme="https://reveroyl.github.io/tags/Lecture-Note/"/>
     
   </entry>
   
@@ -279,7 +283,7 @@
     <link href="https://reveroyl.github.io/2022/02/07/07-02-22/"/>
     <id>https://reveroyl.github.io/2022/02/07/07-02-22/</id>
     <published>2022-02-07T12:00:00.000Z</published>
-    <updated>2022-02-24T20:01:15.111Z</updated>
+    <updated>2022-02-24T20:30:50.125Z</updated>
     
     <summary type="html">
     
@@ -295,10 +299,36 @@
     
     </summary>
     
-      <category term="Note" scheme="https://reveroyl.github.io/categories/Note/"/>
+      <category term="Neuroscience" scheme="https://reveroyl.github.io/categories/Neuroscience/"/>
     
     
-      <category term="Note Neuroscience" scheme="https://reveroyl.github.io/tags/Note-Neuroscience/"/>
+      <category term="Lecture Note" scheme="https://reveroyl.github.io/tags/Lecture-Note/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Usages of animal models in the study of human brain structural connectivity</title>
+    <link href="https://reveroyl.github.io/2022/01/22/2022-01-22-usages-of-animal-models-in-the-study-of-human-brain-structural-connectivity/"/>
+    <id>https://reveroyl.github.io/2022/01/22/2022-01-22-usages-of-animal-models-in-the-study-of-human-brain-structural-connectivity/</id>
+    <published>2022-01-22T09:56:06.000Z</published>
+    <updated>2022-02-15T22:29:58.832Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Critically-evaluate-the-use-of-animal-models-in-the-study-of-human-brain-structural-connectivity&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="discussion" scheme="https://reveroyl.github.io/categories/discussion/"/>
+    
+    
+      <category term="Neuroscience" scheme="https://reveroyl.github.io/tags/Neuroscience/"/>
     
   </entry>
   
@@ -355,37 +385,11 @@
   </entry>
   
   <entry>
-    <title>Usages of animal models in the study of human brain structural connectivity</title>
-    <link href="https://reveroyl.github.io/2022/01/22/2022-01-22-usages-of-animal-models-in-the-study-of-human-brain-structural-connectivity/"/>
-    <id>https://reveroyl.github.io/2022/01/22/2022-01-22-usages-of-animal-models-in-the-study-of-human-brain-structural-connectivity/</id>
-    <published>2022-01-22T09:56:06.000Z</published>
-    <updated>2022-02-15T22:29:58.832Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;Critically-evaluate-the-use-of-animal-models-in-the-study-of-human-brain-structural-connectivity&quot;&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-      <category term="discussion" scheme="https://reveroyl.github.io/categories/discussion/"/>
-    
-    
-      <category term="Neuroscience" scheme="https://reveroyl.github.io/tags/Neuroscience/"/>
-    
-  </entry>
-  
-  <entry>
     <title>NMDA receptor-dependent LTP roles</title>
     <link href="https://reveroyl.github.io/2022/01/18/2022-1-18-nmda-receptor-dependent-ltp-roles/"/>
     <id>https://reveroyl.github.io/2022/01/18/2022-1-18-nmda-receptor-dependent-ltp-roles/</id>
     <published>2022-01-18T17:59:11.000Z</published>
-    <updated>2022-02-16T19:25:29.685Z</updated>
+    <updated>2022-02-24T20:31:59.701Z</updated>
     
     <summary type="html">
     
@@ -399,36 +403,10 @@
     
     </summary>
     
-      <category term="Essay" scheme="https://reveroyl.github.io/categories/Essay/"/>
+      <category term="Neuroscience" scheme="https://reveroyl.github.io/categories/Neuroscience/"/>
     
     
-      <category term="Essay Neuroscience" scheme="https://reveroyl.github.io/tags/Essay-Neuroscience/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Model proteinopathies essay</title>
-    <link href="https://reveroyl.github.io/2021/12/13/2021-12-13-lei-proteinopathies-essay/"/>
-    <id>https://reveroyl.github.io/2021/12/13/2021-12-13-lei-proteinopathies-essay/</id>
-    <published>2021-12-13T12:00:00.000Z</published>
-    <updated>2022-02-16T19:24:43.279Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;This is a comparison and contrast between two common proteinopathies (Alzheimer’s disease &amp;amp; Parkinson’s disease), discussing
-        
-      
-    
-    </summary>
-    
-      <category term="Essay" scheme="https://reveroyl.github.io/categories/Essay/"/>
-    
-    
-      <category term="Essay Neuroscience" scheme="https://reveroyl.github.io/tags/Essay-Neuroscience/"/>
+      <category term="Essay" scheme="https://reveroyl.github.io/tags/Essay/"/>
     
   </entry>
   
@@ -437,7 +415,7 @@
     <link href="https://reveroyl.github.io/2021/12/13/2022-01-04-lei-half-a-year-in-london/"/>
     <id>https://reveroyl.github.io/2021/12/13/2022-01-04-lei-half-a-year-in-london/</id>
     <published>2021-12-13T12:00:00.000Z</published>
-    <updated>2022-02-16T19:24:53.623Z</updated>
+    <updated>2022-02-24T20:28:39.363Z</updated>
     
     <summary type="html">
     
@@ -452,10 +430,36 @@
     
     </summary>
     
-      <category term="diaries" scheme="https://reveroyl.github.io/categories/diaries/"/>
+      <category term="daily life" scheme="https://reveroyl.github.io/categories/daily-life/"/>
     
     
       <category term="diary" scheme="https://reveroyl.github.io/tags/diary/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Model proteinopathies essay</title>
+    <link href="https://reveroyl.github.io/2021/12/13/2021-12-13-lei-proteinopathies-essay/"/>
+    <id>https://reveroyl.github.io/2021/12/13/2021-12-13-lei-proteinopathies-essay/</id>
+    <published>2021-12-13T12:00:00.000Z</published>
+    <updated>2022-02-24T20:28:17.180Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;This is a comparison and contrast between two common proteinopathies (Alzheimer’s disease &amp;amp; Parkinson’s disease), discussing
+        
+      
+    
+    </summary>
+    
+      <category term="Neuroscience" scheme="https://reveroyl.github.io/categories/Neuroscience/"/>
+    
+    
+      <category term="Essay" scheme="https://reveroyl.github.io/tags/Essay/"/>
     
   </entry>
   
@@ -464,7 +468,7 @@
     <link href="https://reveroyl.github.io/2021/11/28/2021-11-28-lei-model-species-essay/"/>
     <id>https://reveroyl.github.io/2021/11/28/2021-11-28-lei-model-species-essay/</id>
     <published>2021-11-28T16:59:19.000Z</published>
-    <updated>2022-02-16T19:24:42.272Z</updated>
+    <updated>2022-02-24T20:27:56.227Z</updated>
     
     <summary type="html">
     
@@ -478,10 +482,10 @@
     
     </summary>
     
-      <category term="Essay" scheme="https://reveroyl.github.io/categories/Essay/"/>
+      <category term="Neuroscience" scheme="https://reveroyl.github.io/categories/Neuroscience/"/>
     
     
-      <category term="Essay Neuroscience" scheme="https://reveroyl.github.io/tags/Essay-Neuroscience/"/>
+      <category term="Essay" scheme="https://reveroyl.github.io/tags/Essay/"/>
     
   </entry>
   
