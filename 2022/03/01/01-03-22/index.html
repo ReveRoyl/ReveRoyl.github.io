@@ -4,11 +4,11 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="phenomenon of ‘Blocking’ on predicted reward, Lei">
+    <meta name="keywords" content="Lecture Notes 01/03/22, Lei">
     <meta name="baidu-site-verification" content="fmlEuI34ir">
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48">
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7">
-    <meta name="description" content="The so-called ‘delta rule’ has been used to describe learning based on predicted reward. Explain, using equations, the p">
+    <meta name="description" content="Mock abstract examPart 1What is the main aim of the research reported in this paper?Define method and clarify why this m">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -16,7 +16,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>phenomenon of ‘Blocking’ on predicted reward | Lei&#39;s Blog</title>
+    <title>Lecture Notes 01/03/22 | Lei&#39;s Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -311,13 +311,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/16.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/29.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        phenomenon of ‘Blocking’ on predicted reward
+                        Lecture Notes 01/03/22
                     </div>
                 </div>
             </div>
@@ -428,8 +428,8 @@
                     
                     <div class="article-tag">
                         
-                        <a href="/tags/Neuroscience/" target="_blank">
-                            <span class="chip bg-color">Neuroscience</span>
+                        <a href="/tags/Lecture-Note/" target="_blank">
+                            <span class="chip bg-color">Lecture Note</span>
                         </a>
                         
                     </div>
@@ -440,8 +440,8 @@
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                        <a href="/categories/discussion/" class="post-category" target="_blank">
-                            discussion
+                        <a href="/categories/Neuroscience/" class="post-category" target="_blank">
+                            Neuroscience
                         </a>
                         
                     </div>
@@ -452,7 +452,7 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2022-01-22
+                    2022-03-01
                 </div>
 
                 <div class="post-author info-break-policy">
@@ -466,14 +466,14 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    764
+                    368
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>Read Times:&nbsp;&nbsp;
-                    4 Min
+                    2 Min
                 </div>
                 
                 
@@ -489,20 +489,28 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="The-so-called-‘delta-rule’-has-been-used-to-describe-learning-based-on-predicted-reward-Explain-using-equations-the-phenomenon-of-‘Blocking’"><a href="#The-so-called-‘delta-rule’-has-been-used-to-describe-learning-based-on-predicted-reward-Explain-using-equations-the-phenomenon-of-‘Blocking’" class="headerlink" title="The so-called ‘delta rule’ has been used to describe learning based on predicted reward. Explain, using equations, the phenomenon of ‘Blocking’."></a>The so-called ‘delta rule’ has been used to describe learning based on predicted reward. Explain, using equations, the phenomenon of ‘Blocking’.</h1><p>Blocking is the phenomenon where there will be no association with the new stimulus is formed when the unconditional reflex has been predicted. It generally refers to the inability to express knowledge or skills due to failures in learning or memory. If the unconditional stimulus is already predicted fully by one stimulus, and the addition of a new stimulus does not provide any new important information about the unconditional stimuli, the unconditional stimuli will not activate or support the learning process which is responsible for establishing the new conditional reflex. Explaining the phenomenon of blocking in detail, here first come the delta law and reinforcement learning model:</p>
-<p>The delta law model is a learning model that describes changes in the strength of synapse, such as learning the relationship between stimulus and reward, using gradient descent to find the optimal weight vector. The gradient descent method is to solve the minimum value of the function, i.e., the error, along the direction of gradient descent.</p>
-<p>Classical conditioning is a basic form of associative learning which is considered an essential component of complex learning. Typically, classical conditioning occurs when a neutral stimulus (conditional stimulus) is paired closely or consecutively temporally with a biological stimulus (unconditional stimulus) eliciting a reflex behaviour that is still unlearned (unconditional response).</p>
-<p>Here is a simple stimuli- reward model:</p>
-<p><img src="https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202201221004405.png" alt="img"></p>
-<p>In this equation, the w is the weight ratio which is learned with the delta rule from the association of stimulus and reward. It is a vector, which means that its direction can be changed as the stimulus changes. This directionality is necessary for the presence of multiple stimuli. The u is the presence or absence of a stimulus, which takes a binary value between 0 and 1, that is, u is 1 if there is a stimulus, and u is 0 if there is no stimulus.</p>
-<p><img src="https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202201221005012.png" alt="img"></p>
-<p>Here δ is the predictive error for a given stimulus and reward, which can be predicted by the following equation:</p>
-<p><img src="https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202201221005829.png" alt="img"></p>
-<p>Here the ε defines a learning rate, i.e., how fast shall we update the association between the stimulus and reward, this value is between 0 and 1. If ε is 0, it means there is no learning, thus this stimulus-reward association model is locked, and the association between stimulus and reward is not updated with any subsequent learning. If ε = 1 means that the association between stimulus and reward will change completely after one learning, this learning model is also generally meaningless for prediction. Usually, this learning rate is individually dependent and different in various conditions. Through this equation, we can predict the efficiency of learning. Another problem is that the external noise will interfere with the forecast. For the external noise error, we can introduce a filter coefficient and a series of convolution operations to eliminate it. </p>
-<p>A simple learning equation based on unconditional reflexes can explain the phenomenon of the blocking well:</p>
-<p><img src="https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202201221004196.png" alt="img"></p>
-<p>Here ε still represents the learning rate. The λ is the maximum binding strength for a given unconditional stimuli. The σv is the sum of the strengths of associations between all conditional and unconditional stimuli. The δv is the change in binding strength of a particular conditional reflex on various trials. According to this equation, the blocking occurs when λ equals σv, i.e., the binding strength obtained by the conditional stimulus paired with the unconditional stimulus reaches the λ value. There are two groups in one experiment to test it. First, a conditional stimulus is paired with an unconditional stimulus. The second conditional stimulus then undergoes compound conditioning with the first and the same unconditional stimulus. If it is in the absence of blocking, the second combination has little regulation. However, if the combination of the first group is not or weakly regulated, there will be a large amount of associative strength the second combination as well as the first combination in the second group. Blocking occurs because the second stimulus loses relevance. In this equation, blocking will result in an ignorance of new information, which means “stop learning”.</p>
-<p>All in all, blocking, in a simple word, is an expression of the learning failure or a classical conditional response. The blocking may play an important role in how animals process information in their environment. Because animals are constantly exposed to numerous stimuli, in which case, selectively responding to those stimuli may keep us away from “brain crashes” caused by too much information. Sometimes, ignorance is a blessing.</p>
+                <h1 id="Mock-abstract-exam"><a href="#Mock-abstract-exam" class="headerlink" title="Mock abstract exam"></a>Mock abstract exam</h1><h2 id="Part-1"><a href="#Part-1" class="headerlink" title="Part 1"></a>Part 1</h2><h3 id="What-is-the-main-aim-of-the-research-reported-in-this-paper"><a href="#What-is-the-main-aim-of-the-research-reported-in-this-paper" class="headerlink" title="What is the main aim of the research reported in this paper?"></a>What is the main aim of the research reported in this paper?</h3><p>Define method and clarify why this method is used in the study</p>
+<p>give background information on aim </p>
+<h3 id="What-are-the-main-findings-of-this-research-How-could-the-authors-further-investigate-them"><a href="#What-are-the-main-findings-of-this-research-How-could-the-authors-further-investigate-them" class="headerlink" title="What are the main findings of this research? How could the authors further investigate them?"></a>What are the main findings of this research? How could the authors further investigate them?</h3><p>state the main finding</p>
+<p>Discuss future research in the context of the current research</p>
+<h3 id="Are-the-authors’-conclusions-supported-by-the-data-Discuss-possible-confounding-variables"><a href="#Are-the-authors’-conclusions-supported-by-the-data-Discuss-possible-confounding-variables" class="headerlink" title="Are the authors’ conclusions supported by the data? Discuss possible confounding variables."></a>Are the authors’ conclusions supported by the data? Discuss possible confounding variables.</h3><p>state if the data support the conclusion.</p>
+<p>fully consider all confounding variables</p>
+<h3 id="The-authors-report-there-was-no-significant-main-effect-of-stimulation-with-an-associated-p-value-of-p-0-97-What-would-the-conclusion-be-if-the-p-value-was-0-50"><a href="#The-authors-report-there-was-no-significant-main-effect-of-stimulation-with-an-associated-p-value-of-p-0-97-What-would-the-conclusion-be-if-the-p-value-was-0-50" class="headerlink" title="The authors report there was no significant main effect of stimulation, with an associated p-value of p = 0.97. What would the conclusion be if the p-value was 0.50?"></a>The authors report there was no significant main effect of stimulation, with an associated p-value of p = 0.97. What would the conclusion be if the <em>p</em>-value was 0.50?</h3><p>answer the question but provide context</p>
+<p>show off your additional knowledge of the subject</p>
+<p>Using your own words, describe the following:</p>
+<h2 id="Part-2"><a href="#Part-2" class="headerlink" title="Part 2"></a>Part 2</h2><h3 id="The-results-obtained-in-this-paper-Include-in-your-answer-a-brief-indication-of-the-methods-used"><a href="#The-results-obtained-in-this-paper-Include-in-your-answer-a-brief-indication-of-the-methods-used" class="headerlink" title="The results obtained in this paper. Include in your answer a brief indication of the methods used"></a>The results obtained in this paper. Include in your answer a brief indication of the methods used</h3><p>State the major findings. 30 marks.</p>
+<p>Give key details of the methods</p>
+<p>think more broadly -replication crisis in cognitive neuroscience is relevant here</p>
+<h3 id="The-significance-of-the-results-for-understanding-cognitive-neuroscience"><a href="#The-significance-of-the-results-for-understanding-cognitive-neuroscience" class="headerlink" title="The significance of the results for understanding cognitive neuroscience"></a>The significance of the results for understanding cognitive neuroscience</h3><hr>
+<h2 id="What-is-cognitive-ageing-and-when-does-cognitive-decline-begin"><a href="#What-is-cognitive-ageing-and-when-does-cognitive-decline-begin" class="headerlink" title="What is cognitive ageing and when does cognitive decline begin?"></a>What is cognitive ageing and when does cognitive decline begin?</h2><h2 id="individual-differences-approaches-to-studying-the-neural-basis-of-cognitive-ageing"><a href="#individual-differences-approaches-to-studying-the-neural-basis-of-cognitive-ageing" class="headerlink" title="individual- differences approaches to studying the neural basis of cognitive ageing"></a>individual- differences approaches to studying the neural basis of cognitive ageing</h2><h3 id="Why-do-cross-sectional-and-longitudinal-ageing"><a href="#Why-do-cross-sectional-and-longitudinal-ageing" class="headerlink" title="Why do cross-sectional and longitudinal ageing"></a>Why do cross-sectional and longitudinal ageing</h3><p>studies give different results?</p>
+<ol>
+<li>Cohort differences (the Flynn Effect)<br>• Problem for cross-sectional studies</li>
+<li>Nonrandom attrition<br>• Problem for longitudinal studies</li>
+<li>Practice effects<br>• Problem for longitudinal studies</li>
+</ol>
+<h3 id="Average-brain-changes-between-73-and-76"><a href="#Average-brain-changes-between-73-and-76" class="headerlink" title="Average brain changes between 73 and 76"></a>Average brain changes between 73 and 76</h3><p>• Grey matter volume: -.07 SDs/year<br>• Normal-appearing white matter volume: -.10 SDs/year<br>• White matter hyperintensity volume: +.11 SDs/year<br>• General fractional anisotropy: -.09 SDs/year<br>• General mean diffusivity: +.34 SDs/year</p>
+<h3 id="Coupled-brain-cognitive-changes-summary"><a href="#Coupled-brain-cognitive-changes-summary" class="headerlink" title="Coupled brain/cognitive changes - summary"></a>Coupled brain/cognitive changes - summary</h3><p>• Volume declines across the lifespan<br>• Of volumetric results, best cognitive predictor/coupling is often white matter hyperintensities (pathology)<br>• White matter microstructure changes alongside fluid intelligence<br>• Some unexpected results (no coupled change between white matter and processing speed)<br>• Larger studies required</p>
+<h3 id="Next-steps"><a href="#Next-steps" class="headerlink" title="Next steps"></a>Next steps</h3><p>• Increase power<br>    • Larger, longer studies with additional waves?<br>• Get specific<br>    • Brain networks rather than broad measures?<br>    • Spatial interaction of hyperintensities and healthy white matter?<br>• Find predictors<br>    • Early-life rather than old-age?<br>• Add genetics<br>    • Polygenic scores to predict brain or cognitive changes?</p>
 
             </div>
             <hr />
@@ -537,9 +545,9 @@
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《phenomenon of ‘Blocking’ on predicted reward》
+                    《Lecture Notes 01/03/22》
                 </span> by
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2022/01/22/2022-01-22-phenomenon-of-blocking-on-predicted-reward/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2022/03/01/01-03-22/" property="cc:attributionName"
                rel="cc:attributionURL">
                 Lei Luo
             </a> is licensed under a
@@ -845,27 +853,62 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2022/02/07/07-02-22/">
+                <a href="/2022/03/02/02-03-22/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/28.jpg" class="responsive-img" alt="Lecture Notes 07/02/22">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="">
                         
-                        <span class="card-title">Lecture Notes 07/02/22</span>
+                        <span class="card-title"></span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-the angular momentum denoted as I and can be 1/2, 1, 3/2 …
-The frequency of precession (the frequency of our signals) i
+                            PsychoPyThere is a online version: https://pavlovia.org/
+Choose the units as height so that we do not need to set it eve
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2022-02-07
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-02
                         </span>
+                        <span class="publish-author">
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fa fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2022/02/28/28-02-22/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="Lecture Notes 28/02/22">
+                        
+                        <span class="card-title">Lecture Notes 28/02/22</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            White matter volume increase from 0-45 (around), and decrease after 45; while grey matter decrease after 50s.
+
+Q: how th
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-02-28
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -883,55 +926,6 @@ The frequency of precession (the frequency of our signals) i
                     
                     <a href="/tags/Lecture-Note/" target="_blank">
                         <span class="chip bg-color">Lecture Note</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                Next&nbsp;<i class="fa fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2022/01/22/2022-01-22-nature-of-dopamine-dysfunction-in-schizophrenia/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="Nature of dopamine dysfunction in schizophrenia">
-                        
-                        <span class="card-title">Nature of dopamine dysfunction in schizophrenia</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            How do we measure dopamine in the living human brain and what do these measures tell us about the nature of dopamine dys
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-01-22
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fa fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/discussion/" class="post-category" target="_blank">
-                                    discussion
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/Neuroscience/" target="_blank">
-                        <span class="chip bg-color">Neuroscience</span>
                     </a>
                     
                 </div>
@@ -1077,6 +1071,25 @@ The frequency of precession (the frequency of our signals) i
     
 
 </main>
+
+
+<script src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$', '$'], ['\(', '\)']]}
+    });
+</script>
+
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+<!-- 代码语言 -->
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+<!-- 代码块复制 -->
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+<script type="text/javascript" src="/libs/codeBlock/clipboard.min.js"></script>
+<!-- 代码块收缩 -->
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script> 
+<!-- 代码块折行 -->
+<style type="text/css">code[class*="language-"], pre[class*="language-"] { white-space: pre !important; }</style>
 
 
     <footer class="page-footer bg-color">

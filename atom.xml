@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://reveroyl.github.io/"/>
-  <updated>2022-03-02T07:48:44.898Z</updated>
+  <updated>2022-03-03T14:55:03.263Z</updated>
   <id>https://reveroyl.github.io/</id>
   
   <author>
@@ -17,9 +17,57 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Lecture Notes 03/03/22</title>
+    <link href="https://reveroyl.github.io/2022/03/03/03-03-22/"/>
+    <id>https://reveroyl.github.io/2022/03/03/03-03-22/</id>
+    <published>2022-03-03T11:00:00.000Z</published>
+    <updated>2022-03-03T14:55:03.263Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Introduction-of-schizophrenia&quot;&gt;&lt;a href=&quot;#Introduction-of-schizophrenia&quot; class=&quot;headerlink&quot; title=&quot;Introduction of
+        
+      
+    
+    </summary>
+    
+      <category term="Neuroscience" scheme="https://reveroyl.github.io/categories/Neuroscience/"/>
+    
+    
+      <category term="Lecture Note" scheme="https://reveroyl.github.io/tags/Lecture-Note/"/>
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://reveroyl.github.io/2022/03/02/02-03-22/"/>
+    <id>https://reveroyl.github.io/2022/03/02/02-03-22/</id>
+    <published>2022-03-02T09:48:11.789Z</published>
+    <updated>2022-03-02T14:28:09.889Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;PsychoPy&quot;&gt;&lt;a href=&quot;#PsychoPy&quot; class=&quot;headerlink&quot; title=&quot;PsychoPy&quot;&gt;&lt;/a&gt;PsychoPy&lt;/h2&gt;&lt;p&gt;There is a online version: &lt;a
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>Lecture Notes 01/03/22</title>
-    <link href="https://reveroyl.github.io/2022/03/01/1-03-22/"/>
-    <id>https://reveroyl.github.io/2022/03/01/1-03-22/</id>
+    <link href="https://reveroyl.github.io/2022/03/01/01-03-22/"/>
+    <id>https://reveroyl.github.io/2022/03/01/01-03-22/</id>
     <published>2022-03-01T10:00:00.000Z</published>
     <updated>2022-03-02T07:48:44.898Z</updated>
     
@@ -487,58 +535,6 @@
     
     
       <category term="Essay" scheme="https://reveroyl.github.io/tags/Essay/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Model species essay</title>
-    <link href="https://reveroyl.github.io/2021/11/28/2021-11-28-lei-model-species-essay/"/>
-    <id>https://reveroyl.github.io/2021/11/28/2021-11-28-lei-model-species-essay/</id>
-    <published>2021-11-28T16:59:19.000Z</published>
-    <updated>2022-02-24T20:27:56.227Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;I described the key factors to be considered when selecting a model species for neuroscience research, and using examples from the
-        
-      
-    
-    </summary>
-    
-      <category term="Neuroscience" scheme="https://reveroyl.github.io/categories/Neuroscience/"/>
-    
-    
-      <category term="Essay" scheme="https://reveroyl.github.io/tags/Essay/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Glossary</title>
-    <link href="https://reveroyl.github.io/2021/11/23/23-11-21glossary/"/>
-    <id>https://reveroyl.github.io/2021/11/23/23-11-21glossary/</id>
-    <published>2021-11-23T12:00:00.000Z</published>
-    <updated>2022-02-24T20:35:21.096Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;Glossary-sequenced-by-the-first-letter&quot;&gt;&lt;a href=&quot;#Glossary-sequenced-by-the-first-letter&quot; class=&quot;headerlink&quot; title=&quot;Glossary
-        
-      
-    
-    </summary>
-    
-      <category term="Neuroscience" scheme="https://reveroyl.github.io/categories/Neuroscience/"/>
-    
-    
-      <category term="glossary" scheme="https://reveroyl.github.io/tags/glossary/"/>
     
   </entry>
   
