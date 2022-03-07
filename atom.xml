@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://reveroyl.github.io/"/>
-  <updated>2022-03-03T15:01:36.232Z</updated>
+  <updated>2022-03-07T16:10:27.445Z</updated>
   <id>https://reveroyl.github.io/</id>
   
   <author>
@@ -15,6 +15,58 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Lecture Notes 07/03/22</title>
+    <link href="https://reveroyl.github.io/2022/03/07/07-03-22/"/>
+    <id>https://reveroyl.github.io/2022/03/07/07-03-22/</id>
+    <published>2022-03-07T12:30:00.000Z</published>
+    <updated>2022-03-07T16:10:27.445Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Objective&quot;&gt;&lt;a href=&quot;#Objective&quot; class=&quot;headerlink&quot; title=&quot;Objective&quot;&gt;&lt;/a&gt;Objective&lt;/h2&gt;&lt;p&gt;Name the key principle that has remained
+        
+      
+    
+    </summary>
+    
+      <category term="Neuroscience" scheme="https://reveroyl.github.io/categories/Neuroscience/"/>
+    
+    
+      <category term="Lecture Note" scheme="https://reveroyl.github.io/tags/Lecture-Note/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Lecture Notes 01/03/22</title>
+    <link href="https://reveroyl.github.io/2022/03/05/python-learning/"/>
+    <id>https://reveroyl.github.io/2022/03/05/python-learning/</id>
+    <published>2022-03-05T22:58:00.000Z</published>
+    <updated>2022-03-07T16:10:31.537Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Tutorial-for-PyCharm&quot;&gt;&lt;a href=&quot;#Tutorial-for-PyCharm&quot; class=&quot;headerlink&quot; title=&quot;Tutorial for PyCharm&quot;&gt;&lt;/a&gt;Tutorial for
+        
+      
+    
+    </summary>
+    
+      <category term="programming" scheme="https://reveroyl.github.io/categories/programming/"/>
+    
+    
+      <category term="python" scheme="https://reveroyl.github.io/tags/python/"/>
+    
+  </entry>
   
   <entry>
     <title>Lecture Notes 03/03/22</title>
@@ -412,32 +464,6 @@
   </entry>
   
   <entry>
-    <title>Usages of animal models in the study of human brain structural connectivity</title>
-    <link href="https://reveroyl.github.io/2022/01/22/2022-01-22-usages-of-animal-models-in-the-study-of-human-brain-structural-connectivity/"/>
-    <id>https://reveroyl.github.io/2022/01/22/2022-01-22-usages-of-animal-models-in-the-study-of-human-brain-structural-connectivity/</id>
-    <published>2022-01-22T09:56:06.000Z</published>
-    <updated>2022-02-15T22:29:58.832Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;Critically-evaluate-the-use-of-animal-models-in-the-study-of-human-brain-structural-connectivity&quot;&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-      <category term="discussion" scheme="https://reveroyl.github.io/categories/discussion/"/>
-    
-    
-      <category term="Neuroscience" scheme="https://reveroyl.github.io/tags/Neuroscience/"/>
-    
-  </entry>
-  
-  <entry>
     <title>phenomenon of ‘Blocking’ on predicted reward</title>
     <link href="https://reveroyl.github.io/2022/01/22/2022-01-22-phenomenon-of-blocking-on-predicted-reward/"/>
     <id>https://reveroyl.github.io/2022/01/22/2022-01-22-phenomenon-of-blocking-on-predicted-reward/</id>
@@ -451,6 +477,32 @@
         
         
           &lt;h1
+        
+      
+    
+    </summary>
+    
+      <category term="discussion" scheme="https://reveroyl.github.io/categories/discussion/"/>
+    
+    
+      <category term="Neuroscience" scheme="https://reveroyl.github.io/tags/Neuroscience/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Usages of animal models in the study of human brain structural connectivity</title>
+    <link href="https://reveroyl.github.io/2022/01/22/2022-01-22-usages-of-animal-models-in-the-study-of-human-brain-structural-connectivity/"/>
+    <id>https://reveroyl.github.io/2022/01/22/2022-01-22-usages-of-animal-models-in-the-study-of-human-brain-structural-connectivity/</id>
+    <published>2022-01-22T09:56:06.000Z</published>
+    <updated>2022-02-15T22:29:58.832Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Critically-evaluate-the-use-of-animal-models-in-the-study-of-human-brain-structural-connectivity&quot;&gt;&lt;a
         
       
     
@@ -486,59 +538,6 @@
     
     
       <category term="Essay" scheme="https://reveroyl.github.io/tags/Essay/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Model proteinopathies essay</title>
-    <link href="https://reveroyl.github.io/2021/12/13/2021-12-13-lei-proteinopathies-essay/"/>
-    <id>https://reveroyl.github.io/2021/12/13/2021-12-13-lei-proteinopathies-essay/</id>
-    <published>2021-12-13T12:00:00.000Z</published>
-    <updated>2022-02-24T20:28:17.180Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;This is a comparison and contrast between two common proteinopathies (Alzheimer’s disease &amp;amp; Parkinson’s disease), discussing
-        
-      
-    
-    </summary>
-    
-      <category term="Neuroscience" scheme="https://reveroyl.github.io/categories/Neuroscience/"/>
-    
-    
-      <category term="Essay" scheme="https://reveroyl.github.io/tags/Essay/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Half a year in London</title>
-    <link href="https://reveroyl.github.io/2021/12/13/2022-01-04-lei-half-a-year-in-london/"/>
-    <id>https://reveroyl.github.io/2021/12/13/2022-01-04-lei-half-a-year-in-london/</id>
-    <published>2021-12-13T12:00:00.000Z</published>
-    <updated>2022-02-24T20:28:39.363Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;时光荏苒，日月穿梭。2021在无数的美好与缺憾的交织之中落下了帷幕。&lt;/p&gt;
-&lt;p&gt;不知不觉中我已经在伦敦度过了三个月份，从一开始的惊喜感，初到的新鲜感，远离中国的思念感，异国文化的分离感中，我也曾徘徊过，也曾迷茫过。我突然想到毛主席说过，存人失地，人地皆寸。虽然不是同一个
-        
-      
-    
-    </summary>
-    
-      <category term="daily life" scheme="https://reveroyl.github.io/categories/daily-life/"/>
-    
-    
-      <category term="diary" scheme="https://reveroyl.github.io/tags/diary/"/>
     
   </entry>
   
