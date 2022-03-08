@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://reveroyl.github.io/"/>
-  <updated>2022-03-07T16:10:27.445Z</updated>
+  <updated>2022-03-08T09:59:06.601Z</updated>
   <id>https://reveroyl.github.io/</id>
   
   <author>
@@ -15,6 +15,24 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Lecture Notes 08/03/22</title>
+    <link href="https://reveroyl.github.io/2022/03/08/08-03-22/"/>
+    <id>https://reveroyl.github.io/2022/03/08/08-03-22/</id>
+    <published>2022-03-08T10:00:00.000Z</published>
+    <updated>2022-03-08T09:59:06.601Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="Neuroscience" scheme="https://reveroyl.github.io/categories/Neuroscience/"/>
+    
+    
+      <category term="Lecture Note" scheme="https://reveroyl.github.io/tags/Lecture-Note/"/>
+    
+  </entry>
   
   <entry>
     <title>Lecture Notes 07/03/22</title>
@@ -47,7 +65,7 @@
     <link href="https://reveroyl.github.io/2022/03/05/python-learning/"/>
     <id>https://reveroyl.github.io/2022/03/05/python-learning/</id>
     <published>2022-03-05T22:58:00.000Z</published>
-    <updated>2022-03-07T16:10:31.537Z</updated>
+    <updated>2022-03-07T19:33:21.791Z</updated>
     
     <summary type="html">
     
@@ -512,32 +530,6 @@
     
     
       <category term="Neuroscience" scheme="https://reveroyl.github.io/tags/Neuroscience/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>NMDA receptor-dependent LTP roles</title>
-    <link href="https://reveroyl.github.io/2022/01/18/2022-1-18-nmda-receptor-dependent-ltp-roles/"/>
-    <id>https://reveroyl.github.io/2022/01/18/2022-1-18-nmda-receptor-dependent-ltp-roles/</id>
-    <published>2022-01-18T17:59:11.000Z</published>
-    <updated>2022-02-24T20:31:59.701Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1
-        
-      
-    
-    </summary>
-    
-      <category term="Neuroscience" scheme="https://reveroyl.github.io/categories/Neuroscience/"/>
-    
-    
-      <category term="Essay" scheme="https://reveroyl.github.io/tags/Essay/"/>
     
   </entry>
   
