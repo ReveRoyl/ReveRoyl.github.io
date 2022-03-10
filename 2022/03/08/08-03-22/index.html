@@ -8,7 +8,8 @@
     <meta name="baidu-site-verification" content="fmlEuI34ir">
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48">
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7">
-    <meta name="description" content="Lecture Notes 08/03/22 | Lei&#39;s Blog">
+    <meta name="description" content="EEG OscillationsThere are different ways to measure oscillations
+FASTFOURIER TRANSFORM (FFT): Delta, Theta, Alpha, Beta,">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -311,7 +312,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/28.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/26.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -466,14 +467,14 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    0
+                    613
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>Read Times:&nbsp;&nbsp;
-                    1 Min
+                    3 Min
                 </div>
                 
                 
@@ -489,7 +490,123 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <h1 id="EEG-Oscillations"><a href="#EEG-Oscillations" class="headerlink" title="EEG Oscillations"></a>EEG Oscillations</h1><p>There are different ways to measure oscillations<img src="https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202203081018999.png" alt="image-20220308101810875"></p>
+<h2 id="FASTFOURIER-TRANSFORM-FFT-Delta-Theta-Alpha-Beta-Gamma"><a href="#FASTFOURIER-TRANSFORM-FFT-Delta-Theta-Alpha-Beta-Gamma" class="headerlink" title="FASTFOURIER TRANSFORM (FFT): Delta, Theta, Alpha, Beta, Gamma"></a>FASTFOURIER TRANSFORM (FFT): Delta, Theta, Alpha, Beta, Gamma</h2><p><img src="https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202203081040845.png" alt="image-20220308102128935"></p>
+<p>Delta 1 – 3.5 Hz</p>
+<ul>
+<li>Most strongly associated with slow wave sleep in healthy adults, and seen in young infants</li>
+<li>In an awake person, can be related to brain pathology, e.g. stroke, brain trauma, brain infection</li>
+<li>The slow fluctuations need to be distinguished from artifacts with similar temporal activity, e.g. respiration, perspiration</li>
+</ul>
+<p>Theta 3.5 – 7.5 Hz</p>
+<ul>
+<li>Whole brain theta linked to arousal, sleep </li>
+<li>In conflict tasks FM theta represents processes involved in the timing of cognitive synchronisation -packaging of information for communication in the cortex, e.g. theta-gamma coupling</li>
+<li>Theta waves (6 Hz) studied in “place cells” by O’Keefe and Nadel in rat hippocampus</li>
+</ul>
+<p>Alpha 7.5 – 12.5 Hz</p>
+<ul>
+<li>Strong, clear and characteristic wave observable even in raw data e.g. “Berger’s wave”</li>
+<li>Produced when quietly sitting in relaxed position, enhanced with eyes closed</li>
+<li>Generally, mental activity is associated with reduced alpha power</li>
+</ul>
+<p>Beta 12.5 – ~30 Hz (or low/high)</p>
+<ul>
+<li>Two subtypes of beta oscillations:</li>
+</ul>
+<ol>
+<li><p>Regular oscillations around 20 Hz – related to benzodiazepine<br>   administration, sensorimotor activity</p>
+<ol start="2">
+<li>Less rhythmic oscillations between 14 and 30 Hz greatest during<br>mental thought and activity, such as completing a cognitive task</li>
+</ol>
+</li>
+</ol>
+<ul>
+<li>Evidence for existence of multiple beta rhythms</li>
+</ul>
+<p>Gamma 30 Hz+</p>
+<hr>
+<h1 id="Bayesian-optimisation-machine-learning"><a href="#Bayesian-optimisation-machine-learning" class="headerlink" title="Bayesian optimisation machine learning"></a>Bayesian optimisation machine learning</h1><h2 id="Optimization"><a href="#Optimization" class="headerlink" title="Optimization"></a>Optimization</h2><h3 id="learning-objectives"><a href="#learning-objectives" class="headerlink" title="learning objectives"></a>learning objectives</h3><ol>
+<li>Distinguishing between Artificial Intelligence and Machine<br>Learning;</li>
+<li>Develop an understanding of how machines learn from<br>data;</li>
+<li>Understanding the concepts of bias and variance and how<br>to balance them;</li>
+<li>Understanding the advantages and shortcomings of using<br>Machine Learning for modelling the brain and behaviour</li>
+</ol>
+<p>AI and ML are different concepts: AI encapsulates ML:</p>
+<p><img src="https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202203081144280.png" alt="image-20220308114403184"></p>
+<p>In Machine Learning models learn from experience. In supervised learning<br>they use their errors to adapt their behaviour;</p>
+<h3 id="Supervised-learning"><a href="#Supervised-learning" class="headerlink" title="Supervised learning"></a>Supervised learning</h3><p><img src="https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202203081157396.png" alt="image-20220308115728282"></p>
+<p>Classification (focuses on predicting a label) &amp; Regression (focuses on predicting a quantity)</p>
+<h3 id="Unsupervised-learning"><a href="#Unsupervised-learning" class="headerlink" title="Unsupervised learning"></a>Unsupervised learning</h3><p><img src="https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202203081158374.png" alt="image-20220308115812311"></p>
+<p>Example of unsupervised learning – K-means clustering</p>
+<p><a href="https://www.naftaliharris.com/blog/visualizing-k-means-clustering/" target="_blank" rel="noopener">https://www.naftaliharris.com/blog/visualizing-k-means-clustering/</a></p>
+<h3 id="Reinforcement-learning"><a href="#Reinforcement-learning" class="headerlink" title="Reinforcement learning"></a>Reinforcement learning</h3><p><img src="https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202203081158238.png" alt="image-20220308115835122"></p>
+<p>However the fitting can be underfitting or overfitting</p>
+<table>
+<thead>
+<tr>
+<th>Underfitting</th>
+<th>overfitting</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>model has limited flexibility to learn the true signal.<br>high bias.<br>solution:<br>increase number of features.</td>
+<td>model is too complex and is fitting to noise instead of the signal.<br>high variance.<br>solutions:<br>increase number of samples;<br>separate training and test sets;<br>constrain the parameters to reduce complexity (regularization).</td>
+</tr>
+</tbody></table>
+<p><img src="https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202203081207107.png" alt="image-20220308120728021"></p>
+<p>What happens as we train a model:</p>
+<p><img src="https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202203081212722.png" alt="image-20220308121253647"></p>
+<p>When fitting a model, one should avoid errors of bias and variance by using a<br>training, a validation and a test set.</p>
+<p>There have been some interesting results in modelling the brain with machine<br>learning but it still has some limitations.</p>
+<p>Clinical implementation pros and cons:</p>
+<p>Pros:</p>
+<ol>
+<li>high precision</li>
+<li>allows almost immediate diagnosis</li>
+<li>can scale to places with scarcity of resources</li>
+</ol>
+<p>Cons:</p>
+<ol>
+<li>lack of explainibility</li>
+<li>problem with generalisation</li>
+</ol>
+<p>Bayesian optimization is a method to find the maximum of expensive functions</p>
+<hr>
+<h1 id="Clinical-application-of-fMRI-feedback"><a href="#Clinical-application-of-fMRI-feedback" class="headerlink" title="Clinical application of fMRI feedback"></a>Clinical application of fMRI feedback</h1><p><img src="https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202203081409628.png" alt="image-20220308140934565"></p>
+<p>What makes the results real-time</p>
+<p><img src="https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202203081409773.png" alt="image-20220308140958715"></p>
+<p><img src="https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202203081410689.png" alt="image-20220308141009636"></p>
+<p>What can make the fMRI steps run faster:</p>
+<ol>
+<li>Image acquisition</li>
+<li>Image reconstruction</li>
+<li>Pre-processing</li>
+<li>Statistical analysis</li>
+</ol>
+<p>Application s of real-time fMRI:</p>
+<ul>
+<li><p>Quality control</p>
+</li>
+<li><p>Branching protocols</p>
+</li>
+<li><p>Presurgical mapping</p>
+</li>
+<li><p>Neurofeedback</p>
+</li>
+</ul>
+<p>Biofeedback is employed to control body functions which are not generally directly accessible, or which cannot be evaluated. Biofeedback is called<br>neurofeedback when it is about the control of brain functions.</p>
+<p>Implementation of neurofeedback with rtfMRI:</p>
+<p><img src="https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202203081433572.png" alt="image-20220308143333512"></p>
+<p><img src="https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202203081434417.png" alt="image-20220308143424361"></p>
+<hr>
+<h1 id="Neuroscience-of-fear-anxiety-and-defence"><a href="#Neuroscience-of-fear-anxiety-and-defence" class="headerlink" title="Neuroscience of fear, anxiety and defence"></a>Neuroscience of fear, anxiety and defence</h1><h2 id="Learning-objectives"><a href="#Learning-objectives" class="headerlink" title="Learning objectives"></a>Learning objectives</h2><ol>
+<li>Understand the relationship between defensive behaviour and<br>the situation.</li>
+<li>Understand how anti-anxiety drugs can be used to study<br>defensive behaviour.</li>
+<li>Understand how abstract stimuli affect anxiety.</li>
+</ol>
+<p>This research shows that the same anti-anxiety drug affects responses to threat and moral judgment, suggesting that the same brain systems underlie both processes and that previously abstract philosophical concepts may be explained in functional, evolutionary terms.</p>
+
             </div>
             <hr />
 
@@ -827,30 +944,29 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-dot-circle-o"></i>&nbsp;Current
-            </div>
+                <i class="fa fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2022/03/08/08-03-22/">
+                <a href="/2022/03/10/10-03-22/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/28.jpg" class="responsive-img" alt="Lecture Notes 08/03/22">
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="Lecture Notes 10/03/22">
                         
-                        <span class="card-title">Lecture Notes 08/03/22</span>
+                        <span class="card-title">Lecture Notes 10/03/22</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            ADHD: a common neurodevelopmental disorder, characterised by inattentive and hyperactive/impulsive behaviours which inte
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-08
-                            </span>
+                        <span class="publish-date">
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-10
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -863,7 +979,6 @@
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
@@ -886,7 +1001,7 @@
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/29.jpg" class="responsive-img" alt="Lecture Notes 07/03/22">
+                        <img src="/medias/featureimages/27.jpg" class="responsive-img" alt="Lecture Notes 07/03/22">
                         
                         <span class="card-title">Lecture Notes 07/03/22</span>
                     </div>
@@ -1092,7 +1207,7 @@ Explain key terminology rel
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;Total words:&nbsp;
-            <span class="white-color">20k</span>
+            <span class="white-color">20.7k</span>
             
 
             <br>

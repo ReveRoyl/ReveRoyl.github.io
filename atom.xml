@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://reveroyl.github.io/"/>
-  <updated>2022-03-08T09:59:06.601Z</updated>
+  <updated>2022-03-10T13:18:27.130Z</updated>
   <id>https://reveroyl.github.io/</id>
   
   <author>
@@ -17,13 +17,47 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Lecture Notes 10/03/22</title>
+    <link href="https://reveroyl.github.io/2022/03/10/10-03-22/"/>
+    <id>https://reveroyl.github.io/2022/03/10/10-03-22/</id>
+    <published>2022-03-10T13:00:00.000Z</published>
+    <updated>2022-03-10T13:18:27.130Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;ADHD: a common neurodevelopmental disorder, characterised by inattentive and hyperactive/impulsive behaviours which interfere with
+        
+      
+    
+    </summary>
+    
+      <category term="Neuroscience" scheme="https://reveroyl.github.io/categories/Neuroscience/"/>
+    
+    
+      <category term="Lecture Note" scheme="https://reveroyl.github.io/tags/Lecture-Note/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Lecture Notes 08/03/22</title>
     <link href="https://reveroyl.github.io/2022/03/08/08-03-22/"/>
     <id>https://reveroyl.github.io/2022/03/08/08-03-22/</id>
     <published>2022-03-08T10:00:00.000Z</published>
-    <updated>2022-03-08T09:59:06.601Z</updated>
+    <updated>2022-03-08T21:48:27.945Z</updated>
     
     <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;EEG-Oscillations&quot;&gt;&lt;a href=&quot;#EEG-Oscillations&quot; class=&quot;headerlink&quot; title=&quot;EEG Oscillations&quot;&gt;&lt;/a&gt;EEG Oscillations&lt;/h1&gt;&lt;p&gt;There are
+        
+      
     
     </summary>
     
@@ -495,32 +529,6 @@
         
         
           &lt;h1
-        
-      
-    
-    </summary>
-    
-      <category term="discussion" scheme="https://reveroyl.github.io/categories/discussion/"/>
-    
-    
-      <category term="Neuroscience" scheme="https://reveroyl.github.io/tags/Neuroscience/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Usages of animal models in the study of human brain structural connectivity</title>
-    <link href="https://reveroyl.github.io/2022/01/22/2022-01-22-usages-of-animal-models-in-the-study-of-human-brain-structural-connectivity/"/>
-    <id>https://reveroyl.github.io/2022/01/22/2022-01-22-usages-of-animal-models-in-the-study-of-human-brain-structural-connectivity/</id>
-    <published>2022-01-22T09:56:06.000Z</published>
-    <updated>2022-02-15T22:29:58.832Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;Critically-evaluate-the-use-of-animal-models-in-the-study-of-human-brain-structural-connectivity&quot;&gt;&lt;a
         
       
     
