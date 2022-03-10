@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://reveroyl.github.io/"/>
-  <updated>2022-03-10T13:18:27.130Z</updated>
+  <updated>2022-03-10T15:12:50.621Z</updated>
   <id>https://reveroyl.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://reveroyl.github.io/2022/03/10/10-03-22/"/>
     <id>https://reveroyl.github.io/2022/03/10/10-03-22/</id>
     <published>2022-03-10T13:00:00.000Z</published>
-    <updated>2022-03-10T13:18:27.130Z</updated>
+    <updated>2022-03-10T15:12:50.621Z</updated>
     
     <summary type="html">
     
@@ -29,7 +29,7 @@
       
         
         
-          &lt;p&gt;ADHD: a common neurodevelopmental disorder, characterised by inattentive and hyperactive/impulsive behaviours which interfere with
+          &lt;h1 id=&quot;Mind-wandering-in-ADHD&quot;&gt;&lt;a href=&quot;#Mind-wandering-in-ADHD&quot; class=&quot;headerlink&quot; title=&quot;Mind wandering in ADHD&quot;&gt;&lt;/a&gt;Mind wandering in
         
       
     
@@ -95,11 +95,11 @@
   </entry>
   
   <entry>
-    <title>Lecture Notes 01/03/22</title>
+    <title>Tutorial for PyCharm</title>
     <link href="https://reveroyl.github.io/2022/03/05/python-learning/"/>
     <id>https://reveroyl.github.io/2022/03/05/python-learning/</id>
     <published>2022-03-05T22:58:00.000Z</published>
-    <updated>2022-03-07T19:33:21.791Z</updated>
+    <updated>2022-03-10T13:47:05.329Z</updated>
     
     <summary type="html">
     
