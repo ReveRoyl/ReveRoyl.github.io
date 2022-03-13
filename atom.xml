@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://reveroyl.github.io/"/>
-  <updated>2022-03-11T13:48:52.842Z</updated>
+  <updated>2022-03-13T19:18:23.037Z</updated>
   <id>https://reveroyl.github.io/</id>
   
   <author>
@@ -17,11 +17,37 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Backup blog source files</title>
+    <link href="https://reveroyl.github.io/2022/03/13/13-03-22backup-blog-source-files/"/>
+    <id>https://reveroyl.github.io/2022/03/13/13-03-22backup-blog-source-files/</id>
+    <published>2022-03-13T19:09:00.000Z</published>
+    <updated>2022-03-13T19:18:23.037Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Backup-blog-source-files&quot;&gt;&lt;a href=&quot;#Backup-blog-source-files&quot; class=&quot;headerlink&quot; title=&quot;Backup blog source files&quot;&gt;&lt;/a&gt;Backup blog
+        
+      
+    
+    </summary>
+    
+      <category term="programming" scheme="https://reveroyl.github.io/categories/programming/"/>
+    
+    
+      <category term="blog building" scheme="https://reveroyl.github.io/tags/blog-building/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Lecture Notes 11/03/22</title>
     <link href="https://reveroyl.github.io/2022/03/11/2022-03-11-lecture-notes-110322/"/>
     <id>https://reveroyl.github.io/2022/03/11/2022-03-11-lecture-notes-110322/</id>
     <published>2022-03-11T10:00:00.000Z</published>
-    <updated>2022-03-11T13:48:52.842Z</updated>
+    <updated>2022-03-11T15:43:18.713Z</updated>
     
     <summary type="html">
     
@@ -512,32 +538,6 @@
     
     
       <category term="Lecture Note" scheme="https://reveroyl.github.io/tags/Lecture-Note/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Nature of dopamine dysfunction in schizophrenia</title>
-    <link href="https://reveroyl.github.io/2022/01/22/2022-01-22-nature-of-dopamine-dysfunction-in-schizophrenia/"/>
-    <id>https://reveroyl.github.io/2022/01/22/2022-01-22-nature-of-dopamine-dysfunction-in-schizophrenia/</id>
-    <published>2022-01-22T09:56:06.000Z</published>
-    <updated>2022-02-16T19:25:11.180Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1
-        
-      
-    
-    </summary>
-    
-      <category term="discussion" scheme="https://reveroyl.github.io/categories/discussion/"/>
-    
-    
-      <category term="Neuroscience" scheme="https://reveroyl.github.io/tags/Neuroscience/"/>
     
   </entry>
   
