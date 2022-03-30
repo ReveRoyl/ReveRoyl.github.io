@@ -469,14 +469,14 @@ EEG: electroencephalography
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    834
+                    1.2k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>Read Times:&nbsp;&nbsp;
-                    5 Min
+                    7 Min
                 </div>
                 
                 
@@ -492,7 +492,7 @@ EEG: electroencephalography
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="EEG-Oscillations"><a href="#EEG-Oscillations" class="headerlink" title="EEG Oscillations"></a>EEG Oscillations</h1><p>There are different ways to measure oscillations<img src="https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202203081018999.png" alt="image-20220308101810875"></p>
+                <h1 id="EEG-Oscillations"><a href="#EEG-Oscillations" class="headerlink" title="EEG Oscillations"></a>EEG Oscillations</h1><p>There are different ways to measure oscillations<img src="https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202203081018999.png" alt="different methods to measure oscillations"></p>
 <p>LFP: local field potential</p>
 <p>EEG: electroencephalography</p>
 <p>EcoG: Electrocorticography</p>
@@ -593,40 +593,69 @@ EEG: electroencephalography
 <li>There have been some interesting results in modelling the brain with machine learning but it still has some limitations.</li>
 </ul>
 <hr>
-<h1 id="Clinical-application-of-fMRI-feedback"><a href="#Clinical-application-of-fMRI-feedback" class="headerlink" title="Clinical application of fMRI feedback"></a>Clinical application of fMRI feedback</h1><p><img src="https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202203081409628.png" alt="image-20220308140934565"></p>
-<p>What makes the results real-time</p>
-<p><img src="https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202203081409773.png" alt="image-20220308140958715"></p>
-<p><img src="https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202203081410689.png" alt="image-20220308141009636"></p>
-<p>What can make the fMRI steps run faster:</p>
+<h1 id="Clinical-application-of-fMRI-feedback"><a href="#Clinical-application-of-fMRI-feedback" class="headerlink" title="Clinical application of fMRI feedback"></a>Clinical application of fMRI feedback</h1><h2 id="Objective"><a href="#Objective" class="headerlink" title="Objective"></a>Objective</h2><ul>
+<li>To understand what real-time fMRI (rtfMRI) is and how it differs from conventional fMRI</li>
+<li>To learn how and where rtfMRI can be implemented</li>
+<li>To know some of the applications of rtfMRI</li>
+<li>To understand neurofeedback in the context of rtfMRI</li>
+<li>To know some of the applications of neurofeedback with real-time fMRI</li>
+</ul>
+<h2 id="Real-time-fMRI-rtfMRI"><a href="#Real-time-fMRI-rtfMRI" class="headerlink" title="Real time fMRI (rtfMRI)"></a>Real time fMRI (rtfMRI)</h2><p><img src="https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202203081409628.png" alt="Conventional fMRI"></p>
+<p><strong>What makes the results real-time</strong></p>
+<p><img src="https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202203081409773.png" alt="Option 1"></p>
+<p><img src="https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202203081410689.png" alt="Option 2"></p>
+<h3 id="Optimising-the-pre-processing"><a href="#Optimising-the-pre-processing" class="headerlink" title="Optimising the pre-processing"></a>Optimising the pre-processing</h3><p>Most of the usual pre processing options have been adapted to run in real time.</p>
+<p>But most often limited to real time motion correction and some form of temporal smoothing (detrending)</p>
+<p><strong>What can make the fMRI steps run faster:</strong></p>
+<p>All the fMRI steps can be made to run faster:</p>
 <ol>
 <li>Image acquisition</li>
 <li>Image reconstruction</li>
 <li>Pre-processing</li>
 <li>Statistical analysis</li>
 </ol>
-<p>Application s of real-time fMRI:</p>
+<h3 id="Application-s-of-real-time-fMRI"><a href="#Application-s-of-real-time-fMRI" class="headerlink" title="Application s of real-time fMRI:"></a>Application s of real-time fMRI:</h3><ol>
+<li>Quality control</li>
+<li>Branching protocols</li>
+<li>Presurgical mapping</li>
+<li>Neurofeedback</li>
+</ol>
+<p><strong>Real time fMRI for quality control:</strong></p>
 <ul>
-<li><p>Quality control</p>
-</li>
-<li><p>Branching protocols</p>
-</li>
-<li><p>Presurgical mapping</p>
-</li>
-<li><p>Neurofeedback</p>
-</li>
+<li>Real-time fMRI makes it possible to detect problems as they happen</li>
+<li>You can stop/restart the scan if needed (e.g., when participant is not doing the task or moving too much)</li>
+<li>Especially important for (rare) patients, children or elderly who may not come back</li>
+<li>Test and tweak experimental protocol during scan</li>
+<li>Change difficulty / stimulation levels</li>
+<li>Test different hardware</li>
+<li>Detect non-desirable cognitive strategies (e.g., verbal strategy during pictorial delayed matched to sample (DMTS) task)</li>
+<li>Cut task short when analysis results are stable</li>
+<li>Can lead to reduced costs, anxiety, habituation, and boredom</li>
 </ul>
-<p>Biofeedback is employed to control body functions which are not generally directly accessible, or which cannot be evaluated. Biofeedback is called<br>neurofeedback when it is about the control of brain functions.</p>
-<p>Implementation of neurofeedback with rtfMRI:</p>
-<p><img src="https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202203081433572.png" alt="image-20220308143333512"></p>
-<p><img src="https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202203081434417.png" alt="image-20220308143424361"></p>
+<h2 id="Neurofeedback"><a href="#Neurofeedback" class="headerlink" title="Neurofeedback"></a>Neurofeedback</h2><p>Biofeedback is employed to control body functions which are not generally directly accessible, or which cannot be evaluated. </p>
+<p>Biofeedback is called neurofeedback when it is about the control of brain functions.</p>
+<p><strong>Implementation of neurofeedback with rtfMRI:</strong></p>
+<p><img src="https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202203081433572.png" alt="Option 1"></p>
+<p><img src="https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202203081434417.png" alt="Option 2"></p>
+<p>Real time fMRI Neurofeedback may improve chronic <strong>Tinnitus</strong>: DOI: 0.007/s00330-009-1595-z</p>
+<p><strong>Stroke</strong>: DOI: 10.1177/1545968311418345 </p>
+<p>Brain Computer Interface (BCI)</p>
 <hr>
 <h1 id="Neuroscience-of-fear-anxiety-and-defence"><a href="#Neuroscience-of-fear-anxiety-and-defence" class="headerlink" title="Neuroscience of fear, anxiety and defence"></a>Neuroscience of fear, anxiety and defence</h1><h2 id="Learning-objectives"><a href="#Learning-objectives" class="headerlink" title="Learning objectives"></a>Learning objectives</h2><ol>
 <li>Understand the relationship between defensive behaviour and<br>the situation.</li>
 <li>Understand how anti-anxiety drugs can be used to study<br>defensive behaviour.</li>
 <li>Understand how abstract stimuli affect anxiety.</li>
 </ol>
-<p>This research shows that the same anti-anxiety drug affects responses to threat and moral judgment, suggesting that the same brain systems underlie both processes and that previously abstract philosophical concepts may be explained in functional, evolutionary terms.</p>
-<h1 id="Vocabularies"><a href="#Vocabularies" class="headerlink" title="Vocabularies"></a>Vocabularies</h1><p>Entrainment:  the process of making something have the same pattern or rhythm as something else</p>
+<h2 id="Anxiety"><a href="#Anxiety" class="headerlink" title="Anxiety"></a>Anxiety</h2><h3 id="Definition"><a href="#Definition" class="headerlink" title="Definition"></a>Definition</h3><p>Jeffrey Gray’s definition: whatever is affected by anti-anxiety drugs. This is not a circular argument because he found these drugs also affect punishment-related behaviour in rodents, increasing approach to locations or stimuli that have been associated with painful electric shock.</p>
+<p>Extended and refined by Philip Corr and Neil McNaughton: This has resulted in the key theory of defensive direction, which splits general punishment/threat sensitivity into sensitivity to threats that require approach  (anxiety-proneness) and sensitivity to threats that need not be approached<br>(fear-proneness).</p>
+<p>Søren Kierkegaard, The Concept of Anxiety (1844): Anxiety informs us of our choices, our self-awareness and personal responsibility, and brings us from a state of un-self-conscious immediacy to self-conscious reflection.</p>
+<p><strong>How can we test abstract anxiety objectively?</strong></p>
+<p>The moral dilemma task</p>
+<p><img src="https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202203302004197.png" alt="Lorazepam studies"></p>
+<h2 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h2><p>This research (Adam Perkins) shows that the same anti-anxiety drug affects responses to threat and moral judgment, suggesting that the same brain systems underlie both processes and that previously abstract philosophical concepts may be explained in functional, evolutionary terms.</p>
+<h1 id="Vocabularies"><a href="#Vocabularies" class="headerlink" title="Vocabularies"></a>Vocabularies</h1><p><strong>Entrainment</strong>:  the process of making something have the same pattern or rhythm as something else</p>
+<p><strong>BCI</strong>: brain computer interface</p>
+<p><strong>Lorazepam</strong>: a drug of the benzodiazepine group, used especially to treat anxiety.</p>
 
             </div>
             <hr />
@@ -981,7 +1010,8 @@ EEG: electroencephalography
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Mind wandering in ADHDADHD: a common neurodevelopmental disorder, characterised by inattentive and hyperactive/impulsive
+                            Mind wandering in ADHDObjectives
+To understand the mind wandering (MW) hypothesis of attention deficit/hyperactivity dis
                         
                     </div>
                     <div class="publish-info">
@@ -1230,7 +1260,7 @@ Explain key terminol
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;Total words:&nbsp;
-            <span class="white-color">22.8k</span>
+            <span class="white-color">23.6k</span>
             
 
             <br>

@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://reveroyl.github.io/2022/03/11/11-03-22/</loc>
+    <lastmod>2022-03-30</lastmod>
+  </url>  <url>
+    <loc>https://reveroyl.github.io/2022/03/10/10-03-22/</loc>
+    <lastmod>2022-03-30</lastmod>
+  </url>  <url>
     <loc>https://reveroyl.github.io/2022/03/08/08-03-22/</loc>
-    <lastmod>2022-03-26</lastmod>
+    <lastmod>2022-03-30</lastmod>
   </url>  <url>
     <loc>https://reveroyl.github.io/2022/03/07/07-03-22/</loc>
     <lastmod>2022-03-26</lastmod>
@@ -24,12 +30,6 @@
   </url>  <url>
     <loc>https://reveroyl.github.io/2022/03/13/13-03-22backup-blog-source-files/</loc>
     <lastmod>2022-03-13</lastmod>
-  </url>  <url>
-    <loc>https://reveroyl.github.io/2022/03/11/2022-03-11-lecture-notes-110322/</loc>
-    <lastmod>2022-03-11</lastmod>
-  </url>  <url>
-    <loc>https://reveroyl.github.io/2022/03/10/10-03-22/</loc>
-    <lastmod>2022-03-10</lastmod>
   </url>  <url>
     <loc>https://reveroyl.github.io/2022/03/05/python-learning/</loc>
     <lastmod>2022-03-10</lastmod>
