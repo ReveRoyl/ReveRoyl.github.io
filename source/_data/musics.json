@@ -1,0 +1,18 @@
+[
+	  {
+		"name": "The 2nd Melody of the Night",
+		"artist": "Shi Jing",
+		"url": "/medias/music/The 2nd Melody of the Night.mp3",
+		"cover": "/medias/music/avatars/The 2nd Melody of the Night.jpg"
+	},{
+		"name": "The 4nd Melody of the Night",
+		"artist": "Shi Jing",
+		"url": "/medias/music/The 4nd Melody of the Night.mp3",
+		"cover": "/medias/music/avatars/The 4nd Melody of the Night.jpg"
+	},{
+		"name": "Sky Castle",
+		"artist": "Joe Hisaishi",
+		"url": "/medias/music/Sky Castle.mp4",
+		"cover": "/medias/music/avatars/Sky Castle.jpeg"
+	}
+]
