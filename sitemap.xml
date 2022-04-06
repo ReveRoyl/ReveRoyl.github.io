@@ -16,7 +16,7 @@
   </url>
   
   <url>
-    <loc>https://reveroyl.github.io/archives/index.html</loc>
+    <loc>https://reveroyl.github.io/about/index.html</loc>
     
     <lastmod>2022-04-06T15:02:11.916Z</lastmod>
     
@@ -30,14 +30,14 @@
   </url>
   
   <url>
-    <loc>https://reveroyl.github.io/contact/index.html</loc>
+    <loc>https://reveroyl.github.io/archives/index.html</loc>
     
     <lastmod>2022-04-06T15:02:11.916Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://reveroyl.github.io/about/index.html</loc>
+    <loc>https://reveroyl.github.io/contact/index.html</loc>
     
     <lastmod>2022-04-06T15:02:11.916Z</lastmod>
     
@@ -58,13 +58,6 @@
   </url>
   
   <url>
-    <loc>https://reveroyl.github.io/2022/04/05/cpp-learning/</loc>
-    
-    <lastmod>2022-04-06T15:02:11.914Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://reveroyl.github.io/2022/02/28/28-02-22/</loc>
     
     <lastmod>2022-04-06T15:02:11.914Z</lastmod>
@@ -72,7 +65,14 @@
   </url>
   
   <url>
-    <loc>https://reveroyl.github.io/2022/01/22/2022-01-22-phenomenon-of-blocking-on-predicted-reward/</loc>
+    <loc>https://reveroyl.github.io/2022/04/05/cpp-learning/</loc>
+    
+    <lastmod>2022-04-06T15:02:11.914Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://reveroyl.github.io/2021/11/23/23-11-21glossary/</loc>
     
     <lastmod>2022-04-06T15:02:11.913Z</lastmod>
     
@@ -86,7 +86,7 @@
   </url>
   
   <url>
-    <loc>https://reveroyl.github.io/2021/11/23/23-11-21glossary/</loc>
+    <loc>https://reveroyl.github.io/2022/01/22/2022-01-22-phenomenon-of-blocking-on-predicted-reward/</loc>
     
     <lastmod>2022-04-06T15:02:11.913Z</lastmod>
     
@@ -107,14 +107,14 @@
   </url>
   
   <url>
-    <loc>https://reveroyl.github.io/2022/01/18/2022-01-18-nmda-receptor-dependent-ltp-roles/</loc>
+    <loc>https://reveroyl.github.io/2022/01/22/2022-01-22-nature-of-dopamine-dysfunction-in-schizophrenia/</loc>
     
     <lastmod>2022-04-06T15:02:11.912Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://reveroyl.github.io/2022/01/22/2022-01-22-nature-of-dopamine-dysfunction-in-schizophrenia/</loc>
+    <loc>https://reveroyl.github.io/2022/01/18/2022-01-18-nmda-receptor-dependent-ltp-roles/</loc>
     
     <lastmod>2022-04-06T15:02:11.912Z</lastmod>
     
@@ -149,14 +149,14 @@
   </url>
   
   <url>
-    <loc>https://reveroyl.github.io/2022/02/16/16-02-22update-of-theme/</loc>
+    <loc>https://reveroyl.github.io/2022/02/15/15-02-22/</loc>
     
     <lastmod>2022-04-06T15:02:11.910Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://reveroyl.github.io/2022/02/15/15-02-22/</loc>
+    <loc>https://reveroyl.github.io/2022/02/16/16-02-22update-of-theme/</loc>
     
     <lastmod>2022-04-06T15:02:11.910Z</lastmod>
     
@@ -205,20 +205,6 @@
   </url>
   
   <url>
-    <loc>https://reveroyl.github.io/2022/02/07/07-02-22/</loc>
-    
-    <lastmod>2022-04-06T15:02:11.907Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://reveroyl.github.io/2022/03/02/02-03-22/</loc>
-    
-    <lastmod>2022-04-06T15:02:11.907Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://reveroyl.github.io/2022/03/03/03-03-22/</loc>
     
     <lastmod>2022-04-06T15:02:11.907Z</lastmod>
@@ -226,7 +212,21 @@
   </url>
   
   <url>
+    <loc>https://reveroyl.github.io/2022/02/07/07-02-22/</loc>
+    
+    <lastmod>2022-04-06T15:02:11.907Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://reveroyl.github.io/2022/03/07/07-03-22/</loc>
+    
+    <lastmod>2022-04-06T15:02:11.907Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://reveroyl.github.io/2022/03/02/02-03-22/</loc>
     
     <lastmod>2022-04-06T15:02:11.907Z</lastmod>
     
