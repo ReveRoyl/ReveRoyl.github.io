@@ -16,13 +16,6 @@
   </url>
   
   <url>
-    <loc>https://reveroyl.github.io/categories/index.html</loc>
-    
-    <lastmod>2022-04-06T15:02:11.916Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://reveroyl.github.io/about/index.html</loc>
     
     <lastmod>2022-04-06T15:02:11.916Z</lastmod>
@@ -30,7 +23,7 @@
   </url>
   
   <url>
-    <loc>https://reveroyl.github.io/contact/index.html</loc>
+    <loc>https://reveroyl.github.io/categories/index.html</loc>
     
     <lastmod>2022-04-06T15:02:11.916Z</lastmod>
     
@@ -38,6 +31,13 @@
   
   <url>
     <loc>https://reveroyl.github.io/archives/index.html</loc>
+    
+    <lastmod>2022-04-06T15:02:11.916Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://reveroyl.github.io/contact/index.html</loc>
     
     <lastmod>2022-04-06T15:02:11.916Z</lastmod>
     
@@ -58,14 +58,14 @@
   </url>
   
   <url>
-    <loc>https://reveroyl.github.io/2022/02/28/28-02-22/</loc>
+    <loc>https://reveroyl.github.io/2022/04/05/cpp-learning/</loc>
     
     <lastmod>2022-04-06T15:02:11.914Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://reveroyl.github.io/2022/04/05/cpp-learning/</loc>
+    <loc>https://reveroyl.github.io/2022/02/28/28-02-22/</loc>
     
     <lastmod>2022-04-06T15:02:11.914Z</lastmod>
     
@@ -135,14 +135,14 @@
   </url>
   
   <url>
-    <loc>https://reveroyl.github.io/2022/02/14/14-02-22/</loc>
+    <loc>https://reveroyl.github.io/2022/02/15/15-02-22/</loc>
     
     <lastmod>2022-04-06T15:02:11.910Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://reveroyl.github.io/2022/02/15/15-02-22/</loc>
+    <loc>https://reveroyl.github.io/2022/02/14/14-02-22/</loc>
     
     <lastmod>2022-04-06T15:02:11.910Z</lastmod>
     
@@ -163,13 +163,6 @@
   </url>
   
   <url>
-    <loc>https://reveroyl.github.io/2022/03/11/11-03-22/</loc>
-    
-    <lastmod>2022-04-06T15:02:11.909Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://reveroyl.github.io/2022/03/10/10-03-22/</loc>
     
     <lastmod>2022-04-06T15:02:11.909Z</lastmod>
@@ -177,14 +170,14 @@
   </url>
   
   <url>
-    <loc>https://reveroyl.github.io/2022/02/09/09-02-22/</loc>
+    <loc>https://reveroyl.github.io/2022/03/11/11-03-22/</loc>
     
-    <lastmod>2022-04-06T15:02:11.908Z</lastmod>
+    <lastmod>2022-04-06T15:02:11.909Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://reveroyl.github.io/2022/02/08/08-02-22/</loc>
+    <loc>https://reveroyl.github.io/2022/02/10/10-02-22/</loc>
     
     <lastmod>2022-04-06T15:02:11.908Z</lastmod>
     
@@ -198,7 +191,14 @@
   </url>
   
   <url>
-    <loc>https://reveroyl.github.io/2022/02/10/10-02-22/</loc>
+    <loc>https://reveroyl.github.io/2022/02/08/08-02-22/</loc>
+    
+    <lastmod>2022-04-06T15:02:11.908Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://reveroyl.github.io/2022/02/09/09-02-22/</loc>
     
     <lastmod>2022-04-06T15:02:11.908Z</lastmod>
     
