@@ -2,5 +2,5 @@ hexo clean
 hexo g
 hexo d
 git add .
-git commit -m "i=$((i+1)) Update"
+git commit -m "((i++)) Update"
 git push origin Run
