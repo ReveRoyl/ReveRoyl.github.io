@@ -1,0 +1,1 @@
+cur_date="`date +%Y-%m-%d`"
