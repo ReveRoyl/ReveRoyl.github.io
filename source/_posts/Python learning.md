@@ -25,4 +25,4 @@ categories:
 
 `Ctrl` `/` 
 
-## P
+## Python
