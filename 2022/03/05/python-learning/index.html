@@ -312,7 +312,7 @@ Ctrl Shift A is the shortcut of Find Action. Al">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/6.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -467,7 +467,7 @@ Ctrl Shift A is the shortcut of Find Action. Al">
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    88
+                    313
                 </div>
                 
 
@@ -494,8 +494,42 @@ Ctrl Shift A is the shortcut of Find Action. Al">
 <p><code>Ctrl</code> <code>Shift</code> <code>A</code> is the shortcut of Find Action. Alternatively search Everywhere can be invoked by pressing <code>Shift</code> twice.</p>
 <p><code>Ctrl</code> <code>W</code>, once to select the word under the caret, twice to select the whole string, tree times to include quotes, four times to select the whole call. If the caret is at the beginning of a statement, twice pressing is used to select it </p>
 <p><code>Ctrl</code> <code>Shift</code> <code>W</code>, to shrink selection back to the arguments. </p>
-<p><code>Ctrl</code> <code>/</code> </p>
-<h2 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h2><p>start</p>
+<p><code>Ctrl</code> <code>/</code>， to comment the code. Also <code>#</code> before code or <code>“”“ ”“”</code> or<code>‘&#39;&#39; &#39;&#39;&#39;</code> between the block</p>
+<p><code>ctrl</code> <code>P</code> to give the values a method expects</p>
+<h2 id="For-beginner"><a href="#For-beginner" class="headerlink" title="For beginner"></a>For beginner</h2><h3 id="Variables"><a href="#Variables" class="headerlink" title="Variables"></a>Variables</h3><p>Boolean data type is using “True” and “False”. Python is sensitive with lowercase and uppercase letters</p>
+<p>String concatenation: </p>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">print</span><span class="token punctuation">(</span>“Text ” <span class="token operator">+</span> data_name<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>Input function: </p>
+<pre class="line-numbers language-python"><code class="language-python">name <span class="token operator">=</span> input <span class="token punctuation">(</span>“What <span class="token keyword">is</span> your name”<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>When you want to name a variable, it is not required to add the type of it. So, if we want to convert the variable from one type to another, we can use:</p>
+<pre class="line-numbers language-python"><code class="language-python">int<span class="token punctuation">(</span>name<span class="token punctuation">)</span>
+float<span class="token punctuation">(</span><span class="token punctuation">)</span>
+bool<span class="token punctuation">(</span><span class="token punctuation">)</span>
+str<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="Operators"><a href="#Operators" class="headerlink" title="Operators"></a>Operators</h3><p>Comparison operators:</p>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token operator">></span>
+<span class="token operator">&lt;</span>
+<span class="token operator">&lt;=</span>
+<span class="token operator">>=</span>
+<span class="token operator">==</span>
+<span class="token operator">!=</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>logical operators:</p>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">print</span><span class="token punctuation">(</span>price<span class="token operator">></span><span class="token number">1</span> <span class="token operator">and</span> price <span class="token operator">&lt;</span><span class="token number">2</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>price<span class="token operator">></span><span class="token number">1</span> <span class="token operator">or</span> price<span class="token operator">&lt;</span><span class="token number">0</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token operator">not</span> price<span class="token operator">></span><span class="token number">1</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p>a Boolean value will be output</p>
+<h3 id="Lists"><a href="#Lists" class="headerlink" title="Lists"></a>Lists</h3><pre class="line-numbers language-python"><code class="language-python">names <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'John'</span><span class="token punctuation">,</span> <span class="token string">'Mary'</span><span class="token punctuation">,</span> <span class="token string">'Bob'</span><span class="token punctuation">,</span> <span class="token string">'Jack'</span><span class="token punctuation">]</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>names<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">:</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">#output will be John Mary</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>names<span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">#output will be Jack</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p>.append(): add element into the lists</p>
+<p>.insert(): insert an element</p>
+<p>.remove(): remove an element</p>
+<p>.clear(): empty a list</p>
+<p>len(): give the numbers of elements</p>
+<pre><code>for items in numbers:
+print(items)</code></pre><p>Each items can automatically hold one elements</p>
+<h3 id="Range"><a href="#Range" class="headerlink" title="Range"></a>Range</h3><p>range(a, b , c): give a sequence of numbers. a for beginning number, b for ending number and c for step. a, c can be default to be 0 and 1</p>
+<h3 id="Tuples"><a href="#Tuples" class="headerlink" title="Tuples"></a>Tuples</h3><pre><code>numbers =(1, 2, 3, 4)</code></pre><p>it is immutable, we can not change elements</p>
 
             </div>
             <hr />
@@ -842,7 +876,7 @@ Ctrl Shift A is the shortcut of Find Action. Al">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/26.jpg" class="responsive-img" alt="Lecture Notes 07/03/22">
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="Lecture Notes 07/03/22">
                         
                         <span class="card-title">Lecture Notes 07/03/22</span>
                     </div>
@@ -894,7 +928,7 @@ Explain key terminol
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="Lecture Notes 03/03/22">
+                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="Lecture Notes 03/03/22">
                         
                         <span class="card-title">Lecture Notes 03/03/22</span>
                     </div>
@@ -1099,7 +1133,7 @@ Explain key terminol
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;Total words:&nbsp;
-            <span class="white-color">23.7k</span>
+            <span class="white-color">24k</span>
             
 
             <br>
