@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://reveroyl.github.io/"/>
-  <updated>2022-04-10T18:57:17.713Z</updated>
+  <updated>2022-04-11T07:30:11.977Z</updated>
   <id>https://reveroyl.github.io/</id>
   
   <author>
@@ -15,6 +15,50 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Notes for references</title>
+    <link href="https://reveroyl.github.io/2022/04/11/notes-for-references/"/>
+    <id>https://reveroyl.github.io/2022/04/11/notes-for-references/</id>
+    <published>2022-04-11T07:28:00.000Z</published>
+    <updated>2022-04-11T07:30:11.977Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="Neuroscience" scheme="https://reveroyl.github.io/categories/Neuroscience/"/>
+    
+    
+      <category term="Project note" scheme="https://reveroyl.github.io/tags/Project-note/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Tutorial for PyCharm</title>
+    <link href="https://reveroyl.github.io/2022/04/06/python-learning/"/>
+    <id>https://reveroyl.github.io/2022/04/06/python-learning/</id>
+    <published>2022-04-06T21:58:00.000Z</published>
+    <updated>2022-04-11T07:28:25.116Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Tutorial-for-PyCharm&quot;&gt;&lt;a href=&quot;#Tutorial-for-PyCharm&quot; class=&quot;headerlink&quot; title=&quot;Tutorial for PyCharm&quot;&gt;&lt;/a&gt;Tutorial for
+        
+      
+    
+    </summary>
+    
+      <category term="programming" scheme="https://reveroyl.github.io/categories/programming/"/>
+    
+    
+      <category term="python" scheme="https://reveroyl.github.io/tags/python/"/>
+    
+  </entry>
   
   <entry>
     <title>Cpp Learning</title>
@@ -32,24 +76,6 @@
           &lt;h2 id=&quot;OpenCV&quot;&gt;&lt;a href=&quot;#OpenCV&quot; class=&quot;headerlink&quot; title=&quot;OpenCV&quot;&gt;&lt;/a&gt;OpenCV&lt;/h2&gt;&lt;p&gt;OpenCV is a good computer vision and machine learning
         
       
-    
-    </summary>
-    
-      <category term="programming" scheme="https://reveroyl.github.io/categories/programming/"/>
-    
-    
-      <category term="Cpp" scheme="https://reveroyl.github.io/tags/Cpp/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Cpp Learning</title>
-    <link href="https://reveroyl.github.io/2022/04/05/notes-for-references/"/>
-    <id>https://reveroyl.github.io/2022/04/05/notes-for-references/</id>
-    <published>2022-04-05T21:32:00.000Z</published>
-    <updated>2022-04-11T07:27:39.867Z</updated>
-    
-    <summary type="html">
     
     </summary>
     
@@ -187,32 +213,6 @@
     
     
       <category term="Lecture Note" scheme="https://reveroyl.github.io/tags/Lecture-Note/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Tutorial for PyCharm</title>
-    <link href="https://reveroyl.github.io/2022/03/05/python-learning/"/>
-    <id>https://reveroyl.github.io/2022/03/05/python-learning/</id>
-    <published>2022-03-05T22:58:00.000Z</published>
-    <updated>2022-04-09T21:20:18.644Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;Tutorial-for-PyCharm&quot;&gt;&lt;a href=&quot;#Tutorial-for-PyCharm&quot; class=&quot;headerlink&quot; title=&quot;Tutorial for PyCharm&quot;&gt;&lt;/a&gt;Tutorial for
-        
-      
-    
-    </summary>
-    
-      <category term="programming" scheme="https://reveroyl.github.io/categories/programming/"/>
-    
-    
-      <category term="python" scheme="https://reveroyl.github.io/tags/python/"/>
     
   </entry>
   
