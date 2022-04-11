@@ -61,4 +61,7 @@ Steps:
    
       ![image-20220405222926886](https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202204052229924.png)
    
-   7. Apply or 
+   7. Apply or OK
+
+## For beginners
+
