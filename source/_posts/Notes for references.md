@@ -1,15 +1,15 @@
 ---
-title: Cpp Learning
+title: Notes for references
 top: false
 cover: false
 toc: true
 mathjax: true
-date: 2022-04-05 22:32
+date: 2022-04-11 08:28
 password:
 summary:
 tags:
-- Cpp
+- Project note
 categories:
-- programming
+- Neuroscience
 ---
 
