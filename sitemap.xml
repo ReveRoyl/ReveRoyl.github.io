@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://reveroyl.github.io/2022/04/12/master-project/</loc>
+    
+    <lastmod>2022-04-25T13:57:19.115Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://reveroyl.github.io/2022/04/11/notes-for-references/</loc>
     
     <lastmod>2022-04-11T07:30:11.977Z</lastmod>
@@ -37,7 +44,14 @@
   </url>
   
   <url>
-    <loc>https://reveroyl.github.io/about/index.html</loc>
+    <loc>https://reveroyl.github.io/archives/index.html</loc>
+    
+    <lastmod>2022-04-06T15:02:11.916Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://reveroyl.github.io/contact/index.html</loc>
     
     <lastmod>2022-04-06T15:02:11.916Z</lastmod>
     
@@ -51,14 +65,7 @@
   </url>
   
   <url>
-    <loc>https://reveroyl.github.io/archives/index.html</loc>
-    
-    <lastmod>2022-04-06T15:02:11.916Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://reveroyl.github.io/contact/index.html</loc>
+    <loc>https://reveroyl.github.io/about/index.html</loc>
     
     <lastmod>2022-04-06T15:02:11.916Z</lastmod>
     
@@ -100,13 +107,6 @@
   </url>
   
   <url>
-    <loc>https://reveroyl.github.io/2022/01/18/2022-01-18-nmda-receptor-dependent-ltp-roles/</loc>
-    
-    <lastmod>2022-04-06T15:02:11.912Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://reveroyl.github.io/2021/12/13/2021-12-13-lei-proteinopathies-essay/</loc>
     
     <lastmod>2022-04-06T15:02:11.912Z</lastmod>
@@ -122,6 +122,13 @@
   
   <url>
     <loc>https://reveroyl.github.io/2022/01/22/2022-01-22-nature-of-dopamine-dysfunction-in-schizophrenia/</loc>
+    
+    <lastmod>2022-04-06T15:02:11.912Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://reveroyl.github.io/2022/01/18/2022-01-18-nmda-receptor-dependent-ltp-roles/</loc>
     
     <lastmod>2022-04-06T15:02:11.912Z</lastmod>
     
@@ -170,14 +177,14 @@
   </url>
   
   <url>
-    <loc>https://reveroyl.github.io/2022/03/11/11-03-22/</loc>
+    <loc>https://reveroyl.github.io/2022/03/10/10-03-22/</loc>
     
     <lastmod>2022-04-06T15:02:11.909Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://reveroyl.github.io/2022/03/10/10-03-22/</loc>
+    <loc>https://reveroyl.github.io/2022/03/11/11-03-22/</loc>
     
     <lastmod>2022-04-06T15:02:11.909Z</lastmod>
     
@@ -191,14 +198,14 @@
   </url>
   
   <url>
-    <loc>https://reveroyl.github.io/2022/02/09/09-02-22/</loc>
+    <loc>https://reveroyl.github.io/2022/03/08/08-03-22/</loc>
     
     <lastmod>2022-04-06T15:02:11.908Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://reveroyl.github.io/2022/03/08/08-03-22/</loc>
+    <loc>https://reveroyl.github.io/2022/02/09/09-02-22/</loc>
     
     <lastmod>2022-04-06T15:02:11.908Z</lastmod>
     
@@ -219,7 +226,7 @@
   </url>
   
   <url>
-    <loc>https://reveroyl.github.io/2022/03/03/03-03-22/</loc>
+    <loc>https://reveroyl.github.io/2022/02/07/07-02-22/</loc>
     
     <lastmod>2022-04-06T15:02:11.907Z</lastmod>
     
@@ -233,7 +240,7 @@
   </url>
   
   <url>
-    <loc>https://reveroyl.github.io/2022/02/07/07-02-22/</loc>
+    <loc>https://reveroyl.github.io/2022/03/03/03-03-22/</loc>
     
     <lastmod>2022-04-06T15:02:11.907Z</lastmod>
     
