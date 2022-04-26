@@ -13,7 +13,9 @@ categories:
 - Neruroscience
 ---
 
-# First meeting April 12th
+# April 12th
+
+## First meeting 
 
 data: https://openneuro.org/datasets/ds003682
 
@@ -31,7 +33,9 @@ More templates can be found in:
 
 https://github.com/tobywise/aversive_state_reactivation/blob/master/notebooks/templates/sequenceness_classifier_template.ipynb
 
-# Session meeting April 13th
+# April 13th
+
+## Session meeting 
 
 General understanding:
 
@@ -57,7 +61,7 @@ Gantt charts is good to help organise time:
 
 # April 18th
 
-### Install MNE-Python via pip:
+## Install MNE-Python via pip:
 
 Update Anaconda via ` conda upgrade --all` and  `conda install anaconda=2021.10`
 
@@ -504,11 +508,7 @@ use PCA to reduce dimensions
 
 ![image-20220419104136746](https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202204191041843.png)
 
-### normalization
-
-
-
-### regularization
+**need to be learned: normalization, regularization**
 
 lasso L1 = sets unpredictive features to 0
 
@@ -518,13 +518,11 @@ elastic net L1/L2
 
 
 
-
-
 `random_search randomizedsearchCV` to test the performance
 
 
 
-neural network can be the best way
+neural network can be the best way for logistic leaning 
 
 
 
@@ -554,7 +552,9 @@ sklearn.cross_validation在1.9版本以后就被弃用了，1.9版本的以后�
 
 # Aprial 25th
 
-### use the command line to install scikit-learn (sklearn)
+## Install scikit-learn (sklearn)
+
+use the command line 
 
 `conda install -c anaconda scikit-learn`
 
@@ -578,9 +578,9 @@ https://scikit-learn.org/stable/tutorial/machine_learning_map/index.html
 
 ![flow chart of scikit](https://scikit-learn.org/stable/_static/ml_map.png)
 
+## Learning of sklearn
 
-
-### 导入模块
+1. 导入模块
 
 ```
 from sklearn import datasets
@@ -588,7 +588,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.neighbors import KNeighborsClassifier
 ```
 
-### 创建数据
+2. 创建数据
 
 加载 `iris` 的数据，把属性存在 `X`，类别标签存在 `y`：
 
@@ -634,7 +634,7 @@ print(y_train)
  """
 ```
 
-### 建立模型－训练－预测
+3. 建立模型－训练－预测
 
 定义模块方式 `KNeighborsClassifier()`， 用 `fit` 来训练 `training data`，这一步就完成了训练的所有步骤， 后面的 `knn` 就已经是训练好的模型，可以直接用来 `predict` 测试集的数据， 对比用模型预测的值与真实的值，可以看到大概模拟出了数据，但是有误差，是不会完完全全预测正确的。
 
@@ -652,3 +652,81 @@ print(y_test)
  """
 ```
 
+![image-20220425150724894](https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202204251507965.png)
+
+
+
+
+
+## Succeed at drawing plot
+
+```
+import mne
+import os
+from mne.datasets import sample
+import matplotlib.pyplot as plt
+
+# sample的存放地址
+data_path = sample.data_path()
+# 该fif文件存放地址
+fname = 'E:\Proj\Previous data\sample\MEG\sample\sub-001_localiser_sub-001_ses-01_task-AversiveLearningReplay_run-localiser_proc_ICA-epo.fif.gz'
+
+epochs = mne.read_epochs(fname)
+
+print(epochs.event_id)
+
+picks = mne.pick_types(epochs.info, meg=True, ref_meg=False, exclude='bads')
+
+epochs.plot(block=True)
+
+epochs.plot_drop_log()
+
+plt.show()
+```
+
+```
+epochs = mne.read_epochs(fname)
+
+evoked = epochs.average()
+evoked.plot_topomap()
+
+plt.show()
+```
+```
+availabe_event = [1, 2, 3, 4, 5, 32]
+
+for i in availabe_event:
+    evoked_i = epochs[i].average(picks=picks)
+    epochs_i = epochs[i]
+    evoked_i.plot(time_unit='s')
+    plt.show()
+
+```
+
+# Aprial 26th
+
+## MRI safety training for 2.5 hrs
+
+## update Anaconda
+
+`conda update conda`
+
+`conda update anaconda`
+
+`conda update --all`
+
+done
+
+Python version: 3.8.13-h6244533_0
+
+## change the directory path of Jupyter notebook
+
+1. `jupyter notebook --generate-config` get the config file. change the line `c.NotebookApp.notebook_dir = ''` to the directory I want
+
+2. find jupyter notebook file, change the attributes. ![change the attributes](https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202204261614733.png)
+
+## Link the local directory and Github
+
+for the convenience of collaboration 
+
+SSH connect public key (id_rsa.pub) was created before.
