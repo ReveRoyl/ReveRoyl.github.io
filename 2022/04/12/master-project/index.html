@@ -315,7 +315,7 @@ What ">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/9.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/8.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -470,14 +470,14 @@ What ">
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    4.6k
+                    5.4k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>Read Times:&nbsp;&nbsp;
-                    27 Min
+                    32 Min
                 </div>
                 
                 
@@ -922,7 +922,7 @@ Proceed ([y]/n)?</code></pre><p>The Python version I am using is:</p>
 <p><code>git clone https://github.com/OpenNeuroDatasets/ds003682</code></p>
 <p>Install MNE:</p>
 <p><code>conda install --channel=conda-forge mne-base</code></p>
-<h1 id="Second-meeting-April-19th"><a href="#Second-meeting-April-19th" class="headerlink" title="Second meeting April 19th"></a>Second meeting April 19th</h1><p><code>x_raw</code></p>
+<h1 id="April-19th"><a href="#April-19th" class="headerlink" title="April 19th"></a>April 19th</h1><h2 id="Second-meeting"><a href="#Second-meeting" class="headerlink" title="Second meeting"></a>Second meeting</h2><p><code>x_raw</code></p>
 <p><code>x_raw.shape</code></p>
 <p><code>y_raw</code></p>
 <p><code>time = localiser epchoes</code></p>
@@ -943,7 +943,7 @@ Proceed ([y]/n)?</code></pre><p>The Python version I am using is:</p>
 <p>The following events are present in the data: 1, 2, 3, 4, 5, 32</p>
 <p>event_id = {‘Auditory/Left’: 1, ‘Auditory/Right’: 2,<br>‘Visual/Left’: 3, ‘Visual/Right’: 4,<br>‘smiley’: 5, ‘button’: 32}</p>
 <p>sklearn.cross_validation在1.9版本以后就被弃用了，1.9版本的以后的小伙伴可以用sklearn.model_selection就行了，后面一样的</p>
-<h1 id="Aprial-25th"><a href="#Aprial-25th" class="headerlink" title="Aprial 25th"></a>Aprial 25th</h1><h2 id="Install-scikit-learn-sklearn"><a href="#Install-scikit-learn-sklearn" class="headerlink" title="Install scikit-learn (sklearn)"></a>Install scikit-learn (sklearn)</h2><p>use the command line </p>
+<h1 id="April-25th"><a href="#April-25th" class="headerlink" title="April 25th"></a>April 25th</h1><h2 id="Install-scikit-learn-sklearn"><a href="#Install-scikit-learn-sklearn" class="headerlink" title="Install scikit-learn (sklearn)"></a>Install scikit-learn (sklearn)</h2><p>use the command line </p>
 <p><code>conda install -c anaconda scikit-learn</code></p>
 <p>在Anaconda Prompt中启动base环境: <code>activate base</code></p>
 <p>并在环境下安装jupyter notebook、numpy等模块</p>
@@ -1035,7 +1035,7 @@ for i in availabe_event:
     epochs_i = epochs[i]
     evoked_i.plot(time_unit=&#39;s&#39;)
     plt.show()
-</code></pre><h1 id="Aprial-26th"><a href="#Aprial-26th" class="headerlink" title="Aprial 26th"></a>Aprial 26th</h1><h2 id="MRI-safety-training-for-2-5-hrs"><a href="#MRI-safety-training-for-2-5-hrs" class="headerlink" title="MRI safety training for 2.5 hrs"></a>MRI safety training for 2.5 hrs</h2><h2 id="update-Anaconda"><a href="#update-Anaconda" class="headerlink" title="update Anaconda"></a>update Anaconda</h2><p><code>conda update conda</code></p>
+</code></pre><h1 id="April-26th"><a href="#April-26th" class="headerlink" title="April 26th"></a>April 26th</h1><h2 id="MRI-safety-training-for-2-5-hrs"><a href="#MRI-safety-training-for-2-5-hrs" class="headerlink" title="MRI safety training for 2.5 hrs"></a>MRI safety training for 2.5 hrs</h2><h2 id="update-Anaconda"><a href="#update-Anaconda" class="headerlink" title="update Anaconda"></a>update Anaconda</h2><p><code>conda update conda</code></p>
 <p><code>conda update anaconda</code></p>
 <p><code>conda update --all</code></p>
 <p>done</p>
@@ -1048,7 +1048,149 @@ for i in availabe_event:
 </ol>
 <h2 id="Link-the-local-directory-and-Github"><a href="#Link-the-local-directory-and-Github" class="headerlink" title="Link the local directory and Github"></a>Link the local directory and Github</h2><p>for the convenience of collaboration </p>
 <p>SSH connect public key (id_rsa.pub) was created before.</p>
+<p>after create the directory, run the command in git:</p>
+<pre><code>git init
+git add .
+git git commit -m  &quot;Comment&quot;
+git remote add origin &quot;the url of directory&quot;
+git push -u origin main</code></pre><h2 id="Journal-club-preparation"><a href="#Journal-club-preparation" class="headerlink" title="Journal club preparation"></a>Journal club preparation</h2><h1 id="April-27th"><a href="#April-27th" class="headerlink" title="April 27th"></a>April 27th</h1><h2 id="Pycharm"><a href="#Pycharm" class="headerlink" title="Pycharm"></a>Pycharm</h2><p>Get Pycharm educational version via King’s email</p>
+<p>install python 3.8 environment for running the code from <a href="https://github.com/tobywise/aversive_state_reactivation" target="_blank" rel="noopener">https://github.com/tobywise/aversive_state_reactivation</a></p>
+<p>run below code in pycharm</p>
+<pre><code>!conda create -n py38 python=3.8
+!pip install mne
+!pip install scikit-learn
+!pip install plotly
+!pip install cufflinks
+!pip install networkx
+!conda install numba
+!pip install pyyaml
+!pip install papermill</code></pre><h2 id="Fixation"><a href="#Fixation" class="headerlink" title="Fixation"></a>Fixation</h2><p>The function <code>joblib</code> does not exist in <code>sklearn.external</code> anymore.</p>
+<p>Error occurs when run the function plot_confusion_matrix:</p>
+<p>Deprecated since version 1.0: <code>plot_confusion_matrix</code> is deprecated in 1.0 and will be removed in 1.2. Use one of the following class methods: <code>from_predictions</code> or <code>from_estimator</code>.</p>
+<p>use</p>
+<pre><code>ConfusionMatrixDisplay.from_predictions(y, y_pred)</code></pre><p>instead of </p>
+<pre><code>plot_confusion_matrix(mean_conf_mat[:n_stim, :n_stim], title=&#39;Normalised confusion matrix, accuracy = {0}&#39;.format(np.round(mean_accuracy, 2)))</code></pre><h1 id="April-28th"><a href="#April-28th" class="headerlink" title="April 28th"></a>April 28th</h1><h2 id="Logistic-regression-cost-function"><a href="#Logistic-regression-cost-function" class="headerlink" title="Logistic regression cost function"></a>Logistic regression cost function</h2><p>The function is using the principle of maximum likelihood estimation to find the parameters $\theta$ for different models. At the meantime, a nice property is it is convex. So, this cost function is generally everyone use for fitting parameters in logistic regression.</p>
+<p><img src="https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202204290105356.png" alt="image-20220429010526272"></p>
+<p>The way we are going to minimize the cost function is using gradient descent:</p>
+<p><img src="https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202204290112574.png" alt="image-20220429011210521"></p>
+<p>Other alternative optimization algorithms (no need to manually pick $\alpha$ studying rate:</p>
+<ol>
+<li>Conjugate gradient</li>
+<li>BFGS</li>
+<li>L-BFGS</li>
+</ol>
+<h2 id="Ways-to-storage-trained-model"><a href="#Ways-to-storage-trained-model" class="headerlink" title="Ways to storage trained model"></a>Ways to storage trained model</h2><p>set and train a simple SVC model</p>
+<pre><code>from sklearn import svm
+from sklearn import datasets
 
+clf = svm.SVC()
+iris = datasets.load_iris()
+X, y = iris.data, iris.target
+clf.fit(X,y)</code></pre><p>Storage:</p>
+<ol>
+<li>pickle</li>
+</ol>
+<pre><code>import pickle #pickle模块
+
+#保存Model(注:save文件夹要预先建立，否则会报错)
+with open(&#39;save/clf.pickle&#39;, &#39;wb&#39;) as f:
+    pickle.dump(clf, f)
+
+#读取Model
+with open(&#39;save/clf.pickle&#39;, &#39;rb&#39;) as f:
+    clf2 = pickle.load(f)
+    #测试读取后的Model
+    print(clf2.predict(X[0:1]))</code></pre><ol start="2">
+<li>joblib(supposed to be faster when dealing with a large data, because the use of multiprocessing)</li>
+</ol>
+<pre><code>from sklearn.externals import joblib #jbolib模块
+
+#保存Model(注:save文件夹要预先建立，否则会报错)
+joblib.dump(clf, &#39;save/clf.pkl&#39;)
+
+#读取Model
+clf3 = joblib.load(&#39;save/clf.pkl&#39;)
+
+#测试读取后的Model
+print(clf3.predict(X[0:1]))
+</code></pre><h1 id="April-29th"><a href="#April-29th" class="headerlink" title="April 29th"></a>April 29th</h1><h2 id="Google-Colab"><a href="#Google-Colab" class="headerlink" title="Google Colab"></a>Google Colab</h2><p>Get the subscription of Google Colab and Google drive</p>
+<p>clone data to google drive</p>
+<p>Token: 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</p>
+<p>connect Google Colab with VS code</p>
+<h2 id="Regularization"><a href="#Regularization" class="headerlink" title="Regularization"></a>Regularization</h2><p>We can use <strong>regularization</strong> to rescue the overfitting</p>
+<p>There are two types of regularization:</p>
+<ul>
+<li><p><strong>L1 Regularization</strong> (or Lasso Regularization)</p>
+<p>$Min$($$\sum_{i=1}^{n}{|y_i-w_ix_i|+p\sum_{i=1}^{n}|w_i|}$$)</p>
+</li>
+<li><p><strong>L2 Regularization</strong> (or Ridge Regularization)</p>
+<p>$Min$($$\sum_{i=1}^{n}{(y_i-w_ix_i)^2+p\sum_{i=1}^{n}w_i^2}$$)</p>
+</li>
+</ul>
+<p>where <code>p</code> is the tuning parameter which decides in what extent we want to penalize the model.</p>
+<p>However, there is another method for combination</p>
+<ul>
+<li><strong>Elastic Net:</strong> When L1 and L2 regularization combine together, it becomes the elastic net method, it adds a hyperparameter.</li>
+</ul>
+<p>how to select:</p>
+<table>
+<thead>
+<tr>
+<th><strong>S.No</strong></th>
+<th><strong>L1 Regularization</strong></th>
+<th><strong>L2 Regularization</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>1</strong></td>
+<td>Panelizes the sum of absolute value of weights.</td>
+<td>penalizes the sum of square weights.</td>
+</tr>
+<tr>
+<td><strong>2</strong></td>
+<td>It has a sparse solution.</td>
+<td>It has a non-sparse solution.</td>
+</tr>
+<tr>
+<td><strong>3</strong></td>
+<td>It gives multiple solutions.</td>
+<td>It has only one solution.</td>
+</tr>
+<tr>
+<td><strong>4</strong></td>
+<td>Constructed in feature selection.</td>
+<td>No feature selection.</td>
+</tr>
+<tr>
+<td><strong>5</strong></td>
+<td>Robust to outliers.</td>
+<td>Not robust to outliers.</td>
+</tr>
+<tr>
+<td><strong>6</strong></td>
+<td>It generates simple and interpretable models.</td>
+<td>It gives more accurate predictions when the output variable is the function of whole input variables.</td>
+</tr>
+<tr>
+<td><strong>7</strong></td>
+<td>Unable to learn complex data patterns.</td>
+<td>Able to learn complex data patterns.</td>
+</tr>
+<tr>
+<td><strong>8</strong></td>
+<td>Computationally inefficient over non-sparse conditions.</td>
+<td>Computationally efficient because of having analytical solutions.</td>
+</tr>
+</tbody></table>
+<h1 id="May-2nd"><a href="#May-2nd" class="headerlink" title="May 2nd"></a>May 2nd</h1><h2 id="Classifier-centre"><a href="#Classifier-centre" class="headerlink" title="Classifier centre"></a>Classifier centre</h2><p>get a question: how to determine the classifier centre? </p>
+<p>for this case, it is around 20 to be at the middle/ top</p>
+<p>GPU accelerations</p>
+<p>It could be a little bit tricky to accelerate the calculation in sklearn with GPU. Here is a possible solution: <a href="https://developer.nvidia.com/blog/scikit-learn-tutorial-beginners-guide-to-gpu-accelerating-ml-pipelines/" target="_blank" rel="noopener">https://developer.nvidia.com/blog/scikit-learn-tutorial-beginners-guide-to-gpu-accelerating-ml-pipelines/</a>.  </p>
+<h2 id="Third-meeting"><a href="#Third-meeting" class="headerlink" title="Third meeting:"></a>Third meeting:</h2><p>possible deep learning package:</p>
+<p>JAX, HAIKU</p>
+<p>my aim is to inform bad-performance data with the training model of good-performance data in aims to increase the performance. One hallmark is to increase the mean accuracy of each cases as high as possible.</p>
+<h2 id="Test"><a href="#Test" class="headerlink" title="Test"></a>Test</h2><p>Mean accuracy: [0.4255555555555556, 0.3322222222222222, </p>
+<h1 id="May-3rd"><a href="#May-3rd" class="headerlink" title="May 3rd"></a>May 3rd</h1>
             </div>
             <hr />
 
@@ -1395,7 +1537,7 @@ for i in availabe_event:
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="master project">
+                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="master project">
                         
                         <span class="card-title">master project</span>
                     </div>
@@ -1449,7 +1591,7 @@ What
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="Notes for references">
+                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="Notes for references">
                         
                         <span class="card-title">Notes for references</span>
                     </div>
@@ -1654,7 +1796,7 @@ What
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;Total words:&nbsp;
-            <span class="white-color">28.6k</span>
+            <span class="white-color">29.3k</span>
             
 
             <br>
