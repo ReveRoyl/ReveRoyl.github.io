@@ -488,7 +488,9 @@ Install MNE:
 
 `conda install --channel=conda-forge mne-base`
 
-# Second meeting April 19th
+# April 19th
+
+## Second meeting 
 
 `x_raw`
 
@@ -550,7 +552,7 @@ event_id = {'Auditory/Left': 1, 'Auditory/Right': 2,
 
 sklearn.cross_validation在1.9版本以后就被弃用了，1.9版本的以后的小伙伴可以用sklearn.model_selection就行了，后面一样的
 
-# Aprial 25th
+# April 25th
 
 ## Install scikit-learn (sklearn)
 
@@ -703,7 +705,7 @@ for i in availabe_event:
 
 ```
 
-# Aprial 26th
+# April 26th
 
 ## MRI safety training for 2.5 hrs
 
@@ -730,3 +732,196 @@ Python version: 3.8.13-h6244533_0
 for the convenience of collaboration 
 
 SSH connect public key (id_rsa.pub) was created before.
+
+after create the directory, run the command in git:
+
+```
+git init
+git add .
+git git commit -m  "Comment"
+git remote add origin "the url of directory"
+git push -u origin main
+```
+
+## Journal club preparation
+
+# April 27th
+
+## Pycharm
+
+Get Pycharm educational version via King’s email
+
+install python 3.8 environment for running the code from https://github.com/tobywise/aversive_state_reactivation
+
+run below code in pycharm
+
+```
+!conda create -n py38 python=3.8
+!pip install mne
+!pip install scikit-learn
+!pip install plotly
+!pip install cufflinks
+!pip install networkx
+!conda install numba
+!pip install pyyaml
+!pip install papermill
+```
+
+## Fixation
+
+The function `joblib` does not exist in `sklearn.external` anymore.
+
+Error occurs when run the function plot_confusion_matrix:
+
+Deprecated since version 1.0: `plot_confusion_matrix` is deprecated in 1.0 and will be removed in 1.2. Use one of the following class methods: `from_predictions` or `from_estimator`.
+
+use
+
+```
+ConfusionMatrixDisplay.from_predictions(y, y_pred)
+```
+
+instead of 
+
+```
+plot_confusion_matrix(mean_conf_mat[:n_stim, :n_stim], title='Normalised confusion matrix, accuracy = {0}'.format(np.round(mean_accuracy, 2)))
+```
+
+# April 28th
+
+## Logistic regression cost function
+
+The function is using the principle of maximum likelihood estimation to find the parameters $\theta$ for different models. At the meantime, a nice property is it is convex. So, this cost function is generally everyone use for fitting parameters in logistic regression.
+
+![image-20220429010526272](https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202204290105356.png)
+
+The way we are going to minimize the cost function is using gradient descent:
+
+![image-20220429011210521](https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202204290112574.png)
+
+Other alternative optimization algorithms (no need to manually pick $\alpha$ studying rate:
+
+1. Conjugate gradient
+2. BFGS
+3. L-BFGS
+
+## Ways to storage trained model
+
+set and train a simple SVC model
+
+```
+from sklearn import svm
+from sklearn import datasets
+
+clf = svm.SVC()
+iris = datasets.load_iris()
+X, y = iris.data, iris.target
+clf.fit(X,y)
+```
+Storage:
+
+1. pickle
+
+```
+import pickle #pickle模块
+
+#保存Model(注:save文件夹要预先建立，否则会报错)
+with open('save/clf.pickle', 'wb') as f:
+    pickle.dump(clf, f)
+
+#读取Model
+with open('save/clf.pickle', 'rb') as f:
+    clf2 = pickle.load(f)
+    #测试读取后的Model
+    print(clf2.predict(X[0:1]))
+```
+
+2. joblib(supposed to be faster when dealing with a large data, because the use of multiprocessing)
+
+```
+from sklearn.externals import joblib #jbolib模块
+
+#保存Model(注:save文件夹要预先建立，否则会报错)
+joblib.dump(clf, 'save/clf.pkl')
+
+#读取Model
+clf3 = joblib.load('save/clf.pkl')
+
+#测试读取后的Model
+print(clf3.predict(X[0:1]))
+
+```
+
+# April 29th
+
+## Google Colab
+
+Get the subscription of Google Colab and Google drive
+
+clone data to google drive
+
+Token: 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
+
+connect Google Colab with VS code
+
+## Regularization
+
+We can use **regularization** to rescue the overfitting
+
+There are two types of regularization:
+
+- **L1 Regularization** (or Lasso Regularization)
+
+  $Min$($$\sum_{i=1}^{n}{|y_i-w_ix_i|+p\sum_{i=1}^{n}|w_i|}$$)
+
+- **L2 Regularization** (or Ridge Regularization)
+
+  $Min$($$\sum_{i=1}^{n}{(y_i-w_ix_i)^2+p\sum_{i=1}^{n}w_i^2}$$)
+
+where `p` is the tuning parameter which decides in what extent we want to penalize the model.
+
+However, there is another method for combination
+
+- **Elastic Net:** When L1 and L2 regularization combine together, it becomes the elastic net method, it adds a hyperparameter.
+
+how to select:
+
+| **S.No** | **L1 Regularization**                                   | **L2 Regularization**                                        |
+| -------- | ------------------------------------------------------- | ------------------------------------------------------------ |
+| **1**    | Panelizes the sum of absolute value of weights.         | penalizes the sum of square weights.                         |
+| **2**    | It has a sparse solution.                               | It has a non-sparse solution.                                |
+| **3**    | It gives multiple solutions.                            | It has only one solution.                                    |
+| **4**    | Constructed in feature selection.                       | No feature selection.                                        |
+| **5**    | Robust to outliers.                                     | Not robust to outliers.                                      |
+| **6**    | It generates simple and interpretable models.           | It gives more accurate predictions when the output variable is the function of whole input variables. |
+| **7**    | Unable to learn complex data patterns.                  | Able to learn complex data patterns.                         |
+| **8**    | Computationally inefficient over non-sparse conditions. | Computationally efficient because of having analytical solutions. |
+
+# May 2nd
+
+## Classifier centre
+
+get a question: how to determine the classifier centre? 
+
+for this case, it is around 20 to be at the middle/ top
+
+GPU accelerations
+
+It could be a little bit tricky to accelerate the calculation in sklearn with GPU. Here is a possible solution: https://developer.nvidia.com/blog/scikit-learn-tutorial-beginners-guide-to-gpu-accelerating-ml-pipelines/.  
+
+## Third meeting:
+
+possible deep learning package:
+
+JAX, HAIKU
+
+my aim is to inform bad-performance data with the training model of good-performance data in aims to increase the performance. One hallmark is to increase the mean accuracy of each cases as high as possible.
+
+## Test
+
+Mean accuracy: [0.4255555555555556, 0.3322222222222222, 
+
+
+
+# May 3rd
+
