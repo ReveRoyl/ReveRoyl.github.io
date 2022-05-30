@@ -114,7 +114,63 @@ numbers =(1, 2, 3, 4)
 
 it is immutable, we can not change elements
 
+# Tricks 
 
+## and 和 or 的短路效应：
 
+当or表达式里的所有值为真，会选择第一个值
 
+当and表达式里所有值为真，会选择第二个值
 
+## intern 机制
+
+intern（字符串驻留）的机制在Python解释器中被使用，
+
+当有空格，或者字符串长度超过20个字符，则不启动intern机制
+
+```Python
+s1="hello"
+s2="hello"
+s1 is s2 # True
+
+s1="hell o"
+s2="hell o"
+s1 is s2 # False
+
+s1="hello"*4
+s2="hello"*4
+s1 is s2 # False
+
+s1="hello"*5
+s2="hello"*5
+s1 is s2 # True
+```
+
+## argument 和 parameter 的区别
+
+parameter：形参（formal parameter），体现在函数内部，作用域是这个函数体。
+argument ：实参（actual parameter），调用函数实际传递的参数。
+
+## return不一定都是函数的终点
+
+在try…finally…语句中，try中的 return 会被直接忽视（这里的 return 不是函数的终点），因为要保证 finally 能够执行。
+
+```python
+def func():
+	try:
+		return 'try'
+	finally:
+		return 'finally'
+func() #'finally'
+
+def func1():
+	try:
+		return 'try'
+	finally:
+		print('finally')
+func1() 
+#finally
+#'try'
+```
+
+如果 finally 里有显式的 return，那么这个 return 会直接覆盖 try 里的 return，而如果 finally 里没有 显式的 return，那么 try 里的 return 仍然有效。
