@@ -1,5 +1,4 @@
-https://reveroyl.github.io/2022/05/13/master-project/
-https://reveroyl.github.io/2022/04/11/notes-for-references/
+https://reveroyl.github.io/2022/05/16/master-project/
 https://reveroyl.github.io/2022/04/06/python-learning/
 https://reveroyl.github.io/2022/04/05/cpp-learning/
 https://reveroyl.github.io/2022/03/13/13-03-22backup-blog-source-files/

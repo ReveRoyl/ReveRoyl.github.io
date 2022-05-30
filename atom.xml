@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://reveroyl.github.io/"/>
-  <updated>2022-05-13T12:24:13.498Z</updated>
+  <updated>2022-05-28T21:30:31.218Z</updated>
   <id>https://reveroyl.github.io/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>master project</title>
-    <link href="https://reveroyl.github.io/2022/05/13/master-project/"/>
-    <id>https://reveroyl.github.io/2022/05/13/master-project/</id>
-    <published>2022-05-13T13:00:00.000Z</published>
-    <updated>2022-05-13T12:24:13.498Z</updated>
+    <link href="https://reveroyl.github.io/2022/05/16/master-project/"/>
+    <id>https://reveroyl.github.io/2022/05/16/master-project/</id>
+    <published>2022-05-16T13:00:00.000Z</published>
+    <updated>2022-05-28T21:30:31.218Z</updated>
     
     <summary type="html">
     
@@ -35,28 +35,10 @@
     
     </summary>
     
-      <category term="Neruroscience" scheme="https://reveroyl.github.io/categories/Neruroscience/"/>
+      <category term="Neruroscience programming" scheme="https://reveroyl.github.io/categories/Neruroscience-programming/"/>
     
     
       <category term="project" scheme="https://reveroyl.github.io/tags/project/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Notes for references</title>
-    <link href="https://reveroyl.github.io/2022/04/11/notes-for-references/"/>
-    <id>https://reveroyl.github.io/2022/04/11/notes-for-references/</id>
-    <published>2022-04-11T07:28:00.000Z</published>
-    <updated>2022-04-11T07:30:11.977Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="Neuroscience" scheme="https://reveroyl.github.io/categories/Neuroscience/"/>
-    
-    
-      <category term="Project note" scheme="https://reveroyl.github.io/tags/Project-note/"/>
     
   </entry>
   
@@ -65,7 +47,7 @@
     <link href="https://reveroyl.github.io/2022/04/06/python-learning/"/>
     <id>https://reveroyl.github.io/2022/04/06/python-learning/</id>
     <published>2022-04-06T21:58:00.000Z</published>
-    <updated>2022-04-11T07:28:25.116Z</updated>
+    <updated>2022-05-24T17:22:28.669Z</updated>
     
     <summary type="html">
     
@@ -516,6 +498,32 @@
         
         
           &lt;h3 id=&quot;Experimental-design&quot;&gt;&lt;a href=&quot;#Experimental-design&quot; class=&quot;headerlink&quot; title=&quot;Experimental design&quot;&gt;&lt;/a&gt;Experimental
+        
+      
+    
+    </summary>
+    
+      <category term="Neuroscience" scheme="https://reveroyl.github.io/categories/Neuroscience/"/>
+    
+    
+      <category term="Lecture Note" scheme="https://reveroyl.github.io/tags/Lecture-Note/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Lecture Notes 09/02/22</title>
+    <link href="https://reveroyl.github.io/2022/02/09/09-02-22/"/>
+    <id>https://reveroyl.github.io/2022/02/09/09-02-22/</id>
+    <published>2022-02-09T18:00:00.000Z</published>
+    <updated>2022-04-06T15:02:11.908Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Abstract&quot;&gt;&lt;a href=&quot;#Abstract&quot; class=&quot;headerlink&quot; title=&quot;Abstract&quot;&gt;&lt;/a&gt;Abstract&lt;/h2&gt;&lt;p&gt;quick overviews (&lt;strong&gt;What you have
         
       
     
