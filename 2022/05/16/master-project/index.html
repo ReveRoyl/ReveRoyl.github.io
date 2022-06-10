@@ -315,7 +315,7 @@ What ">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/10.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/6.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -470,14 +470,14 @@ What ">
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    3.2k
+                    3.5k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>Read Times:&nbsp;&nbsp;
-                    17 Min
+                    20 Min
                 </div>
                 
                 
@@ -501,7 +501,7 @@ What ">
 <p><a href="https://mne.tools/stable/generated/mne.read_epochs.html" target="_blank" rel="noopener">https://mne.tools/stable/generated/mne.read_epochs.html</a></p>
 <p>More templates can be found in:</p>
 <p><a href="https://github.com/tobywise/aversive_state_reactivation/blob/master/notebooks/templates/sequenceness_classifier_template.ipynb" target="_blank" rel="noopener">https://github.com/tobywise/aversive_state_reactivation/blob/master/notebooks/templates/sequenceness_classifier_template.ipynb</a></p>
-<h1 id="April-13th"><a href="#April-13th" class="headerlink" title="April 13th"></a>April 13th</h1><h2 id="Session-meeting"><a href="#Session-meeting" class="headerlink" title="Session meeting"></a>Session meeting</h2><p>General understanding:</p>
+<h1 id="April-13th"><a href="#April-13th" class="headerlink" title="April 13th"></a>April 13th</h1><h2 id="First-session-meeting"><a href="#First-session-meeting" class="headerlink" title="First session meeting"></a>First session meeting</h2><p>General understanding:</p>
 <p>Title: the utility of multi-task machine learning for decoding brain states</p>
 <p>How to write a lab notebookL</p>
 <p><img src="https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202204131042297.png" alt="image-20220413104227189"></p>
@@ -666,7 +666,8 @@ git push -u origin main</code></pre><h2 id="Journal-club-preparation"><a href="#
 <p>Deprecated since version 1.0: <code>plot_confusion_matrix</code> is deprecated in 1.0 and will be removed in 1.2. Use one of the following class methods: <code>from_predictions</code> or <code>from_estimator</code>.</p>
 <p>use</p>
 <pre><code>ConfusionMatrixDisplay.from_predictions(y, y_pred)</code></pre><p>instead of </p>
-<pre><code>plot_confusion_matrix(mean_conf_mat[:n_stim, :n_stim], title=&#39;Normalised confusion matrix, accuracy = {0}&#39;.format(np.round(mean_accuracy, 2)))</code></pre><h1 id="April-28th"><a href="#April-28th" class="headerlink" title="April 28th"></a>April 28th</h1><h2 id="Logistic-regression-cost-function"><a href="#Logistic-regression-cost-function" class="headerlink" title="Logistic regression cost function"></a>Logistic regression cost function</h2><p>The function is using the principle of maximum likelihood estimation to find the parameters $\theta$ for different models. At the meantime, a nice property is it is convex. So, this cost function is generally everyone use for fitting parameters in logistic regression.</p>
+<pre><code>plot_confusion_matrix(mean_conf_mat[:n_stim, :n_stim], title=&#39;Normalised confusion matrix, accuracy = {0}&#39;.format(np.round(mean_accuracy, 2)))</code></pre><h2 id="Second-session-meeting"><a href="#Second-session-meeting" class="headerlink" title="Second session meeting"></a>Second session meeting</h2><p>Each people gives a general introduction of their project</p>
+<h1 id="April-28th"><a href="#April-28th" class="headerlink" title="April 28th"></a>April 28th</h1><h2 id="Logistic-regression-cost-function"><a href="#Logistic-regression-cost-function" class="headerlink" title="Logistic regression cost function"></a>Logistic regression cost function</h2><p>The function is using the principle of maximum likelihood estimation to find the parameters $\theta$ for different models. At the meantime, a nice property is it is convex. So, this cost function is generally everyone use for fitting parameters in logistic regression.</p>
 <p><img src="https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202204290105356.png" alt="image-20220429010526272"></p>
 <p>The way we are going to minimize the cost function is using gradient descent:</p>
 <p><img src="https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202204290112574.png" alt="image-20220429011210521"></p>
@@ -913,10 +914,46 @@ input2 = tf.placeholder(tf.float32)
 ouput = tf.multiply(input1, input2)</code></pre><p>接下来, 传值的工作交给了 <code>sess.run()</code> , 需要传入的值放在了<code>feed_dict={}</code> 并一一对应每一个 <code>input</code>. <code>placeholder</code> 与 <code>feed_dict={}</code> 是绑定在一起出现的。</p>
 <pre><code>with tf.Session() as sess:
     print(sess.run(ouput, feed_dict={input1: [7.], input2: [2.]}))
-# [ 14.]</code></pre><h3 id="Activation-function"><a href="#Activation-function" class="headerlink" title="Activation function"></a>Activation function</h3><p>when there are many layers, be careful to use activation function in case of the <strong>gradient explosion or gradient disappearance</strong>.</p>
+# [ 14.]</code></pre><h3 id="Activation-function"><a href="#Activation-function" class="headerlink" title="Activation function"></a>Activation function</h3><p>when there are many layers, be careful to use activation function in case of the <strong>gradient exploding or gradient disappearance</strong>.</p>
 <h1 id="May-28th"><a href="#May-28th" class="headerlink" title="May 28th"></a>May 28th</h1><blockquote>
 <p>Although in the computer vision field convolutional layer often followed by a pooling layer to reduce the data dimension at the expense of information loss, in the scenes of MEG decoding, the size of MEG data is much smaller than the computer vision field. So in order to keep all the information, we don’t use the pooling layer. After the spatial convolutional layer, we use two layers of temporal convolutional layers to extract temporal features, a fully connected layer with dropout operation for feature fusion, and a softmax layer for final classification. (Huang2019)</p>
 </blockquote>
+<h1 id="May-30th"><a href="#May-30th" class="headerlink" title="May 30th"></a>May 30th</h1><h2 id="ML-optimizer"><a href="#ML-optimizer" class="headerlink" title="ML optimizer"></a>ML optimizer</h2><ul>
+<li>Stochastic Gradient Descent (SGD)</li>
+<li>Momentum</li>
+<li>AdaGrad</li>
+<li>RMSProp</li>
+<li>Adam</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202205302233928.png" alt="speedup3"></p>
+<p>X.shape gives (n_epochs, n_channels, n_times) corresponding to (batches, pixels,channels)  of images</p>
+<h1 id="May-31st"><a href="#May-31st" class="headerlink" title="May 31st"></a>May 31st</h1><p>data augmentation</p>
+<p>D. H. Wolpert et. al. (1995) come up with “No  free lunch theorem”: all optimization algorithms perform equally well when their performance is averaged across all possible problems. 任何一个预测函数，如果在一些训练样本上表现好，那么必然在另一些训练样本上表现不好，如果不对数据在特征空间的先验分布有一定假设，那么表现好与不好的情况一样多。</p>
+<h1 id="May-1st"><a href="#May-1st" class="headerlink" title="May 1st"></a>May 1st</h1><h2 id="Seventh-meeting"><a href="#Seventh-meeting" class="headerlink" title="Seventh meeting"></a>Seventh meeting</h2><p>load data with dataloader</p>
+<h1 id="May-6th"><a href="#May-6th" class="headerlink" title="May 6th"></a>May 6th</h1><p>transform inputs from multi hot coding into one hot coding</p>
+<h1 id="May-7th"><a href="#May-7th" class="headerlink" title="May 7th"></a>May 7th</h1><p>try different models, reshape the data from [batches, channels, times point ]to be [batches, times point, channels] in corresponding to images format [batches, picture channels (layers), pixels] (not the same channels, the same names but different meanings)</p>
+<h1 id="May-8th"><a href="#May-8th" class="headerlink" title="May 8th"></a>May 8th</h1><h2 id="Third-session-meeting"><a href="#Third-session-meeting" class="headerlink" title="Third session meeting"></a>Third session meeting</h2><p>from the history of ML to the current meaning </p>
+<ul>
+<li><input checked disabled type="checkbox"> The <strong>history</strong> of <strong>ML</strong>, (black box…)</li>
+<li><input disabled type="checkbox"> the <strong>history</strong> of disease classification or <strong>behaviour prediction</strong></li>
+<li><input disabled type="checkbox"> how people use the ML techniques to <strong>predict  behaviours</strong> these days</li>
+<li><input disabled type="checkbox"> what is aversive state reactivation (one sentence); why people want to learn aversive state reactivation</li>
+<li><input disabled type="checkbox"> how people tried to connect ML with aversive state reactivation</li>
+<li><input disabled type="checkbox"> the problem (gap) is previous model only gives a low prediction accuracy</li>
+<li><input disabled type="checkbox"> Introduction of CNN, LSTM, RNN or transfer learning</li>
+<li><input disabled type="checkbox"> My aims is to optimize the model with new techniques: CNN, LSTM RNN or transfer learning</li>
+</ul>
+<p>state what in each paragraph is not enough and leads to the next paragraph.</p>
+<h2 id="LSTM-RNN"><a href="#LSTM-RNN" class="headerlink" title="LSTM RNN"></a>LSTM RNN</h2><p>tried LSTM RNN today.</p>
+<p>The problems when I try to use one hot data <code>labels = F.one_hot(labels)</code>, it is not applicable because in that case the dimensions could be 28 instead of 14 as we only have even numbers,</p>
+<p>Some packages automatically figure out where there missing labels during one hot operation but this one (pytorch) doesn’t</p>
+<h2 id="Eight-meeting"><a href="#Eight-meeting" class="headerlink" title="Eight meeting"></a>Eight meeting</h2><p>Problems: </p>
+<ul>
+<li><input disabled type="checkbox"> loss functions give similar values?</li>
+<li><input checked disabled type="checkbox"> <del>is it correct to use enumerate to loop each data?</del></li>
+<li><input disabled type="checkbox"> </li>
+<li><input disabled type="checkbox"> </li>
+</ul>
 
             </div>
             <hr />
@@ -1264,7 +1301,7 @@ ouput = tf.multiply(input1, input2)</code></pre><p>接下来, 传值的工作交
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="master project">
+                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="master project">
                         
                         <span class="card-title">master project</span>
                     </div>
@@ -1318,7 +1355,7 @@ What
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="Tutorial for PyCharm">
+                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="Tutorial for PyCharm">
                         
                         <span class="card-title">Tutorial for PyCharm</span>
                     </div>
@@ -1524,7 +1561,7 @@ Ctrl Shift A is the shortcut of Find Action. Al
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;Total words:&nbsp;
-            <span class="white-color">27.4k</span>
+            <span class="white-color">27.8k</span>
             
 
             <br>
