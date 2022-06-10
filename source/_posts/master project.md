@@ -35,7 +35,7 @@ https://github.com/tobywise/aversive_state_reactivation/blob/master/notebooks/te
 
 # April 13th
 
-## Session meeting 
+## First session meeting 
 
 General understanding:
 
@@ -375,6 +375,10 @@ instead of
 ```
 plot_confusion_matrix(mean_conf_mat[:n_stim, :n_stim], title='Normalised confusion matrix, accuracy = {0}'.format(np.round(mean_accuracy, 2)))
 ```
+
+## Second session meeting
+
+Each people gives a general introduction of their project
 
 # April 28th
 
@@ -770,8 +774,76 @@ with tf.Session() as sess:
 
 ### Activation function
 
-when there are many layers, be careful to use activation function in case of the **gradient explosion or gradient disappearance**.
+when there are many layers, be careful to use activation function in case of the **gradient exploding or gradient disappearance**.
 
 # May 28th
 
 > Although in the computer vision field convolutional layer often followed by a pooling layer to reduce the data dimension at the expense of information loss, in the scenes of MEG decoding, the size of MEG data is much smaller than the computer vision field. So in order to keep all the information, we don’t use the pooling layer. After the spatial convolutional layer, we use two layers of temporal convolutional layers to extract temporal features, a fully connected layer with dropout operation for feature fusion, and a softmax layer for final classification. (Huang2019)
+
+# May 30th
+
+## ML optimizer
+
+- Stochastic Gradient Descent (SGD)
+- Momentum
+- AdaGrad
+- RMSProp
+- Adam
+
+![speedup3](https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202205302233928.png)
+
+X.shape gives (n_epochs, n_channels, n_times) corresponding to (batches, pixels,channels)  of images
+
+# May 31st
+
+data augmentation
+
+D. H. Wolpert et. al. (1995) come up with “No  free lunch theorem”: all optimization algorithms perform equally well when their performance is averaged across all possible problems. 任何一个预测函数，如果在一些训练样本上表现好，那么必然在另一些训练样本上表现不好，如果不对数据在特征空间的先验分布有一定假设，那么表现好与不好的情况一样多。
+
+# May 1st
+
+## Seventh meeting
+
+load data with dataloader
+
+# May 6th
+
+transform inputs from multi hot coding into one hot coding
+
+# May 7th
+
+try different models, reshape the data from [batches, channels, times point ]to be [batches, times point, channels] in corresponding to images format [batches, picture channels (layers), pixels] (not the same channels, the same names but different meanings)
+
+# May 8th
+
+## Third session meeting
+
+from the history of ML to the current meaning 
+
+- [x] The **history** of **ML**, (black box...)
+- [ ] the **history** of disease classification or **behaviour prediction**
+- [ ] how people use the ML techniques to **predict  behaviours** these days
+- [ ] what is aversive state reactivation (one sentence); why people want to learn aversive state reactivation
+- [ ] how people tried to connect ML with aversive state reactivation
+- [ ] the problem (gap) is previous model only gives a low prediction accuracy
+- [ ] Introduction of CNN, LSTM, RNN or transfer learning
+- [ ] My aims is to optimize the model with new techniques: CNN, LSTM RNN or transfer learning
+
+state what in each paragraph is not enough and leads to the next paragraph.
+
+## LSTM RNN
+
+tried LSTM RNN today.
+
+The problems when I try to use one hot data `  labels = F.one_hot(labels)`, it is not applicable because in that case the dimensions could be 28 instead of 14 as we only have even numbers,
+
+Some packages automatically figure out where there missing labels during one hot operation but this one (pytorch) doesn't
+
+## Eight meeting
+
+Problems: 
+
+- [ ] loss functions give similar values?
+- [x] ~~is it correct to use enumerate to loop each data?~~
+- [ ] 
+- [ ] 
