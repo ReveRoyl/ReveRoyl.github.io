@@ -798,23 +798,23 @@ X.shape gives (n_epochs, n_channels, n_times) corresponding to (batches, pixels,
 
 data augmentation
 
-D. H. Wolpert et. al. (1995) come up with “No  free lunch theorem”: all optimization algorithms perform equally well when their performance is averaged across all possible problems. 任何一个预测函数，如果在一些训练样本上表现好，那么必然在另一些训练样本上表现不好，如果不对数据在特征空间的先验分布有一定假设，那么表现好与不好的情况一样多。
+D. H. Wolpert et. al. (1995) come up with “No free lunch theorem”: all optimization algorithms perform equally well when their performance is averaged across all possible problems. 任何一个预测函数，如果在一些训练样本上表现好，那么必然在另一些训练样本上表现不好，如果不对数据在特征空间的先验分布有一定假设，那么表现好与不好的情况一样多。
 
-# May 1st
+# Jun 1st
 
 ## Seventh meeting
 
 load data with dataloader
 
-# May 6th
+# Jun 6th
 
 transform inputs from multi hot coding into one hot coding
 
-# May 7th
+# Jun 7th
 
 try different models, reshape the data from [batches, channels, times point ]to be [batches, times point, channels] in corresponding to images format [batches, picture channels (layers), pixels] (not the same channels, the same names but different meanings)
 
-# May 8th
+# Jun 8th
 
 ## Third session meeting
 
@@ -845,5 +845,50 @@ Problems:
 
 - [ ] loss functions give similar values?
 - [x] ~~is it correct to use enumerate to loop each data?~~
-- [ ] 
-- [ ] 
+
+# Jun 9th
+
+## Label noise.
+
+We cannot correctly compare each label when we are using **one-hot format**. If the labels you predict are apples, bananas, and strawberries, obviously they do not directly have a comparison relationship. If we use 1, 2, 3 as labels, there will be a comparison relationship between the labels. Distances are different. With the comparison relationship, the distance between the first label and the last label is too far, which affects the learning of the model.
+
+One promotion:
+
+> Knowledge distillation (KD) improves performance precisely by suppressing this label nosie. Based on this understanding, we introduce a particularly simple improvement method of knowledge disillation, which can significantly improve the performance of ordinary KD by setting different temperatures for each image. 
+>
+> Xu, K., Rui, L., Li, Y., Gu, L. (2020). *Feature Normalized Knowledge Distillation for Image Classification.* In: Vedaldi, A., Bischof, H., Brox, T., Frahm, JM. (eds) Computer Vision – ECCV 2020. ECCV 2020. Lecture Notes in Computer Science(), vol 12370. Springer, Cham. https://doi.org/10.1007/978-3-030-58595-2_40
+
+The effect of the number of hidden layers for neural networks
+
+![img](https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202206120108575.jpeg)
+
+# Jun 10th
+
+try `CrossEntropyLoss()`
+
+convert the labels from “every 2 in 0 to 28” to “every 1 in 1 to 14”
+
+use `  with torch.autocast('cuda')` to solve “cuda error” of  CrossEntropyLoss()
+
+# Jun 12th
+
+Define a function named `onehot`
+
+even though the accuracy of prediction for train data increases quickly as trainning, the accutacy for test data is still very low. It seems the validation loss does not converge. I guess the next step is going to do more literatural research and adjust the parameters.
+
+# Jun 13th
+
+the problem is overfitting. There could be 2 alternative options: 1, get more data; 2, try different learning rate or dynamic learning rate.
+
+the way the train-test split worked wasn't ideal in the data loading function - because the data wasn't shuffled prior to splitting, the train and test set would often consist of different subjects if you load multiple subjects. The data can be shuffled before splitting (by setting shuffle=True), which means that there will be a mix of subjects in both the training and testing data. This seems to boost accuracy in the test set a little
+
+# Jun 14th
+
+try `CosineEmbeddingLoss()`
+
+> Cosine loss could have better performance for small dataset (around 30%). 
+>
+> Barz, B., & Denzler, J. (2019). Deep Learning on Small Datasets without Pre-Training using Cosine Loss. *Proceedings - 2020 IEEE Winter Conference on Applications of Computer Vision, WACV 2020*, 1360–1369. https://doi.org/10.48550/arxiv.1901.09054
+
+# Jun 15th
+
