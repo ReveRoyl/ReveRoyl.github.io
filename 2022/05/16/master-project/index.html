@@ -315,7 +315,7 @@ What ">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/6.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/8.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -470,14 +470,14 @@ What ">
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    3.5k
+                    4k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>Read Times:&nbsp;&nbsp;
-                    20 Min
+                    22 Min
                 </div>
                 
                 
@@ -928,11 +928,11 @@ ouput = tf.multiply(input1, input2)</code></pre><p>接下来, 传值的工作交
 <p><img src="https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202205302233928.png" alt="speedup3"></p>
 <p>X.shape gives (n_epochs, n_channels, n_times) corresponding to (batches, pixels,channels)  of images</p>
 <h1 id="May-31st"><a href="#May-31st" class="headerlink" title="May 31st"></a>May 31st</h1><p>data augmentation</p>
-<p>D. H. Wolpert et. al. (1995) come up with “No  free lunch theorem”: all optimization algorithms perform equally well when their performance is averaged across all possible problems. 任何一个预测函数，如果在一些训练样本上表现好，那么必然在另一些训练样本上表现不好，如果不对数据在特征空间的先验分布有一定假设，那么表现好与不好的情况一样多。</p>
-<h1 id="May-1st"><a href="#May-1st" class="headerlink" title="May 1st"></a>May 1st</h1><h2 id="Seventh-meeting"><a href="#Seventh-meeting" class="headerlink" title="Seventh meeting"></a>Seventh meeting</h2><p>load data with dataloader</p>
-<h1 id="May-6th"><a href="#May-6th" class="headerlink" title="May 6th"></a>May 6th</h1><p>transform inputs from multi hot coding into one hot coding</p>
-<h1 id="May-7th"><a href="#May-7th" class="headerlink" title="May 7th"></a>May 7th</h1><p>try different models, reshape the data from [batches, channels, times point ]to be [batches, times point, channels] in corresponding to images format [batches, picture channels (layers), pixels] (not the same channels, the same names but different meanings)</p>
-<h1 id="May-8th"><a href="#May-8th" class="headerlink" title="May 8th"></a>May 8th</h1><h2 id="Third-session-meeting"><a href="#Third-session-meeting" class="headerlink" title="Third session meeting"></a>Third session meeting</h2><p>from the history of ML to the current meaning </p>
+<p>D. H. Wolpert et. al. (1995) come up with “No free lunch theorem”: all optimization algorithms perform equally well when their performance is averaged across all possible problems. 任何一个预测函数，如果在一些训练样本上表现好，那么必然在另一些训练样本上表现不好，如果不对数据在特征空间的先验分布有一定假设，那么表现好与不好的情况一样多。</p>
+<h1 id="Jun-1st"><a href="#Jun-1st" class="headerlink" title="Jun 1st"></a>Jun 1st</h1><h2 id="Seventh-meeting"><a href="#Seventh-meeting" class="headerlink" title="Seventh meeting"></a>Seventh meeting</h2><p>load data with dataloader</p>
+<h1 id="Jun-6th"><a href="#Jun-6th" class="headerlink" title="Jun 6th"></a>Jun 6th</h1><p>transform inputs from multi hot coding into one hot coding</p>
+<h1 id="Jun-7th"><a href="#Jun-7th" class="headerlink" title="Jun 7th"></a>Jun 7th</h1><p>try different models, reshape the data from [batches, channels, times point ]to be [batches, times point, channels] in corresponding to images format [batches, picture channels (layers), pixels] (not the same channels, the same names but different meanings)</p>
+<h1 id="Jun-8th"><a href="#Jun-8th" class="headerlink" title="Jun 8th"></a>Jun 8th</h1><h2 id="Third-session-meeting"><a href="#Third-session-meeting" class="headerlink" title="Third session meeting"></a>Third session meeting</h2><p>from the history of ML to the current meaning </p>
 <ul>
 <li><input checked disabled type="checkbox"> The <strong>history</strong> of <strong>ML</strong>, (black box…)</li>
 <li><input disabled type="checkbox"> the <strong>history</strong> of disease classification or <strong>behaviour prediction</strong></li>
@@ -951,10 +951,28 @@ ouput = tf.multiply(input1, input2)</code></pre><p>接下来, 传值的工作交
 <ul>
 <li><input disabled type="checkbox"> loss functions give similar values?</li>
 <li><input checked disabled type="checkbox"> <del>is it correct to use enumerate to loop each data?</del></li>
-<li><input disabled type="checkbox"> </li>
-<li><input disabled type="checkbox"> </li>
 </ul>
-
+<h1 id="Jun-9th"><a href="#Jun-9th" class="headerlink" title="Jun 9th"></a>Jun 9th</h1><h2 id="Label-noise"><a href="#Label-noise" class="headerlink" title="Label noise."></a>Label noise.</h2><p>We cannot correctly compare each label when we are using <strong>one-hot format</strong>. If the labels you predict are apples, bananas, and strawberries, obviously they do not directly have a comparison relationship. If we use 1, 2, 3 as labels, there will be a comparison relationship between the labels. Distances are different. With the comparison relationship, the distance between the first label and the last label is too far, which affects the learning of the model.</p>
+<p>One promotion:</p>
+<blockquote>
+<p>Knowledge distillation (KD) improves performance precisely by suppressing this label nosie. Based on this understanding, we introduce a particularly simple improvement method of knowledge disillation, which can significantly improve the performance of ordinary KD by setting different temperatures for each image. </p>
+<p>Xu, K., Rui, L., Li, Y., Gu, L. (2020). <em>Feature Normalized Knowledge Distillation for Image Classification.</em> In: Vedaldi, A., Bischof, H., Brox, T., Frahm, JM. (eds) Computer Vision – ECCV 2020. ECCV 2020. Lecture Notes in Computer Science(), vol 12370. Springer, Cham. <a href="https://doi.org/10.1007/978-3-030-58595-2_40" target="_blank" rel="noopener">https://doi.org/10.1007/978-3-030-58595-2_40</a></p>
+</blockquote>
+<p>The effect of the number of hidden layers for neural networks</p>
+<p><img src="https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202206120108575.jpeg" alt="img"></p>
+<h1 id="Jun-10th"><a href="#Jun-10th" class="headerlink" title="Jun 10th"></a>Jun 10th</h1><p>try <code>CrossEntropyLoss()</code></p>
+<p>convert the labels from “every 2 in 0 to 28” to “every 1 in 1 to 14”</p>
+<p>use <code>with torch.autocast(&#39;cuda&#39;)</code> to solve “cuda error” of  CrossEntropyLoss()</p>
+<h1 id="Jun-12th"><a href="#Jun-12th" class="headerlink" title="Jun 12th"></a>Jun 12th</h1><p>Define a function named <code>onehot</code></p>
+<p>even though the accuracy of prediction for train data increases quickly as trainning, the accutacy for test data is still very low. It seems the validation loss does not converge. I guess the next step is going to do more literatural research and adjust the parameters.</p>
+<h1 id="Jun-13th"><a href="#Jun-13th" class="headerlink" title="Jun 13th"></a>Jun 13th</h1><p>the problem is overfitting. There could be 2 alternative options: 1, get more data; 2, try different learning rate or dynamic learning rate.</p>
+<p>the way the train-test split worked wasn’t ideal in the data loading function - because the data wasn’t shuffled prior to splitting, the train and test set would often consist of different subjects if you load multiple subjects. The data can be shuffled before splitting (by setting shuffle=True), which means that there will be a mix of subjects in both the training and testing data. This seems to boost accuracy in the test set a little</p>
+<h1 id="Jun-14th"><a href="#Jun-14th" class="headerlink" title="Jun 14th"></a>Jun 14th</h1><p>try <code>CosineEmbeddingLoss()</code></p>
+<blockquote>
+<p>Cosine loss could have better performance for small dataset (around 30%). </p>
+<p>Barz, B., &amp; Denzler, J. (2019). Deep Learning on Small Datasets without Pre-Training using Cosine Loss. <em>Proceedings - 2020 IEEE Winter Conference on Applications of Computer Vision, WACV 2020</em>, 1360–1369. <a href="https://doi.org/10.48550/arxiv.1901.09054" target="_blank" rel="noopener">https://doi.org/10.48550/arxiv.1901.09054</a></p>
+</blockquote>
+<h1 id="Jun-15th"><a href="#Jun-15th" class="headerlink" title="Jun 15th"></a>Jun 15th</h1>
             </div>
             <hr />
 
@@ -1301,7 +1319,7 @@ ouput = tf.multiply(input1, input2)</code></pre><p>接下来, 传值的工作交
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="master project">
+                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="master project">
                         
                         <span class="card-title">master project</span>
                     </div>
@@ -1355,7 +1373,7 @@ What
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="Tutorial for PyCharm">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="Tutorial for PyCharm">
                         
                         <span class="card-title">Tutorial for PyCharm</span>
                     </div>
@@ -1561,7 +1579,7 @@ Ctrl Shift A is the shortcut of Find Action. Al
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;Total words:&nbsp;
-            <span class="white-color">27.8k</span>
+            <span class="white-color">28.2k</span>
             
 
             <br>
