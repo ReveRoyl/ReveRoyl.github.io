@@ -892,3 +892,94 @@ try `CosineEmbeddingLoss()`
 
 # Jun 15th
 
+## Fourth session meeting
+
+> *Affective modulation of the startle response in depression: Influence of the severity of depression, anhedonia and anxiety*
+
+startle reflex (SR)
+
+1. affective rating
+
+​	get affective rating after participants watched every clips 
+
+​	and analysis the difference between depressed patients and control.
+
+2. Startle amplitude
+
+3. EMG
+
+   higher baseline EMG activity during pleasant and unpleasant clips, relative to the neutral clips
+
+**Conclusion**
+
+a reduced degree of self-reported mood modulation 
+
+**Gap**
+
+The findings differ from those of Allen et al. (1999): they think it does not matter for depression or anhedonia for affective and emotional modulation.
+
+**key wards**
+
+Depression
+
+Anxiety
+
+Anhedonia
+
+Affective modulation
+
+Mood regulation
+
+Startle response
+
+EMG
+
+affective rating
+
+## Ninth meeting
+
+Multilayer Perceptron
+
+transfer learning
+
+# Jun 16th
+
+>  **Convolutional Layer** : Consider a convolutional layer which takes “l” feature maps as the input and has “k” feature maps as output. The filter size is “**n\*m**”.
+> Here the input has ***l=32\*** feature maps as inputs, ***k=64\*** feature maps as outputs and filter size is ***n=3 and m=3\***. It is important to understand, that we don’t simply have a 3*3 filter, but actually, we have **3\*3\*32** filter, as our input has 32 dimensions. And as an output from first conv layer, we learn 64 different **3\*3\*32** filters which total weights is “**n\*m\*k\*l**”. Then there is a term called bias for each feature map. So, the total number of parameters are “**(n\*m\*l+1)\*k**”.
+>
+> https://medium.com/@iamvarman/how-to-calculate-the-number-of-parameters-in-the-cnn-5bd55364d7ca
+
+bicubic interpolation: torch.nn.functional.interpolate() with mode='bicubic' 
+
+> https://stackoverflow.com/questions/54083474/bicubic-interpolation-in-pytorch
+
+Meeting these data and fitting problems, I realize the insufficiency of understanding data itself, so I look back to the Machine Learning courses materials from 2 years ago, trying to get some new approaches.
+
+When reading the Chapter 1 of *Computational Modelling of Cognition and Behaviour*, I get the following points: 
+
+> 1. Data never speak for themselves but require a model to be understood and to be explained.
+> 2. Verbal theorizing alone ultimately cannot replace for quantitative analysis.
+> 3. There are always several alternative models that vie for explanation of data and we must select among them.
+> 4. Model selection rests on both quantitative evaluation and intellectual and scholarly judgment.
+
+# June 20th
+
+## FT and Feedback session
+
+![image-20220620124206695](https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202206201242841.png)
+
+# June 21th
+
+Have a meeting with Eammon
+
+faces are different	
+
+# June 25th
+
+try Mnet
+
+As an alternative option, the accuracy can be expressed as root mean square error. 
+
+# Jun27th
+
+try to extract band power
