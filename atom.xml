@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://reveroyl.github.io/"/>
-  <updated>2022-06-16T14:52:12.164Z</updated>
+  <updated>2022-07-15T13:52:02.668Z</updated>
   <id>https://reveroyl.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Installing Jupyter lab</title>
+    <link href="https://reveroyl.github.io/2022/07/12/installing-jupyter-lab/"/>
+    <id>https://reveroyl.github.io/2022/07/12/installing-jupyter-lab/</id>
+    <published>2022-07-12T13:51:00.000Z</published>
+    <updated>2022-07-15T13:52:02.668Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Installing-Jupyter-lab&quot;&gt;&lt;a href=&quot;#Installing-Jupyter-lab&quot; class=&quot;headerlink&quot; title=&quot;Installing Jupyter lab&quot;&gt;&lt;/a&gt;Installing Jupyter
+        
+      
+    
+    </summary>
+    
+      <category term="Neruroscience programming" scheme="https://reveroyl.github.io/categories/Neruroscience-programming/"/>
+    
+    
+      <category term="project" scheme="https://reveroyl.github.io/tags/project/"/>
+    
+  </entry>
   
   <entry>
     <title></title>
@@ -43,7 +69,7 @@
     <link href="https://reveroyl.github.io/2022/05/16/master-project/"/>
     <id>https://reveroyl.github.io/2022/05/16/master-project/</id>
     <published>2022-05-16T13:00:00.000Z</published>
-    <updated>2022-06-27T16:13:45.036Z</updated>
+    <updated>2022-07-02T01:19:10.822Z</updated>
     
     <summary type="html">
     
@@ -494,32 +520,6 @@
         
         
           &lt;h1 id=&quot;Face-processing-and-its-disorders&quot;&gt;&lt;a href=&quot;#Face-processing-and-its-disorders&quot; class=&quot;headerlink&quot; title=&quot;Face processing and its
-        
-      
-    
-    </summary>
-    
-      <category term="Neuroscience" scheme="https://reveroyl.github.io/categories/Neuroscience/"/>
-    
-    
-      <category term="Lecture Note" scheme="https://reveroyl.github.io/tags/Lecture-Note/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Lecture Notes 10/02/22</title>
-    <link href="https://reveroyl.github.io/2022/02/10/10-02-22/"/>
-    <id>https://reveroyl.github.io/2022/02/10/10-02-22/</id>
-    <published>2022-02-10T20:00:00.000Z</published>
-    <updated>2022-04-06T15:02:11.908Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h3 id=&quot;Experimental-design&quot;&gt;&lt;a href=&quot;#Experimental-design&quot; class=&quot;headerlink&quot; title=&quot;Experimental design&quot;&gt;&lt;/a&gt;Experimental
         
       
     
