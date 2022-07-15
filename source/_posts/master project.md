@@ -980,6 +980,27 @@ try Mnet
 
 As an alternative option, the accuracy can be expressed as root mean square error. 
 
-# Jun27th
+# Jun 27th
 
 try to extract band power
+
+# June 28th
+
+set up cluster
+
+# June 29th
+
+**零均值归一化**，它会将原始数据映射到均值为 0，标准差为 1 的分布上。假设原始特征的均值是μ \mu*μ*、方差是σ \sigma*σ*，则公式如下：
+z = x − μ σ z = \frac{x-\mu}{\sigma}*z*=*σ**x*−*μ*
+
+# July 1th
+
+try Mnet with band power
+
+find the initial loss is too huge and does not change afterwards.
+
+# July 2th
+
+looking for solution to merge the function
+
+guess I am meeting “dying ReLU” problem
