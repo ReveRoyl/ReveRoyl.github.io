@@ -508,7 +508,7 @@ chmod +x Miniconda3-latest-Linux-x86_64.sh
 pip install jupyterlab</code></pre><h3 id="Connecting-to-Jupyter-Lab-through-an-SSH-tunnel"><a href="#Connecting-to-Jupyter-Lab-through-an-SSH-tunnel" class="headerlink" title="Connecting to Jupyter Lab through an SSH tunnel"></a>Connecting to Jupyter Lab through an SSH tunnel</h3><ol start="4">
 <li>Start an interactive session</li>
 </ol>
-<pre><code>srun -p gpu --pty -t 4:00:00 --mem=30GB --gres=gpu /bin/bash</code></pre><p><strong>Make a note of the node you’re connected to, e.g. erc-hpc-comp001</strong></p>
+<pre><code>srun -p gpu --pty -t 6:00:00 --mem=30GB --gres=gpu /bin/bash</code></pre><p><strong>Make a note of the node you’re connected to, e.g. erc-hpc-comp001</strong></p>
 <ol start="5">
 <li>Within this session, start Jupyter lab without the display on a specific port (here this is port 9998)</li>
 </ol>
@@ -1121,7 +1121,7 @@ entail instead of ha
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;Total words:&nbsp;
-            <span class="white-color">29k</span>
+            <span class="white-color">30.6k</span>
             
 
             <br>
