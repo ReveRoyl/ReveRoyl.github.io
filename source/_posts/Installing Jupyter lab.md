@@ -43,7 +43,7 @@ pip install jupyterlab
 4.  Start an interactive session
 
 ``` 
-srun -p gpu --pty -t 4:00:00 --mem=30GB --gres=gpu /bin/bash
+srun -p gpu --pty -t 6:00:00 --mem=30GB --gres=gpu /bin/bash
 ```
 
 **Make a note of the node you're connected to, e.g. erc-hpc-comp001**

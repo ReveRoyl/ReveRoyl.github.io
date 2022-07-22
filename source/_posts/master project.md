@@ -17,6 +17,12 @@ categories:
 
 ## First meeting 
 
+### Objective: 
+
+to find out which data we are going to use and which method to analyse it
+
+### Results:
+
 data: https://openneuro.org/datasets/ds003682
 
 The file we cares:
@@ -37,31 +43,43 @@ https://github.com/tobywise/aversive_state_reactivation/blob/master/notebooks/te
 
 ## First session meeting 
 
-General understanding:
+### Objective:
 
-Title: the utility of multi-task machine learning for decoding brain states
-
-How to write a lab notebookL
+learn how to write a lab notebook
 
 ![image-20220413104227189](https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202204131042297.png)
 
 ![image-20220413104255487](https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202204131042577.png)
 
-Table of Contents
-
-page numbers; date; title/subject/experiment
-
 ![image-20220413104725413](https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202204131047482.png)
 
 ![image-20220413105233836](https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202204131052901.png)
+
+### Results
+
+General understanding:
+
+Title: the utility of multi-task machine learning for decoding brain states
+
+Table of Contents:
+
+page numbers; date; title/subject/experiment
 
 Gantt charts is good to help organise time:
 
 ![image-20220413110103327](https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202204131101425.png)
 
+
+
 # April 18th
 
 ## Install MNE-Python via pip:
+
+### Objective:
+
+to upgrade environment manager and compiler to the latest stable version
+
+### Results:
 
 Update Anaconda via ` conda upgrade --all` and  `conda install anaconda=2021.10`
 
@@ -83,6 +101,10 @@ Install MNE:
 
 ## Second meeting 
 
+### Objective: 
+
+have a general understanding of the data and figure out details about methods
+
 `x_raw`
 
 `x_raw.shape`
@@ -91,17 +113,19 @@ Install MNE:
 
 `time = localiser epchoes`
 
+### Results:
 
+#### what I have known:
 
 **scikit-learn** is the package I am going to use
 
-
-
-use PCA to reduce dimensions 
+use **PCA** to reduce dimensions 
 
 ![image-20220419104136746](https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202204191041843.png)
 
-**need to be learned: normalization, regularization**
+#### what need to be learned: 
+
+##### 1. normalization, regularization
 
 lasso L1 = sets unpredictive features to 0
 
@@ -109,27 +133,35 @@ ridge L2 = minimises the weights on unpredictive features
 
 elastic net L1/L2
 
-
+##### 2. search
 
 `random_search randomizedsearchCV` to test the performance
 
-
+##### 3. Neural network
 
 neural network can be the best way for logistic leaning 
 
-
-
-validation	
+##### 4. validation	
 
 # April 24th
 
-从连续的脑电图信号中提取一些特定时间窗口的信号，这些时间窗口可以称作为epochs.
+### Objective:
 
-由于EEG是连续收集的，要分析脑电事件相关的电位时，需要将信号"切分"成时间片段，这些时间片段被锁定到某个事件（例如刺激）中的时间片段。
+play with existing code and make a foundation for the following coding
 
-文章中的MEG数据无效，可能是因为数据损坏
+### Results:
 
-incomplete copying led to corrupted files
+#### Epochs
+
+Extract signals from continuous EEG signals for specific time windows, which can be called epochs.
+
+Because EEGs are collected continuously, to analyse EEG event-related potentials requires "slicing" the signal into time segments that are locked to time segments within an event (e.g., a stimulus).
+
+#### Data corruption
+
+The MEG data in the article is invalid, possibly because of data corruption
+
+**incomplete copying led to corrupted files**
 
 The following events are present in the data: 1, 2, 3, 4, 5, 32
 
@@ -139,7 +171,7 @@ event_id = {'Auditory/Left': 1, 'Auditory/Right': 2,
 'smiley': 5, 'button': 32}
 ```
 
-sklearn.cross_validation在1.9版本以后就被弃用了，1.9版本的以后的可以用sklearn.model_selection.
+`sklearn.cross_validation` has been deprecated since version 1.9, and `sklearn.model_selection` can be used after version 1.9.
 
 # April 25th
 
@@ -149,9 +181,9 @@ use the command line
 
 `conda install -c anaconda scikit-learn`
 
-在Anaconda Prompt中启动base环境: `activate base`
+Start the base environment in Anaconda Prompt: `activate base`
 
-并在环境下安装jupyter notebook、numpy等模块
+And install jupyter notebook, numpy and other modules in the environment
 
 ```
 conda insatll tensorflow
@@ -169,9 +201,9 @@ https://scikit-learn.org/stable/tutorial/machine_learning_map/index.html
 
 ![flow chart of scikit](https://scikit-learn.org/stable/_static/ml_map.png)
 
-## Learning of sklearn
+## Learning sklearn
 
-1. 导入模块
+1. import modules
 
 ```
 from sklearn import datasets
@@ -179,9 +211,9 @@ from sklearn.model_selection import train_test_split
 from sklearn.neighbors import KNeighborsClassifier
 ```
 
-2. 创建数据
+2. create data
 
-加载 `iris` 的数据，把属性存在 `X`，类别标签存在 `y`：
+load `iris` data，store the **attributes** in  `X`，store the **labels** in `y`：
 
 ```
 iris = datasets.load_iris()
@@ -189,13 +221,14 @@ iris_X = iris.data
 iris_y = iris.target
 ```
 
-观察一下数据集，`X` 有四个属性，`y` 有 0，1，2 三类：
+Looking at the dataset, `X` has four attributes, and `y` has three categories: 0, 1, and 2:
 
 ```
 print(iris_X[:2, :])
 print(iris_y)
 
 """
+Output:
 [[ 5.1  3.5  1.4  0.2]
  [ 4.9  3.   1.4  0.2]]
 [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
@@ -206,28 +239,29 @@ print(iris_y)
  """
 ```
 
-把数据集分为训练集和测试集，其中 `test_size=0.3`，即测试集占总数据的 30%：
+Divide the data set into training set and test set, where `test_size=0.3`, that is, the test set accounts for 30% of the total data:
 
 ```
 X_train, X_test, y_train, y_test = train_test_split(
     iris_X, iris_y, test_size=0.3)
 ```
 
-可以看到分开后的数据集，顺序也被打乱，这样更有利于学习模型：
+It can be seen that the separated data sets are also disrupted in order, which is better to train the model:
 
 ```
 print(y_train)
 
 """
+Outputs:
 [2 1 0 1 0 0 1 1 1 1 0 0 1 2 1 1 1 0 2 2 1 1 1 1 0 2 2 0 2 2 2 2 2 0 1 2 2
  2 2 2 2 0 1 2 2 1 1 1 0 0 1 2 0 1 0 1 0 1 2 2 0 1 2 2 2 1 1 1 1 2 2 2 1 0
  1 1 0 0 0 2 0 1 0 0 1 2 0 2 2 0 0 2 2 2 1 2 0 0 2 1 2 0 0 1 2]
  """
 ```
 
-3. 建立模型－训练－预测
+3. Build a model - train - predict
 
-定义模块方式 `KNeighborsClassifier()`， 用 `fit` 来训练 `training data`，这一步就完成了训练的所有步骤， 后面的 `knn` 就已经是训练好的模型，可以直接用来 `predict` 测试集的数据， 对比用模型预测的值与真实的值，可以看到大概模拟出了数据，但是有误差，是不会完完全全预测正确的。
+Define the module method `KNeighborsClassifier()`, use `fit` to train `training data`, this step completes all the steps of training, the latter `knn` is already a trained model, which can be used directly `predict` For the data of the test set, comparing the value predicted by the model with the real value, we can see that the data is roughly simulated, but there is an error, and the prediction will not be completely correct.
 
 ```
 knn = KNeighborsClassifier()
@@ -245,10 +279,6 @@ print(y_test)
 
 ![image-20220425150724894](https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202204251507965.png)
 
-
-
-
-
 ## Succeed at drawing plot
 
 ```
@@ -257,9 +287,9 @@ import os
 from mne.datasets import sample
 import matplotlib.pyplot as plt
 
-# sample的存放地址
+# The storage path of sample
 data_path = sample.data_path()
-# 该fif文件存放地址
+# The storage path of the fif file
 fname = 'E:\Proj\Previous data\sample\MEG\sample\sub-001_localiser_sub-001_ses-01_task-AversiveLearningReplay_run-localiser_proc_ICA-epo.fif.gz'
 
 epochs = mne.read_epochs(fname)
@@ -294,11 +324,17 @@ for i in availabe_event:
 
 ```
 
+## A few questions at last: 
+
+1. why do we split the data as 70%, does it work as other ration?
+
+   Because we have got enough data to train and need more data to test and valid the training performance.
+
 # April 26th
 
 ## MRI safety training for 2.5 hrs
 
-## update Anaconda
+## update Anaconda (start to use a new platform)
 
 `conda update conda`
 
@@ -332,15 +368,15 @@ git remote add origin "the url of directory"
 git push -u origin main
 ```
 
-## Journal club preparation
+## Journal club preparation for the next session
 
 # April 27th
 
-## Pycharm
+## Pycharm (use IDE)
 
 Get Pycharm educational version via King’s email
 
-install python 3.8 environment for running the code from https://github.com/tobywise/aversive_state_reactivation
+install python 3.8 environment for running the code from https://github.com/tobywise/aversive_state_reactivation (because it was coding with python 3.8 compiler)
 
 run below code in pycharm
 
@@ -356,7 +392,7 @@ run below code in pycharm
 !pip install papermill
 ```
 
-## Fixation
+## Fixation for some expired code
 
 The function `joblib` does not exist in `sklearn.external` anymore.
 
@@ -378,27 +414,25 @@ plot_confusion_matrix(mean_conf_mat[:n_stim, :n_stim], title='Normalised confusi
 
 ## Second session meeting
 
-Each people gives a general introduction of their project
+Every people gives a general introduction of their project
 
 # April 28th
 
 ## Logistic regression cost function
 
-The function is using the principle of maximum likelihood estimation to find the parameters $\theta$ for different models. At the meantime, a nice property is it is convex. So, this cost function is generally everyone use for fitting parameters in logistic regression.
-
-![image-20220429010526272](https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202204290105356.png)
+The function is using the principle of maximum likelihood estimation to find the parameters $\theta$ for different models. At the meantime, a nice property is it is convex. So, this cost function is generally everyone use for fitting parameters in logistic regression.![image-20220429010526272](https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202204290105356.png)
 
 The way we are going to minimize the cost function is using gradient descent:
 
 ![image-20220429011210521](https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202204290112574.png)
 
-Other alternative optimization algorithms (no need to manually pick $\alpha$ studying rate:
+Other alternative optimization algorithms (no need to manually pick $\alpha$ studying rate):
 
 1. Conjugate gradient
 2. BFGS
 3. L-BFGS
 
-## Ways to storage trained model
+## Methods to storage trained model
 
 set and train a simple SVC model
 
@@ -416,31 +450,31 @@ Storage:
 1. pickle
 
 ```
-import pickle #pickle模块
+import pickle #pickle module
 
-#保存Model(注:save文件夹要预先建立，否则会报错)
+#store Model(Note: The save folder must be created in advance, otherwise an error will be reported)
 with open('save/clf.pickle', 'wb') as f:
     pickle.dump(clf, f)
 
-#读取Model
+#load Model
 with open('save/clf.pickle', 'rb') as f:
     clf2 = pickle.load(f)
-    #测试读取后的Model
+    #test loaded Model
     print(clf2.predict(X[0:1]))
 ```
 
-2. joblib(supposed to be faster when dealing with a large data, because the use of multiprocessing)
+2. joblib (supposed to be faster when dealing with a large data, because the use of multiprocessing)
 
 ```
 from sklearn.externals import joblib #jbolib模块
 
-#保存Model(注:save文件夹要预先建立，否则会报错)
+#store Model(Note: The save folder must be created in advance, otherwise an error will be reported)
 joblib.dump(clf, 'save/clf.pkl')
 
-#读取Model
+##load Model
 clf3 = joblib.load('save/clf.pkl')
 
-#测试读取后的Model
+#test loaded Model
 print(clf3.predict(X[0:1]))
 
 ```
@@ -490,9 +524,35 @@ how to select:
 | **7**    | Unable to learn complex data patterns.                  | Able to learn complex data patterns.                         |
 | **8**    | Computationally inefficient over non-sparse conditions. | Computationally efficient because of having analytical solutions. |
 
+### Question:
+
+which layer should I apply the regularization?
+
+From the model's summary, I can determine which layers have the most parameters. It is better to apply regularization to the layers with the highest parameters.
+
+In the above case, how to get each layer’s parameters?
+
+```python
+from prettytable import PrettyTable
+
+def count_parameters(model):
+    table = PrettyTable(["Modules", "Parameters"])
+    total_params = 0
+    for name, parameter in model.named_parameters():
+        if not parameter.requires_grad: continue
+        params = parameter.numel()
+        table.add_row([name, params])
+        total_params+=params
+    print(table)
+    print(f"Total Trainable Params: {total_params}")
+    return total_params
+    
+count_parameters(model)
+```
+
 # May 2nd
 
-## Classifier centre
+## Question ahead:
 
 get a question: how to determine the classifier centre? 
 
@@ -510,17 +570,9 @@ JAX, HAIKU
 
 my aim is to inform bad-performance data with the training model of good-performance data in aims to increase the performance. One hallmark is to increase the mean accuracy of each cases as high as possible.
 
-## Test
-
-Mean accuracy:
-
-```
-[0.4288888888888889, 0.33666666666666667, 0.2777777777777778, 0.5022222222222222, 0.5066666666666667, 0.4245810055865922, 0.5577777777777778, 0.43222222222222223, 0.65, 0.47888888888888886, 0.3377777777777778, 0.4800469483568075, 0.27111111111111114, 0.37193763919821826, 0.4288888888888889, 0.40555555555555556, 0.46444444444444444, 0.7077777777777777, 0.5811111111111111, 0.4711111111111111, 0.4255555555555556, 0.5022222222222222, 0.45394006659267483, 0.38555555555555554, 0.6222222222222222, 0.4622222222222222, 0.35444444444444445, 0.47444444444444445]
-```
-
 # May 3rd
 
-Successfully do confusion matrix.
+Successfully run the code for confusion matrix.
 
 pictures of each case are stored in the Github depository: 
 
@@ -528,6 +580,11 @@ https://github.com/ReveRoyl/MT_ML_Decoding/tree/main/Aversive_state_reactivation
 
 It takes around 36 minutes to run 28 cases. 
 
+Mean accuracy with existing code:
+
+```
+[0.4288888888888889, 0.33666666666666667, 0.2777777777777778, 0.5022222222222222, 0.5066666666666667, 0.4245810055865922, 0.5577777777777778, 0.43222222222222223, 0.65, 0.47888888888888886, 0.3377777777777778, 0.4800469483568075, 0.27111111111111114, 0.37193763919821826, 0.4288888888888889, 0.40555555555555556, 0.46444444444444444, 0.7077777777777777, 0.5811111111111111, 0.4711111111111111, 0.4255555555555556, 0.5022222222222222, 0.45394006659267483, 0.38555555555555554, 0.6222222222222222, 0.4622222222222222, 0.35444444444444445, 0.47444444444444445]
+```
 # May 10th
 
 Get rid of the effect of null data
@@ -540,9 +597,17 @@ transform X into the same size as clf
 
 Test Grid Search CV instead of Randomized Search CV
 
-## Concatenattion
+However, the result of grid search CV is worse than the randomized search CV. I think the reason is that random search CV uses a random combination of hyperparameters to find the best solution for a built model. However, the random search CV is not 100% better than grid search CV: the disadvantage of random search is that it produces high variance during computation.
 
-Concatenate X np arrays and test, the mean accuracy increases. I test did 5 cases.
+## Concatenation
+
+### Objective
+
+Since my aim is to transfer the model prediction of one case to anther, I try to concatenate multiple cases data together to train the model and see what will happen.
+
+### Result
+
+Concatenate X np arrays and test, the mean accuracy increases. I test 5 cases.
 
 Mean accuracy = 0.5111111111111111, while for each cases, previous mean accuracy = 0.43777777777777777; 0.34; 0.2788888888888889; 0.5055555555555555.
 
@@ -558,7 +623,7 @@ The concatenated data gives a better fit:
 
 ![output](https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202205121731546.png)
 
-However, the generalization ability of this method has not been decided yet.
+However, the generalization ability of this method has not been decided yet till now.
 
 # May 12th
 
@@ -570,12 +635,8 @@ for session_id_int in range(1, 2):
     session_id = '{:03d}'.format(session_id_int)
     print(session_id)
     # Get data
-    # if session_id_int == 1:
-        # localiser_epochs_concatenate = mne.read_epochs(os.path.join(output_dir, 'preprocessing', 'sub-001', 'localiser', 'sub-001_ses-01_task-AversiveLearningReplay_run-localiser_proc_ICA-epo.fif.gz')) 
-    # else:
     localiser_epochs = mne.read_epochs(os.path.join(output_dir, 'preprocessing', 'sub-{}', 'localiser', 'sub-{}_ses-01_task-AversiveLearningReplay_run-localiser_proc_ICA-epo.fif.gz').format(session_id,session_id))  
-    # localiser_epochs.info = localiser_epochs_concatenate.info
-    # localiser_epochs_concatenate = mne.concatenate_epochs([localiser_epochs_concatenate, localiser_epochs]) 
+    
     X_raw = localiser_epochs.get_data()
     
     picks_meg = mne.pick_types(localiser_epochs.info, meg=True, ref_meg=False)
@@ -598,29 +659,43 @@ It takes me 1 hour to make the code elegant.
 
 ## Forth meeting
 
+### Objective:
+
+We have tested existing code, the following step is to try different models to predict.
+
+My supervisor’s suggestion is to use haiku trying CNN.
+
 ```
 pip install -upgrade jax optax dm-haiku 
 ```
 
-rectifier RELU
+to be learnt: 
 
-## New model selection
+active function: rectifier RELU
 
-CNN: Haiku
+### Result:
+
+New model selection: CNN with Haiku
 
 # May 14th
 
-Find a serious bug: concatenated data was not used correctly. The result should be lowering the mean accuracy.
+Find a  bug: concatenated data was not giving a correct result. The better performance was because of the randomness of every time training. The concatenated data won’t give a better prediction. 
+
+possible solution: transfer learning instead of directly concatenation.
 
 # May 16th
 
+### Objective
+
 learning deep learning courses (Andrew Ng) in coursera
 
-In the context of artificial neural networks, the rectifier or ReLU (Rectified Linear Unit) activation function[1][2] is an activation function defined as the positive part of its argument.
+### Result:
 
-## Convolution
+In the context of artificial neural networks, the rectifier or ReLU (Rectified Linear Unit) activation function is an activation function defined as the positive part of its argument.
 
-Types of layer in a CN:
+#### Convolution
+
+Types of layer in a CNN:
 
 - Covolution
 - Pooling
@@ -644,15 +719,21 @@ LeNet -5
 
 ## Learning JAX
 
+**Question: why jax has its own numpy type: jax.numpy? what is the difference between it and numpy?**
+
 Jax.numpy is a little bit different from numpy: the former is immutable
 
-why do we need jax.numpy? because numpy only works on CPU while jax.numpy works on GPU
+**Question: why do we need jax.numpy?** 
+
+because numpy only works on CPU while jax.numpy works on GPU
+
+**another advantage of JAX**
 
 `jit()` can be used to compile the data input thus makes the program run faster
 
 ## First group meeting
 
-Yiqi introduced his recent work which is basically based on U-net, VAE
+Yiqi introduced his recent work which is based on U-net, VAE
 
 # May 18th
 
@@ -670,27 +751,95 @@ JAX API structure
 - lax API is stricter and more powerful
 - It's a Python wrapper around XLA
 
+![nn](https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202207221751704.svg)
+
+```python
+class CNN(hk.Module):
+    def __init__(self):
+        super().__init__(name="CNN")
+        # self.conv1 = hk.Conv2D(output_channels=32, kernel_shape=(3,3), padding="SAME")
+        # self.conv2 = hk.Conv2D(output_channels=16, kernel_shape=(3,3), padding="SAME")
+        self.conv1 = hk.Conv2D(output_channels=64, kernel_shape=(11,11), stride=4, padding="SAME")
+        self.conv2 = hk.Conv2D(output_channels=192, kernel_shape=(5,5), padding="SAME")
+        self.conv3 = hk.Conv2D(output_channels=384, kernel_shape=(3,3), padding="SAME")
+        self.conv4 = hk.Conv2D(output_channels=256, kernel_shape=(3,3), padding="SAME")
+        self.conv5 = hk.Conv2D(output_channels=256, kernel_shape=(3,3), padding="SAME")
+        self.flatten = hk.Flatten()
+        self.linear = hk.Linear(len(classes))
+
+    def __call__(self, x_batch):
+        x = self.conv1(x_batch)
+        x = jax.nn.relu(x)
+        x = hk.MaxPool(window_shape=(3, 3), strides=(2, 2), padding='VALID')(x)
+        x = self.conv2(x)
+        x = jax.nn.relu(x)
+        x = hk.MaxPool(window_shape=(3, 3), strides=(2, 2), padding='VALID')(x)        
+        x = self.conv3(x_batch)
+        x = jax.nn.relu(x)
+        x = self.conv4(x_batch)
+        x = jax.nn.relu(x)
+        x = self.conv5(x_batch)
+        x = jax.nn.relu(x)
+        x = hk.MaxPool(window_shape=(3, 3), strides=2, padding='VALID')(x)
+        # x = hk.AvgPool(window_shape=(6, 6), strides=(2, 2), padding='SAME')(x)
+        
+        x = self.flatten(x)
+        x = self.linear(x)
+        x = jax.nn.softmax(x)
+        return x
+```
+
 # May 19th
 
-CNN test was run but the prediction result is not quite as expected: 
+## Test CNN
+
+CNN test was run but the prediction result is not as good as expected: 
+
+the performance of it is about 0.4 for training dataset and 0.15 for test dataset.
+
+I think we should try to tune the parameters of model or test a different model since the current model is suitable for image recognition. Before that, literature reviews should be done.
 
 ## Fifth meeting
+
+I have the requirement of visualization during training: 
 
 To use Tensor Board to show the training process
 
 # May 20th
 
-Tried AlexNet
+## Tried AlexNet (can be easily get from Pytorch hub)
+
+AlexNet
+
+```
+AlexNet  = torch.hub.load('pytorch/vision:v0.10.0', 'alexnet', pretrained=True).cuda()
+```
+
+
+
+Resnet 18
+
+```
+Resnet   = torch.hub.load('pytorch/vision:v0.10.0', 'resnet18', pretrained=True).cuda()
+```
+
+
+
+![image-20220722175851266](https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202207221758352.png)
+
+
 
 ## Sixth meeting
 
-**shall we concatenate data?**
+### Objective:
 
-**2D or 3D?**
+discuss about that if we should use concatenate data and pre-processing for standardization 
 
-Pre-processing for standardization 
+### Results:
 
-Rossalin advices transfer learning, LSTM
+Dr Toby and I had a discussion together with Dr Rossalin 
+
+Rossalin advices us to try transfer learning or LSTM.
 
 # May 24th
 
@@ -704,9 +853,9 @@ Zarc gives a presentation about his NLP project.
 
 ### Session control
 
-在 Tensorflow 中，定义了某字符串是变量，它才是变量，这一点是与 Python 所不同的。
+In Tensorflow, a string is defined as a variable, and it is a variable, which is different from Python. (later on I found it was correct in Tensorflow v1 but changes in Tensorflow v2)
 
-定义语法： `state = tf.Variable()`
+ `state = tf.Variable()`
 
 ```
 import tensorflow as tf
@@ -723,16 +872,16 @@ new_value = tf.add(state, one)
 update = tf.assign(state, new_value)
 ```
 
-如果你在 Tensorflow 中设定了变量，那么初始化变量是最重要的！！所以定义了变量以后, 一定要定义 `init = tf.initialize_all_variables()` .
+If you set variables in Tensorflow, initializing the variables is the most important thing! ! So after defining the variable, be sure to define `init = tf.initialize_all_variables()` .
 
-到这里变量还是没有被激活，需要再在 `sess` 里, `sess.run(init)` , 激活 `init` 这一步.
+At this point, the variable is still not activated, and it needs to be added in `sess` , `sess.run(init)` , to activate`init`. (again, it changes in v2, we do not need to initialize the session in Tensorflow v2)
 
 ```Python
-# 如果定义 Variable, 就一定要 initialize
-# init = tf.initialize_all_variables() # tf 马上就要废弃这种写法
-init = tf.global_variables_initializer()  # 替换成这样就好
+# Variable, initialize
+# init = tf.initialize_all_variables() # expired
+init = tf.global_variables_initializer()  
  
-# 使用 Session
+# Session
 with tf.Session() as sess:
     sess.run(init)
     for _ in range(3):
@@ -741,30 +890,30 @@ with tf.Session() as sess:
 
 ```
 
-注意：直接 `print(state)` 不起作用！！
+Note: directly `print(state)` does not work! !
 
-一定要把 `sess` 的指针指向 `state` 再进行 `print` 才能得到想要的结果！
+Be sure to point the `sess` pointer to `state` and then `print` to get the desired result!
 
 ### placeholder
 
-`placeholder` 是 Tensorflow 中的占位符，暂时储存变量.
+`placeholder` is a placeholder in Tensorflow that temporarily stores variables.
 
-Tensorflow 如果想要从外部传入data, 那就需要用到 `tf.placeholder()`, 然后以这种形式传输数据 `sess.run(***, feed_dict={input: **})`.
+If Tensorflow wants to pass in data from the outside, it needs to use `tf.placeholder()`, and then transfer the data in this form `sess.run(***, feed_dict={input: **})`.
 
-示例：
+Examoles：
 
 ```
 import tensorflow as tf
 
-#在 Tensorflow 中需要定义 placeholder 的 type ，一般为 float32 形式
+# Tensorflow requires defining placeholder's type, usually float32
 input1 = tf.placeholder(tf.float32)
 input2 = tf.placeholder(tf.float32)
 
-# mul = multiply 是将input1和input2 做乘法运算，并输出为 output 
+# multiply input1 and input2
 ouput = tf.multiply(input1, input2)
 ```
 
-接下来, 传值的工作交给了 `sess.run()` , 需要传入的值放在了`feed_dict={}` 并一一对应每一个 `input`. `placeholder` 与 `feed_dict={}` 是绑定在一起出现的。
+Next, the work of passing the value is handed over to `sess.run()`, the value that needs to be passed in is placed in `feed_dict={}` and corresponds to each `input` one by one. `placeholder` and `feed_dict={ }` are bound together.
 
 ```
 with tf.Session() as sess:
@@ -780,9 +929,17 @@ when there are many layers, be careful to use activation function in case of the
 
 > Although in the computer vision field convolutional layer often followed by a pooling layer to reduce the data dimension at the expense of information loss, in the scenes of MEG decoding, the size of MEG data is much smaller than the computer vision field. So in order to keep all the information, we don’t use the pooling layer. After the spatial convolutional layer, we use two layers of temporal convolutional layers to extract temporal features, a fully connected layer with dropout operation for feature fusion, and a softmax layer for final classification. (Huang2019)
 
+It is important to select if we should use pooling layers and how many to use.
+
 # May 30th
 
 ## ML optimizer
+
+### Objective:
+
+learn to use and select different optimizer
+
+### Results:
 
 - Stochastic Gradient Descent (SGD)
 - Momentum
@@ -794,29 +951,65 @@ when there are many layers, be careful to use activation function in case of the
 
 X.shape gives (n_epochs, n_channels, n_times) corresponding to (batches, pixels,channels)  of images
 
+### impression
+
+As I tried to apply regularization at the same time. It is important to bear in mind, if we give a momentum in SGD (about 0.9), we can easily apply L2 regularization when the weight_decay is larger than 0.
+
 # May 31st
 
-data augmentation
+### Objective:
 
-D. H. Wolpert et. al. (1995) come up with “No free lunch theorem”: all optimization algorithms perform equally well when their performance is averaged across all possible problems. 任何一个预测函数，如果在一些训练样本上表现好，那么必然在另一些训练样本上表现不好，如果不对数据在特征空间的先验分布有一定假设，那么表现好与不好的情况一样多。
+try to learn data augmentation and learn a important rule: “No free lunch theorem”
+
+### Results:
+
+D. H. Wolpert et. al. (1995) come up with “No free lunch theorem”: all optimization algorithms perform equally well when their performance is averaged across all possible problems.
+
+For any prediction function, if it performs well on some training samples, it must perform poorly on other training samples. If there are certain assumptions about the prior distribution of the data in the feature space, there are as many good and bad performances.
 
 # Jun 1st
 
 ## Seventh meeting
 
-load data with dataloader
+Dr Toby provide me the code to load data with dataloader
 
 # Jun 6th
 
-transform inputs from multi hot coding into one hot coding
+### Objective:
+
+try different loss function:
+
+### Results:
+
+when apply other loss function instead of CrossEntropy, there are some format error occurs:
+
+solution: transform inputs from multi hot coding into one hot coding. 
+
+```Python
+def onehot(batches, n_classes, y):
+  yn = torch.zeros(batches, n_classes)
+  for i in range(batches):
+    x = [0 for j in range(batches)]
+    x[i] = y[i]/2-1                     #ex. [12]-> [5]
+    yn[i][int(x[i])]+= 1                  #[000010000]
+  return yn
+```
+
+Later I found that we can use the function in Pytorch: F.onehot
 
 # Jun 7th
 
-try different models, reshape the data from [batches, channels, times point ]to be [batches, times point, channels] in corresponding to images format [batches, picture channels (layers), pixels] (not the same channels, the same names but different meanings)
+try different models, reshape the data from [batches, channels, times point ]to be [batches, times point, channels] in corresponding to images format [batches, picture channels (layers), pixels] (not the same channels, the same names but different meanings, former one is electrode channels. latter one is picture layers)
 
 # Jun 8th
 
 ## Third session meeting
+
+### Objective:
+
+learn the key points of writing a good introduction
+
+### Results:
 
 from the history of ML to the current meaning 
 
@@ -829,26 +1022,40 @@ from the history of ML to the current meaning
 - [ ] Introduction of CNN, LSTM, RNN or transfer learning
 - [ ] My aims is to optimize the model with new techniques: CNN, LSTM RNN or transfer learning
 
-state what in each paragraph is not enough and leads to the next paragraph.
+Note: state what in each paragraph is not enough and leads to the next paragraph.
 
 ## LSTM RNN
 
-tried LSTM RNN today.
+### Objective: 
+
+try LSTM RNN
+
+### Results:
 
 The problems when I try to use one hot data `  labels = F.one_hot(labels)`, it is not applicable because in that case the dimensions could be 28 instead of 14 as we only have even numbers,
 
 Some packages automatically figure out where there missing labels during one hot operation but this one (pytorch) doesn't
 
-## Eight meeting
+## Eighth meeting
 
-Problems: 
+### questions: 
 
 - [ ] loss functions give similar values?
 - [x] ~~is it correct to use enumerate to loop each data?~~
 
+In my case, CrossEntropy is the better for MEG data. It is the experience gained from Dr Toby. Even though I found the others’ research about hands behaviour prediction used MSE loss. It is not suitable for our results because theirs is about the movements while ours is not.
+
 # Jun 9th
 
 ## Label noise.
+
+### Objectives:
+
+labels format it self may affect the model performance. 
+
+**question**: how to determine numbers of hidden layers in LSTM RNN.
+
+### Results:
 
 We cannot correctly compare each label when we are using **one-hot format**. If the labels you predict are apples, bananas, and strawberries, obviously they do not directly have a comparison relationship. If we use 1, 2, 3 as labels, there will be a comparison relationship between the labels. Distances are different. With the comparison relationship, the distance between the first label and the last label is too far, which affects the learning of the model.
 
@@ -858,31 +1065,35 @@ One promotion:
 >
 > Xu, K., Rui, L., Li, Y., Gu, L. (2020). *Feature Normalized Knowledge Distillation for Image Classification.* In: Vedaldi, A., Bischof, H., Brox, T., Frahm, JM. (eds) Computer Vision – ECCV 2020. ECCV 2020. Lecture Notes in Computer Science(), vol 12370. Springer, Cham. https://doi.org/10.1007/978-3-030-58595-2_40
 
+**Hidden layers in LSTM RNN**
+
 The effect of the number of hidden layers for neural networks
 
 ![img](https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202206120108575.jpeg)
 
 # Jun 10th
 
-try `CrossEntropyLoss()`
+try `CrossEntropyLoss()` with onehot format data
 
 convert the labels from “every 2 in 0 to 28” to “every 1 in 1 to 14”
 
-use `  with torch.autocast('cuda')` to solve “cuda error” of  CrossEntropyLoss()
+use `  with torch.autocast('cuda')` to solve “cuda error” of `CrossEntropyLoss()`
 
 # Jun 12th
 
-Define a function named `onehot`
-
-even though the accuracy of prediction for train data increases quickly as trainning, the accutacy for test data is still very low. It seems the validation loss does not converge. I guess the next step is going to do more literatural research and adjust the parameters.
+even though the accuracy of prediction for train data increases quickly as trainning, the accutacy for test data is still very low. It seems the validation loss does not converge. I decide the next step is going to do more literatural research and adjust the parameters.
 
 # Jun 13th
 
+### Problems:
+
 the problem is overfitting. There could be 2 alternative options: 1, get more data; 2, try different learning rate or dynamic learning rate.
 
-the way the train-test split worked wasn't ideal in the data loading function - because the data wasn't shuffled prior to splitting, the train and test set would often consist of different subjects if you load multiple subjects. The data can be shuffled before splitting (by setting shuffle=True), which means that there will be a mix of subjects in both the training and testing data. This seems to boost accuracy in the test set a little
+the way the train-test split worked wasn't ideal in the data loading function - because the data wasn't shuffled prior to splitting, the train and test set would often consist of different subjects if we load multiple subjects. The data can be shuffled before splitting (by setting shuffle=True), which means that there will be a mix of subjects in both the training and testing data. This seems to boost accuracy in the test set a little bit.
 
 # Jun 14th
+
+### Objective:
 
 try `CosineEmbeddingLoss()`
 
@@ -890,9 +1101,15 @@ try `CosineEmbeddingLoss()`
 >
 > Barz, B., & Denzler, J. (2019). Deep Learning on Small Datasets without Pre-Training using Cosine Loss. *Proceedings - 2020 IEEE Winter Conference on Applications of Computer Vision, WACV 2020*, 1360–1369. https://doi.org/10.48550/arxiv.1901.09054
 
+### Results:
+
+however, the performance is not promoted
+
 # Jun 15th
 
 ## Fourth session meeting
+
+I read others work, extract the key words and main ideas:
 
 > *Affective modulation of the startle response in depression: Influence of the severity of depression, anhedonia and anxiety*
 
@@ -938,9 +1155,13 @@ affective rating
 
 ## Ninth meeting
 
-Multilayer Perceptron
+### Problems:
 
-transfer learning
+Since the past work does not give a good result and it has been nearly halfway of the project. My following work is suggested to be focused on:
+
+1. Multilayer Perceptron
+
+2. transfer learning
 
 # Jun 16th
 
@@ -970,37 +1191,187 @@ When reading the Chapter 1 of *Computational Modelling of Cognition and Behaviou
 
 # June 21th
 
-Have a meeting with Eammon
+Have a meeting with Eammon, we talked about my recent work:
 
-faces are different	
+Eammon gives me a suggestion: in behaviour level, picture of faces are different. Try and see what if we get rid of the picture of faces in labels.
+
+Here are the pictures shown to participants: 
+
+![image-20220722184848108](https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202207221848253.png)
 
 # June 25th
 
-try Mnet
+try Mnet (was used to predict the Alzheimer's disease by Aoe .etc)
+
+> Aoe, J., Fukuma, R., Yanagisawa, T. *et al.* Automatic diagnosis of neurological diseases using MEG signals with a deep neural network. *Sci Rep* **9,** 5057 (2019). https://doi.org/10.1038/s41598-019-41500-xz
+
+Score method:
 
 As an alternative option, the accuracy can be expressed as root mean square error. 
 
 # Jun 27th
 
-try to extract band power
+### Objective:
+
+apply data augmentation 
+
+### Result:
+
+one possible solution is to extract band power to augment the data
+
+> “This model was implemented to check the proprieties of the RPS to extract meaningful features from the input data. The RPS was combined with an MLP to add nonlinearity and increase the capability of approximate the target variable.”
+>
+> The RPS was implemented in 4 steps: 
+>
+> 1. Compute the modified periodogram using Welch methods (Welch 1967) to get the power spectral density. 
+> 2. Calculate the average band power approximating using the composite Simpson’s rule to get it for a specific target band. 
+> 3. Divide the average band power of the specific target band by the total power of the signal to get the relative power spectrum.
+
+> Anelli, M. (2020). *Using Deep learning to predict continuous hand kinematics from Magnetoencephalographic (MEG) measurements of electromagnetic brain activity* (Doctoral dissertation, ETSI_Informatica).
 
 # June 28th
 
-set up cluster
+### Problem:
+
+My google colab VIP is expired but luckily I have got the access of HPC in KCL (create)
+
+### Solution:
+
+set up cluster as the tutorial: https://docs.er.kcl.ac.uk/CREATE/access/
+
+1. Start an interactive session:
+
+```
+srun -p gpu --pty -t 6:00:00 --mem=30GB --gres=gpu /bin/bash
+```
+
+**Make a note of the node I am connected to, e.g. erc-hpc-comp001**
+
+2. start Jupyter lab without the display on a specific port (here this is port 9998)
+
+```
+jupyter lab --no-browser --port=9998 --ip="*"
+```
+
+3. **Open a separate connection** to CREATE that connects to the node where Jupyter Lab is running using the port you specified earlier. (Problems known with VScode terminal)
+
+```
+ssh -m hmac-sha2-512 -o ProxyCommand="ssh -m hmac-sha2-512 -W %h:%p k21116947@bastion.er.kcl.ac.uk" -L 9998:erc-hpc-comp031:9998 k21116947@hpc.create.kcl.ac.uk
+```
+
+- Note:
+  - k12345678 should be replaced with your username.
+  - erc-hpc-comp001 should be replaced with the name of node where Jupyter lab is running
+  - 9998 should be replaced with the port you specified when running Jupyter lab (using e.g. `--port=9998`)
+  - authorize via https://portal.er.kcl.ac.uk/mfa/
+
+4. Start notebook in http://localhost:9998/lab
+
+5. VS code part: set the Jupyter server as remote:
+
+   ```
+   http://localhost:9998/lab?token=XXX
+   # replace the localhost as erc-hpc-comp031
+   ```
+
+   Note: However, After the latest weekly update, existing problem has been found is the connection via VS code is not stable. Reason could be the dynamic allocated node and port confuses the VS code connection server.
 
 # June 29th
 
-**零均值归一化**，它会将原始数据映射到均值为 0，标准差为 1 的分布上。假设原始特征的均值是μ \mu*μ*、方差是σ \sigma*σ*，则公式如下：
-z = x − μ σ z = \frac{x-\mu}{\sigma}*z*=*σ**x*−*μ*
+### Objective:
+
+try different normalization method: **Z-Score Normalization**
+
+### Results:
+
+which maps the raw data to a distribution with mean 0 and standard deviation 
+
+1. Assuming that the mean of the original feature is μ and the variance is σ , the formula is as follows:
+
+![img](https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202207221914685.png)
 
 # July 1th
 
-try Mnet with band power
+### Objective:
 
-find the initial loss is too huge and does not change afterwards.
+try Mnet with band power (RPS Ment)
+
+### Results:
+
+extract band powers to get a 6 RPS (relative power spectrum) for each frequency period:
+
+````python
+X = np.swapaxes(X_train, 2, -1).squeeze()
+data = X[X.shape[0]-1, 70, :]
+psd_mne, freqs_mne = psd_array_welch(data, 250, 1., 70., n_per_seg=None,
+                          n_overlap=0, n_jobs=1)
+for low, high in [(1, 4), (4, 8), (8, 10), (10, 13), (13, 30),
+                  (30, 70)]:
+    print("processing bands (low, high) : ({},{})".format(low, high))
+    # Find intersecting values in frequency vector
+    idx_delta = np.logical_and(freqs_mne >= low, freqs_mne <= high)
+      # Frequency resolution
+    freq_res = freqs_mne[1] - freqs_mne[0]  # = 1 / 4 = 0.25
+
+    # Compute the absolute power by approximating the area under the curve
+    power = simps(psd_mne[idx_delta], dx=freq_res)
+    print('Absolute power: {:.4f} uV^2'.format(power))
+    
+    total_power = simps(psd_mne, dx=freq_res)
+    rel_power = power / total_power
+    
+    print('Relative power: {:.4f}'.format(rel_power))
+    
+```
+Outputs:
+Effective window size : 1.024 (s)
+processing bands (low, high) : (1,4)
+Absolute power: 0.0610 uV^2
+Relative power: 0.1251
+processing bands (low, high) : (4,8)
+Absolute power: 0.0315 uV^2
+Relative power: 0.0647
+processing bands (low, high) : (8,10)
+Absolute power: 0.0220 uV^2
+Relative power: 0.0452
+processing bands (low, high) : (10,13)
+Absolute power: 0.0031 uV^2
+Relative power: 0.0064
+processing bands (low, high) : (13,30)
+Absolute power: 0.0577 uV^2
+Relative power: 0.1184
+processing bands (low, high) : (30,70)
+Absolute power: 0.2356 uV^2
+Relative power: 0.4837
+```
+````
+
+### Problems:
+
+find the initial loss is too huge and does not change afterwards. Guess it is because of too large initial loss or wrongly `loss.backward()`
+
+### solution:
+
+parameters of optimizer was set wrongly, fix it with `model.parameters()`
 
 # July 2th
+
+### Problems:
 
 looking for solution to merge the function
 
 guess I am meeting “dying ReLU” problem
+
+# July 5th
+
+### Objectives:
+
+try dynamic learning rate and interpolate 130 time points to be 800 time points without losing too much information.
+
+### Solution:
+
+Multilayer perceptron
+
+interpolate https://pytorch.org/docs/stable/generated/torch.nn.functional.interpolate.html
+
+Learning rate scheduling https://pytorch.org/docs/stable/optim.html
