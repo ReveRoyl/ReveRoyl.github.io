@@ -13,25 +13,31 @@ categories:
 - Neruroscience programming
 ---
 
+# Table of content 
+
+[Toc]
+
 # April 12th
 
 ## First meeting 
 
 ### Objective: 
 
-to find out which data we are going to use and which method to analyse it
+to find out which data we are going to use and which method to analyse it because good understanding of the data can help researching simpler and more accurate. It can also inform me important information about features engineering or neural network designing.
 
 ### Results:
 
 data: https://openneuro.org/datasets/ds003682
 
+28 participants viewing 14 image stimuli 
+
 The file we cares:
 
 ![image-20220411140935965](https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202204111409061.png)
 
-We can use MNE to open it
+I can use MNE-Python to analyse it because MNE-Python package is highly integrated allowing an easy access to analysing.
 
-What these files do:
+What these files do can be achieved with:
 
 https://mne.tools/stable/generated/mne.read_epochs.html
 
@@ -47,14 +53,6 @@ https://github.com/tobywise/aversive_state_reactivation/blob/master/notebooks/te
 
 learn how to write a lab notebook
 
-![image-20220413104227189](https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202204131042297.png)
-
-![image-20220413104255487](https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202204131042577.png)
-
-![image-20220413104725413](https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202204131047482.png)
-
-![image-20220413105233836](https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202204131052901.png)
-
 ### Results
 
 General understanding:
@@ -65,11 +63,7 @@ Table of Contents:
 
 page numbers; date; title/subject/experiment
 
-Gantt charts is good to help organise time:
-
-![image-20220413110103327](https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202204131101425.png)
-
-
+Gantt charts is good to help organise time.
 
 # April 18th
 
@@ -77,7 +71,7 @@ Gantt charts is good to help organise time:
 
 ### Objective:
 
-to upgrade environment manager and compiler to the latest stable version
+to upgrade environment manager and compiler to the latest stable version because I always tend to use the latest version of packages which is supposed to be more compatible
 
 ### Results:
 
@@ -103,7 +97,7 @@ Install MNE:
 
 ### Objective: 
 
-have a general understanding of the data and figure out details about methods
+to have a general understanding of the data and figure out details about methods because these are what I am going to feed into the network so that I should have a clear recognition for each part.
 
 `x_raw`
 
@@ -117,7 +111,7 @@ have a general understanding of the data and figure out details about methods
 
 #### what I have known:
 
-**scikit-learn** is the package I am going to use
+**scikit-learn** (machine learning library) is an available package I am going to use
 
 use **PCA** to reduce dimensions 
 
@@ -147,7 +141,7 @@ neural network can be the best way for logistic leaning
 
 ### Objective:
 
-play with existing code and make a foundation for the following coding
+to play with existing code https://github.com/tobywise/aversive_state_reactivation because it can inform me code grammars analysing MEG data and it will make a foundation for my following coding 
 
 ### Results:
 
@@ -159,11 +153,11 @@ Because EEGs are collected continuously, to analyse EEG event-related potentials
 
 #### Data corruption
 
-The MEG data in the article is invalid, possibly because of data corruption
+The MEG data in the repository https://openneuro.org/datasets/ds003682 is invalid, possibly because of data corruption
 
 **incomplete copying led to corrupted files**
 
-The following events are present in the data: 1, 2, 3, 4, 5, 32
+The following events are an example present in the data: 1, 2, 3, 4, 5, 32
 
 ```
 event_id = {'Auditory/Left': 1, 'Auditory/Right': 2,
@@ -185,7 +179,7 @@ Start the base environment in Anaconda Prompt: `activate base`
 
 And install jupyter notebook, numpy and other modules in the environment
 
-```
+```bash
 conda insatll tensorflow
 
 conda install jupyter notebook
@@ -195,7 +189,7 @@ conda install scikit-learn
 conda install scipy
 ```
 
-how to choose the right algorithm 
+Learn how to choose the right algorithm 
 
 https://scikit-learn.org/stable/tutorial/machine_learning_map/index.html
 
@@ -205,7 +199,7 @@ https://scikit-learn.org/stable/tutorial/machine_learning_map/index.html
 
 1. import modules
 
-```
+```python
 from sklearn import datasets
 from sklearn.model_selection import train_test_split
 from sklearn.neighbors import KNeighborsClassifier
@@ -215,7 +209,7 @@ from sklearn.neighbors import KNeighborsClassifier
 
 load `iris` data，store the **attributes** in  `X`，store the **labels** in `y`：
 
-```
+```python
 iris = datasets.load_iris()
 iris_X = iris.data
 iris_y = iris.target
@@ -223,7 +217,7 @@ iris_y = iris.target
 
 Looking at the dataset, `X` has four attributes, and `y` has three categories: 0, 1, and 2:
 
-```
+```python
 print(iris_X[:2, :])
 print(iris_y)
 
@@ -241,14 +235,14 @@ Output:
 
 Divide the data set into training set and test set, where `test_size=0.3`, that is, the test set accounts for 30% of the total data:
 
-```
+```python
 X_train, X_test, y_train, y_test = train_test_split(
     iris_X, iris_y, test_size=0.3)
 ```
 
 It can be seen that the separated data sets are also disrupted in order, which is better to train the model:
 
-```
+```python
 print(y_train)
 
 """
@@ -263,7 +257,7 @@ Outputs:
 
 Define the module method `KNeighborsClassifier()`, use `fit` to train `training data`, this step completes all the steps of training, the latter `knn` is already a trained model, which can be used directly `predict` For the data of the test set, comparing the value predicted by the model with the real value, we can see that the data is roughly simulated, but there is an error, and the prediction will not be completely correct.
 
-```
+```python
 knn = KNeighborsClassifier()
 knn.fit(X_train, y_train)
 print(knn.predict(X_test))
@@ -277,11 +271,13 @@ print(y_test)
  """
 ```
 
+Directly download the data and store in my computer. However, it is unprofessional to run code in personal computer. I should looking for a way to solve this problem: rent a server or find a HPC cluster in King’s College.
+
 ![image-20220425150724894](https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202204251507965.png)
 
 ## Succeed at drawing plot
 
-```
+```python
 import mne
 import os
 from mne.datasets import sample
@@ -305,7 +301,7 @@ epochs.plot_drop_log()
 plt.show()
 ```
 
-```
+```python
 epochs = mne.read_epochs(fname)
 
 evoked = epochs.average()
@@ -313,7 +309,7 @@ evoked.plot_topomap()
 
 plt.show()
 ```
-```
+```python
 availabe_event = [1, 2, 3, 4, 5, 32]
 
 for i in availabe_event:
@@ -323,6 +319,14 @@ for i in availabe_event:
     plt.show()
 
 ```
+
+The panel each contains 900 epochs. In these samples, there are no spikes or other distinctive abnormal waveforms. For every single training dataset from various participants, 900 of in total 900 events passed the rejection process. It is because the rejection algorithm was purposefully designed to be inclusive. All data were deliberately included because the CNN model should be robust to noise in the data
+
+![image-20220817193732989](https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202208171937606.png)
+
+Topological map from -500.00 to 790.00 ms. The brain areas that are activated are concentrated in the downstream temporal region or visual cortex.
+
+![image-20220817194146606](https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202208171941694.png)
 
 ## A few questions at last: 
 
@@ -336,6 +340,8 @@ for i in availabe_event:
 
 ## update Anaconda (start to use a new platform)
 
+Anaconda is a good environment manager tool which allows me to manage and deploy packages
+
 `conda update conda`
 
 `conda update anaconda`
@@ -346,7 +352,7 @@ done
 
 Python version: 3.8.13-h6244533_0
 
-## change the directory path of Jupyter notebook
+## change the directory path of Jupyter notebook (in order to save files in preferred path)
 
 1. `jupyter notebook --generate-config` get the config file. change the line `c.NotebookApp.notebook_dir = ''` to the directory I want
 
@@ -360,7 +366,7 @@ SSH connect public key (id_rsa.pub) was created before.
 
 after create the directory, run the command in git:
 
-```
+```bash
 git init
 git add .
 git git commit -m  "Comment"
@@ -380,7 +386,7 @@ install python 3.8 environment for running the code from https://github.com/toby
 
 run below code in pycharm
 
-```
+```bash
 !conda create -n py38 python=3.8
 !pip install mne
 !pip install scikit-learn
@@ -402,19 +408,19 @@ Deprecated since version 1.0: `plot_confusion_matrix` is deprecated in 1.0 and w
 
 use
 
-```
+```python
 ConfusionMatrixDisplay.from_predictions(y, y_pred)
 ```
 
 instead of 
 
-```
+```python
 plot_confusion_matrix(mean_conf_mat[:n_stim, :n_stim], title='Normalised confusion matrix, accuracy = {0}'.format(np.round(mean_accuracy, 2)))
 ```
 
 ## Second session meeting
 
-Every people gives a general introduction of their project
+Every people gives a general introduction of their projects
 
 # April 28th
 
@@ -436,7 +442,7 @@ Other alternative optimization algorithms (no need to manually pick $\alpha$ stu
 
 set and train a simple SVC model
 
-```
+```python
 from sklearn import svm
 from sklearn import datasets
 
@@ -449,7 +455,7 @@ Storage:
 
 1. pickle
 
-```
+```python
 import pickle #pickle module
 
 #store Model(Note: The save folder must be created in advance, otherwise an error will be reported)
@@ -465,7 +471,7 @@ with open('save/clf.pickle', 'rb') as f:
 
 2. joblib (supposed to be faster when dealing with a large data, because the use of multiprocessing)
 
-```
+```python
 from sklearn.externals import joblib #jbolib模块
 
 #store Model(Note: The save folder must be created in advance, otherwise an error will be reported)
@@ -513,16 +519,24 @@ However, there is another method for combination
 
 how to select:
 
-| **S.No** | **L1 Regularization**                                   | **L2 Regularization**                                        |
-| -------- | ------------------------------------------------------- | ------------------------------------------------------------ |
-| **1**    | Panelizes the sum of absolute value of weights.         | penalizes the sum of square weights.                         |
-| **2**    | It has a sparse solution.                               | It has a non-sparse solution.                                |
-| **3**    | It gives multiple solutions.                            | It has only one solution.                                    |
-| **4**    | Constructed in feature selection.                       | No feature selection.                                        |
-| **5**    | Robust to outliers.                                     | Not robust to outliers.                                      |
-| **6**    | It generates simple and interpretable models.           | It gives more accurate predictions when the output variable is the function of whole input variables. |
-| **7**    | Unable to learn complex data patterns.                  | Able to learn complex data patterns.                         |
-| **8**    | Computationally inefficient over non-sparse conditions. | Computationally efficient because of having analytical solutions. |
+| **No** | **L1 Regularization**                                   | **L2 Regularization**                                        |
+| ------ | ------------------------------------------------------- | ------------------------------------------------------------ |
+| **1**  | Panelises the sum of absolute value of weights.         | Penalises the sum of square weights.                         |
+| **2**  | It has a sparse solution.                               | It has a non-sparse solution.                                |
+| **3**  | It gives multiple solutions.                            | It has only one solution.                                    |
+| **4**  | Constructed in feature selection.                       | No feature selection.                                        |
+| **5**  | Robust to outliers.                                     | Not robust to outliers.                                      |
+| **6**  | It generates simple and interpretable models.           | It gives more accurate predictions when the output variable is the function of whole input variables. |
+| **7**  | Unable to learn complex data patterns.                  | Able to learn complex data patterns.                         |
+| **8**  | Computationally inefficient over non-sparse conditions. | Computationally efficient because of having analytical solutions. |
+
+## Normalization
+
+The reason for applying normalization is the normalization step can generalize the statistical distribution of uniform samples, which is expected to enhance the training performance.
+
+ ![img](https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202208171958842.gif)
+
+where m is the total number of data and x represents data, makes the average value and standard deviation of data in each channel to be located in the range between 0 and 1
 
 ### Question:
 
@@ -554,7 +568,7 @@ count_parameters(model)
 
 ## Question ahead:
 
-get a question: how to determine the classifier centre? 
+get a question: how to determine the classifier centre (windows width)? 
 
 for this case, it is around 20 to be at the middle/ top
 
@@ -564,15 +578,45 @@ It could be a little bit tricky to accelerate the calculation in sklearn with GP
 
 ## Third meeting:
 
-possible deep learning package:
+Deep learning might be the solution for MEG signals classification. 
+
+The CNN is a particular subtype of the neural network, which is effective in analysing images or other data containing high spatial information (Khan et al., 2018; Valueva et al., 2020) and also works well with temporal information (Bai et al., 2018)
+
+> Khan, S., Rahmani, H., Shah, S. A. A., & Bennamoun, M. (2018). A Guide to Convolutional Neural Networks for Computer Vision. *A Guide to Convolutional Neural Networks for Computer Vision*. https://doi.org/10.1007/978-3-031-01821-3
+>
+> Valueva, M. v., Nagornov, N. N., Lyakhov, P. A., Valuev, G. v., & Chervyakov, N. I. (2020). Application of the residue number system to reduce hardware costs of the convolutional neural network implementation. *Mathematics and Computers in Simulation*, *177*, 232–243. https://doi.org/10.1016/J.MATCOM.2020.04.031
+>
+> Bai, S., Kolter, J. Z., & Koltun, V. (2018). *An Empirical Evaluation of Generic Convolutional and Recurrent Networks for Sequence Modeling*. https://doi.org/10.48550/arxiv.1803.01271
+
+possible deep learning packages:
 
 JAX, HAIKU
 
-my aim is to inform bad-performance data with the training model of good-performance data in aims to increase the performance. One hallmark is to increase the mean accuracy of each cases as high as possible.
+My aim is to inform bad-performance data with the training model of good-performance data in aims to increase the performance. One hallmark is to increase the mean accuracy of each cases as high as possible.
 
 # May 3rd
 
 Successfully run the code for confusion matrix.
+
+```python
+clf.set_params(**random_search.best_params_)
+
+# Get predictions with 5 fold CV
+y_pred = cross_val_predict(clf, X, y, cv=confusion_matrix_cv)
+mean_conf_mat = confusion_matrix(y, y_pred)
+mean_accuracy = accuracy_score(y[y != 99], y_pred[y != 99])
+mean_conf_mat = mean_conf_mat.astype('float') / mean_conf_mat.sum(axis=1)  # normalise
+
+print("Mean accuracy = {0}".format(mean_accuracy))
+    
+# Plot mean confusion matrix
+#plot_confusion_matrix(mean_conf_mat[:n_stim, :n_stim], title='Normalised confusion matrix, accuracy = {0}'.format(np.round(mean_accuracy, 2)))
+#plt.imshow(mean_conf_mat[:n_stim, :n_stim])
+
+ConfusionMatrixDisplay.from_predictions(y, y_pred)
+plt.savefig('./save_folder/fig-{}.png'.format(session_id), dpi=600)
+plt.show()
+```
 
 pictures of each case are stored in the Github depository: 
 
@@ -582,7 +626,7 @@ It takes around 36 minutes to run 28 cases.
 
 Mean accuracy with existing code:
 
-```
+```python
 [0.4288888888888889, 0.33666666666666667, 0.2777777777777778, 0.5022222222222222, 0.5066666666666667, 0.4245810055865922, 0.5577777777777778, 0.43222222222222223, 0.65, 0.47888888888888886, 0.3377777777777778, 0.4800469483568075, 0.27111111111111114, 0.37193763919821826, 0.4288888888888889, 0.40555555555555556, 0.46444444444444444, 0.7077777777777777, 0.5811111111111111, 0.4711111111111111, 0.4255555555555556, 0.5022222222222222, 0.45394006659267483, 0.38555555555555554, 0.6222222222222222, 0.4622222222222222, 0.35444444444444445, 0.47444444444444445]
 ```
 # May 10th
@@ -595,7 +639,7 @@ transform X into the same size as clf
 
 ## Grid Search CV
 
-Test Grid Search CV instead of Randomized Search CV
+To test Grid Search CV instead of Randomized Search CV
 
 However, the result of grid search CV is worse than the randomized search CV. I think the reason is that random search CV uses a random combination of hyperparameters to find the best solution for a built model. However, the random search CV is not 100% better than grid search CV: the disadvantage of random search is that it produces high variance during computation.
 
@@ -604,6 +648,19 @@ However, the result of grid search CV is worse than the randomized search CV. I 
 ### Objective
 
 Since my aim is to transfer the model prediction of one case to anther, I try to concatenate multiple cases data together to train the model and see what will happen.
+
+```python
+localiser_epochs = mne.read_epochs(os.path.join(output_dir, 'preprocessing', 'sub-{}', 'localiser', 'sub-{}_ses-01_task-AversiveLearningReplay_run-localiser_proc_ICA-epo.fif.gz').format('001','001')) 
+
+for session_id_int in range(2, 3):
+    session_id = '{:03d}'.format(session_id_int)
+    print(session_id)
+    
+    localiser_epochs_unconcatenate = mne.read_epochs(os.path.join(output_dir, 'preprocessing', 'sub-{}', 'localiser', 'sub-{}_ses-01_task-AversiveLearningReplay_run-localiser_proc_ICA-epo.fif.gz').format(session_id,session_id))  
+    localiser_epochs_unconcatenate.info = localiser_epochs.info
+    localiser_epochs = mne.concatenate_epochs([localiser_epochs, localiser_epochs_unconcatenate]) 
+
+```
 
 ### Result
 
@@ -653,7 +710,7 @@ for session_id_int in range(1, 2):
 X = np.stack(X_4D)
 ```
 
-It takes me 1 hour to make the code elegant.
+It takes me 1 hour to make the code logical elegant.
 
 # May 13th
 
@@ -687,7 +744,7 @@ possible solution: transfer learning instead of directly concatenation.
 
 ### Objective
 
-learning deep learning courses (Andrew Ng) in coursera
+to learning deep learning courses (Andrew Ng) in coursera because as said in ‘Knife don't miss your job’, to solid the foundation of deep learning will help me build the CNN and understand others’ work
 
 ### Result:
 
@@ -795,9 +852,13 @@ class CNN(hk.Module):
 
 CNN test was run but the prediction result is not as good as expected: 
 
-the performance of it is about 0.4 for training dataset and 0.15 for test dataset.
+the performance of it is about 0.4 for training dataset and 0.15 for test dataset. 
 
-I think we should try to tune the parameters of model or test a different model since the current model is suitable for image recognition. Before that, literature reviews should be done.
+I think we should try to tune the parameters of model or test a different model since the current model is suitable for image recognition. Before that, literature reviews should be done. 
+
+Later after I read Aoe’s work, I start to under stand it is because my image classification CNN model fails to extract the temporal and spatial information. 
+
+> Aoe, J., Fukuma, R., Yanagisawa, T., Harada, T., Tanaka, M., Kobayashi, M., Inoue, Y., Yamamoto, S., Ohnishi, Y., & Kishima, H. (2019). Automatic diagnosis of neurological diseases using MEG signals with a deep neural network. *Scientific Reports*, *9*(1). https://doi.org/10.1038/S41598-019-41500-X
 
 ## Fifth meeting
 
@@ -805,25 +866,31 @@ I have the requirement of visualization during training:
 
 To use Tensor Board to show the training process
 
+```python
+!rm -rf /logs/ # clear logs
+# if 'google.colab' in str(get_ipython()): # tensor board
+%load_ext tensorboard  
+# %tensorboard --logdir logs
+%tensorboard --logdir=./models/test
+```
+
 # May 20th
 
 ## Tried AlexNet (can be easily get from Pytorch hub)
 
 AlexNet
 
-```
+```python
 AlexNet  = torch.hub.load('pytorch/vision:v0.10.0', 'alexnet', pretrained=True).cuda()
 ```
 
-
-
 Resnet 18
 
-```
+```python
 Resnet   = torch.hub.load('pytorch/vision:v0.10.0', 'resnet18', pretrained=True).cuda()
 ```
 
-
+These 2 models fail as well. The same reason: these models fail to extract the temporal and spatial information in the first convolutional layers.
 
 ![image-20220722175851266](https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202207221758352.png)
 
@@ -833,13 +900,15 @@ Resnet   = torch.hub.load('pytorch/vision:v0.10.0', 'resnet18', pretrained=True)
 
 ### Objective:
 
-discuss about that if we should use concatenate data and pre-processing for standardization 
+to discuss about that if we should use concatenate data and pre-processing for standardization because the conditions of recording may varies a lot among different subjects: the device position or potential individual reasons.
 
 ### Results:
 
-Dr Toby and I had a discussion together with Dr Rossalin 
+Dr. Toby and I had a discussion together with Dr. Rossalin 
 
-Rossalin advices us to try transfer learning or LSTM.
+Rossalin advices me to try transfer learning or LSTM.
+
+After trying the model is usually used in image classification, it is a good idea to try the model LSTM RNN, which is known as a good fit for sequential data.
 
 # May 24th
 
@@ -851,28 +920,32 @@ Zarc gives a presentation about his NLP project.
 
 ## Learning Tensorflow
 
+Tensorflow is a more popular packages which allows me to get access to many templates. Some research is also using Tensorflow as their machine learning library. But I found Pytorch is a more popular packages which allows me to get access to more well-known templates. Most related research is using Pytorch as their machine learning library.
+
+However, I found the variable and  placeholder operations are more commonly used in Tensorflow-v1 rather than the latest  Tensorflow-v1
+
 ### Session control
 
 In Tensorflow, a string is defined as a variable, and it is a variable, which is different from Python. (later on I found it was correct in Tensorflow v1 but changes in Tensorflow v2)
 
  `state = tf.Variable()`
 
-```
+```python
 import tensorflow as tf
 
 state = tf.Variable(0, name='counter')
 
-# 定义常量 one
+# define variable one
 one = tf.constant(1)
 
-# 定义加法步骤 (注: 此步并没有直接计算)
+# define plus step (hint: no computation here)
 new_value = tf.add(state, one)
 
-# 将 State 更新成 new_value
+# update State to new_value
 update = tf.assign(state, new_value)
 ```
 
-If you set variables in Tensorflow, initializing the variables is the most important thing! ! So after defining the variable, be sure to define `init = tf.initialize_all_variables()` .
+If I set variables in Tensorflow, initializing the variables is the most important thing! ! So after defining the variable, be sure to define `init = tf.initialize_all_variables()`.
 
 At this point, the variable is still not activated, and it needs to be added in `sess` , `sess.run(init)` , to activate`init`. (again, it changes in v2, we do not need to initialize the session in Tensorflow v2)
 
@@ -937,7 +1010,7 @@ It is important to select if we should use pooling layers and how many to use.
 
 ### Objective:
 
-learn to use and select different optimizer
+to learn how to use and select different optimizer, because it modifies model’s parameters like weights and learning rate, which helps to increase accuracy and reduce overall loss.
 
 ### Results:
 
@@ -951,6 +1024,8 @@ learn to use and select different optimizer
 
 X.shape gives (n_epochs, n_channels, n_times) corresponding to (batches, pixels,channels)  of images
 
+Apart for optimizer, scheduler may help a lot with providing a dynamic learning rate.
+
 ### impression
 
 As I tried to apply regularization at the same time. It is important to bear in mind, if we give a momentum in SGD (about 0.9), we can easily apply L2 regularization when the weight_decay is larger than 0.
@@ -959,7 +1034,7 @@ As I tried to apply regularization at the same time. It is important to bear in 
 
 ### Objective:
 
-try to learn data augmentation and learn a important rule: “No free lunch theorem”
+to learn data augmentation and learn a important rule: “No free lunch theorem”
 
 ### Results:
 
@@ -967,17 +1042,66 @@ D. H. Wolpert et. al. (1995) come up with “No free lunch theorem”: all optim
 
 For any prediction function, if it performs well on some training samples, it must perform poorly on other training samples. If there are certain assumptions about the prior distribution of the data in the feature space, there are as many good and bad performances.
 
+Later I found relative power spectrum including delta (0.5-4 Hz), theta (4-8 Hz), alpha (8-12 Hz), beta (12-30Hz), and gamma (above 30 Hz), provide important information to augmenting the MEG data.
+
+```python
+X_train_numpy = X_train_tensors.cpu().numpy()
+X_test_numpy = X_test_tensors.cpu().numpy()
+
+X = np.swapaxes(X_train_numpy, 2, -1).squeeze()
+data = X[X.shape[0]-1, 70, :]
+psd_mne, freqs_mne = psd_array_welch(data, 100, 1., 70., n_per_seg=None,
+                          n_overlap=0, n_jobs=1)
+for low, high in [(0.5, 4), (4, 8), (8, 10), (10, 12), (12, 30),
+                  (30, 70)]:
+    print("processing bands (low, high) : ({},{})".format(low, high))
+    # Find intersecting values in frequency vector
+    idx_delta = np.logical_and(freqs_mne >= low, freqs_mne <= high)
+      # Frequency resolution
+    freq_res = freqs_mne[1] - freqs_mne[0]  # = 1 / 4 = 0.25
+
+    # Compute the absolute power by approximating the area under the curve
+    power = simps(psd_mne[idx_delta], dx=freq_res)
+    print('Absolute power: {:.4f} uV^2'.format(power))
+    
+    total_power = simps(psd_mne, dx=freq_res)
+    rel_power = power / total_power
+    
+    print('Relative power: {:.4f}'.format(rel_power))
+```
+
 # Jun 1st
 
 ## Seventh meeting
 
 Dr Toby provide me the code to load data with dataloader
 
+it defines load_MEG_dataset function with following parameters: 
+
+```python
+def load_MEG_dataset(
+        subject_ids: List[str],
+        mode: str = "individual",
+        output_format: str = "numpy",
+        trial_data_format: str = "2D",
+        data_location: str = "./data/",
+        center_timepoint: int = 20,
+        window_width: List[int] = [-400, 400],
+        shuffle: bool = False,
+        pca_n_components: int = None,
+        training: bool = True,
+        train_test_split: float = 0.75,
+        batch_size: int = 32,
+        scale: bool = True,
+        seed: int = 0,
+    )
+```
+
 # Jun 6th
 
 ### Objective:
 
-try different loss function:
+to try different loss function, because different evaluating methods may affect the learning process, and lead to a different approach to training results.
 
 ### Results:
 
@@ -1007,20 +1131,20 @@ try different models, reshape the data from [batches, channels, times point ]to 
 
 ### Objective:
 
-learn the key points of writing a good introduction
+to learn the key points of writing a good introduction
 
 ### Results:
 
 from the history of ML to the current meaning 
 
 - [x] The **history** of **ML**, (black box...)
-- [ ] the **history** of disease classification or **behaviour prediction**
-- [ ] how people use the ML techniques to **predict  behaviours** these days
-- [ ] what is aversive state reactivation (one sentence); why people want to learn aversive state reactivation
-- [ ] how people tried to connect ML with aversive state reactivation
-- [ ] the problem (gap) is previous model only gives a low prediction accuracy
-- [ ] Introduction of CNN, LSTM, RNN or transfer learning
-- [ ] My aims is to optimize the model with new techniques: CNN, LSTM RNN or transfer learning
+- [x] the **history** of disease classification or **behaviour prediction**
+- [x] how people use the ML techniques to **predict  behaviours** these days
+- [x] what is aversive state reactivation (one sentence); why people want to learn aversive state reactivation
+- [x] how people tried to connect ML with aversive state reactivation
+- [x] the problem (gap) is previous model only gives a low prediction accuracy
+- [x] Introduction of CNN, LSTM, RNN or transfer learning
+- [x] My aims is to optimize the model with new techniques: CNN, LSTM RNN or transfer learning
 
 Note: state what in each paragraph is not enough and leads to the next paragraph.
 
@@ -1040,7 +1164,7 @@ Some packages automatically figure out where there missing labels during one hot
 
 ### questions: 
 
-- [ ] loss functions give similar values?
+- [x] loss functions give similar values?
 - [x] ~~is it correct to use enumerate to loop each data?~~
 
 In my case, CrossEntropy is the better for MEG data. It is the experience gained from Dr Toby. Even though I found the others’ research about hands behaviour prediction used MSE loss. It is not suitable for our results because theirs is about the movements while ours is not.
@@ -1051,7 +1175,7 @@ In my case, CrossEntropy is the better for MEG data. It is the experience gained
 
 ### Objectives:
 
-labels format it self may affect the model performance. 
+to figure out if labels format it self may affect the model performance. Because some models only accept data in one kind of format. 
 
 **question**: how to determine numbers of hidden layers in LSTM RNN.
 
@@ -1077,11 +1201,22 @@ try `CrossEntropyLoss()` with onehot format data
 
 convert the labels from “every 2 in 0 to 28” to “every 1 in 1 to 14”
 
+```python
+y_train = (y_train / 2) - 1
+y_test = (y_test / 2) - 1
+```
+
 use `  with torch.autocast('cuda')` to solve “cuda error” of `CrossEntropyLoss()`
+
+```python
+with torch.autocast('cuda'):
+        # loss = criterion(outputs, torch.tensor(labels).cuda())
+            loss = criterion(outputs, labels)
+```
 
 # Jun 12th
 
-even though the accuracy of prediction for train data increases quickly as trainning, the accutacy for test data is still very low. It seems the validation loss does not converge. I decide the next step is going to do more literatural research and adjust the parameters.
+even though the accuracy of prediction for train data increases quickly as training, the accuracy for test data is still very low. It seems the validation loss does not converge. I decide the next step is going to do more literature research and adjust the parameters.
 
 # Jun 13th
 
@@ -1095,7 +1230,7 @@ the way the train-test split worked wasn't ideal in the data loading function - 
 
 ### Objective:
 
-try `CosineEmbeddingLoss()`
+to try `CosineEmbeddingLoss()` because it is reported that cosine loss may improve the performance for small dataset
 
 > Cosine loss could have better performance for small dataset (around 30%). 
 >
@@ -1109,7 +1244,7 @@ however, the performance is not promoted
 
 ## Fourth session meeting
 
-I read others work, extract the key words and main ideas:
+I read others work, practice to extract the key words and main ideas:
 
 > *Affective modulation of the startle response in depression: Influence of the severity of depression, anhedonia and anxiety*
 
@@ -1183,12 +1318,6 @@ When reading the Chapter 1 of *Computational Modelling of Cognition and Behaviou
 > 3. There are always several alternative models that vie for explanation of data and we must select among them.
 > 4. Model selection rests on both quantitative evaluation and intellectual and scholarly judgment.
 
-# June 20th
-
-## FT and Feedback session
-
-![image-20220620124206695](https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202206201242841.png)
-
 # June 21th
 
 Have a meeting with Eammon, we talked about my recent work:
@@ -1201,7 +1330,7 @@ Here are the pictures shown to participants:
 
 # June 25th
 
-try Mnet (was used to predict the Alzheimer's disease by Aoe .etc)
+to try Mnet (was used to predict the Alzheimer's disease by Aoe .etc)
 
 > Aoe, J., Fukuma, R., Yanagisawa, T. *et al.* Automatic diagnosis of neurological diseases using MEG signals with a deep neural network. *Sci Rep* **9,** 5057 (2019). https://doi.org/10.1038/s41598-019-41500-xz
 
@@ -1213,7 +1342,7 @@ As an alternative option, the accuracy can be expressed as root mean square erro
 
 ### Objective:
 
-apply data augmentation 
+to apply data augmentation because it was reported that relative power spectrum provide extra information which may improve model’s performance on MEG data.
 
 ### Result:
 
@@ -1229,11 +1358,25 @@ one possible solution is to extract band power to augment the data
 
 > Anelli, M. (2020). *Using Deep learning to predict continuous hand kinematics from Magnetoencephalographic (MEG) measurements of electromagnetic brain activity* (Doctoral dissertation, ETSI_Informatica).
 
+```python
+X_train_bp = np.squeeze(X_train_numpy, axis=1)
+# X_train_bp = X_train_bp[: :, :, :]
+X_train_bp = standard_scaling_sklearn(X_train_bp)
+X_test_bp = np.squeeze(X_test_numpy, axis=1)
+# X_train_bp = X_train_bp[: :, :, :]
+X_test_bp = standard_scaling_sklearn(X_test_bp)
+bands = [(1, 4), (4, 8), (8, 10), (10, 13), (13, 30), (30, 70)]
+bp_train = bandpower_multi_bands(X_train_bp, fs=800.0, bands=bands, relative=True)
+bp_test = bandpower_multi_bands(X_test_bp, fs=800.0, bands=bands, relative=True)
+bp_train_tensor = torch.Tensor(bp_train).cuda()
+bp_test_tensor = torch.Tensor(bp_test).cuda()
+```
+
 # June 28th
 
 ### Problem:
 
-My google colab VIP is expired but luckily I have got the access of HPC in KCL (create)
+My Google Colab subscriptions is expired but luckily I have got the access of HPC in KCL (create)
 
 ### Solution:
 
@@ -1247,6 +1390,8 @@ srun -p gpu --pty -t 6:00:00 --mem=30GB --gres=gpu /bin/bash
 
 **Make a note of the node I am connected to, e.g. erc-hpc-comp001**
 
+`sinfo avail` to check the available cores
+
 2. start Jupyter lab without the display on a specific port (here this is port 9998)
 
 ```
@@ -1256,7 +1401,7 @@ jupyter lab --no-browser --port=9998 --ip="*"
 3. **Open a separate connection** to CREATE that connects to the node where Jupyter Lab is running using the port you specified earlier. (Problems known with VScode terminal)
 
 ```
-ssh -m hmac-sha2-512 -o ProxyCommand="ssh -m hmac-sha2-512 -W %h:%p k21116947@bastion.er.kcl.ac.uk" -L 9998:erc-hpc-comp031:9998 k21116947@hpc.create.kcl.ac.uk
+ssh -m hmac-sha2-512 -o ProxyCommand="ssh -m hmac-sha2-512 -W %h:%p k21116947@bastion.er.kcl.ac.uk" -L 9998:erc-hpc-comp033:9998 k21116947@hpc.create.kcl.ac.uk
 ```
 
 - Note:
@@ -1280,7 +1425,7 @@ ssh -m hmac-sha2-512 -o ProxyCommand="ssh -m hmac-sha2-512 -W %h:%p k21116947@ba
 
 ### Objective:
 
-try different normalization method: **Z-Score Normalization**
+to try different normalization method: **Z-Score Normalization**
 
 ### Results:
 
@@ -1294,11 +1439,82 @@ which maps the raw data to a distribution with mean 0 and standard deviation
 
 ### Objective:
 
-try Mnet with band power (RPS Ment)
+to try Mnet with band power (RPS Ment); the reason for splitting alpha into low and high is that kinematic show that alpha band significant after movement and beta before movement. It is also reported that gamma band is associated with it is related to synergistic muscle activation (Kolasinski et. al, 2019)
+
+> Kolasinski, J., Dima, D. C., Mehler, D. M. A., Stephenson, A., Valadan, S., Kusmia, S., & Rossiter, H. E. (2019). Spatially and temporally distinct encoding of muscle and kinematic information in rostral and caudal primary motor cortex. *BioRxiv*, 613323. https://doi.org/10.1101/613323
 
 ### Results:
 
 extract band powers to get a 6 RPS (relative power spectrum) for each frequency period:
+
+```python
+def bandpower_1d(data, sf, band, nperseg=800, relative=False):
+
+    # band = np.asarray(band)
+    low, high = band
+
+    # Compute the modified periodogram (Welch)
+    # TODO: generalize freq values
+    psd, freqs = psd_array_welch(data, sf, 1., 70., n_per_seg=int(800 / 2),
+                                 n_overlap=0, n_jobs=1)
+
+    # Frequency resolution
+    freq_res = freqs[1] - freqs[0]
+
+    # Find closest indices of band in frequency vector
+    idx_band = np.logical_and(freqs >= low, freqs <= high)
+
+    # Integral approximation of the spectrum using Simpson's rule.
+    bp = simps(psd[idx_band], dx=freq_res)
+
+    if relative:
+        bp /= simps(psd, dx=freq_res)
+    return bp
+
+def bandpower(x, fs, bands, nperseg=800, relative=True):
+
+    psd, freqs = psd_array_welch(x, fs, 1., 70., n_per_seg=int(fs/2),
+                                 n_overlap=0, n_jobs=1)
+    # Frequency resolution
+    freq_res = freqs[1] - freqs[0]
+    n_channel, _ = x.shape
+    bp = np.zeros((n_channel, len(bands)))
+    for idx, band in enumerate(bands):
+        low, high = band
+        # Find closest indices of band in frequency vector
+        idx_band = np.logical_and(freqs >= low, freqs <= high)
+
+        # Integral approximation of the spectrum using Simpson's rule.
+        _bp = simps(psd[..., idx_band], dx=freq_res, axis=-1)
+
+        if relative:
+            _bp /= simps(psd, dx=freq_res, axis=-1)
+        
+        # print(bp.shape, _bp.shape) #272,6  80,272
+        bp[:, idx] = _bp
+
+    return bp
+
+def bandpower_multi_bands(x, fs, bands,  nperseg=800, relative=True):
+    
+    n_epoch, n_channel, _ = x.shape
+    bp = np.zeros((n_epoch, n_channel, len(bands)))
+    for e in range(n_epoch):
+        bp[e] = bandpower(x[e], fs, bands, nperseg=nperseg, relative=relative)
+
+    return bp
+
+def standard_scaling_sklearn(data):
+    
+    n_epoch = data.shape[0]
+    for e in range(n_epoch):
+        scaler = skScaler()
+        data[e, ...] = scaler.fit_transform(data[e, ...])
+
+    return data
+```
+
+In main code:
 
 ````python
 X = np.swapaxes(X_train, 2, -1).squeeze()
@@ -1346,6 +1562,14 @@ Relative power: 0.4837
 ```
 ````
 
+The average power spectrum for all subjects:
+
+![image-20220817205940319](https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202208172059472.png)
+
+The results show that beta and delta waves are in the large and major proportion. It may be considered as potential evidence that beta and delta waves are associated with not only anxious thinking, and active concentration (Baumeister et al., 2013), but also the aversive state. In the following classifier task, these findings are in line with results showing the involvement of beta and delta in concentration.
+
+> Baumeister, J., Barthel, T., Geiss, K. R., & Weiss, M. (2013). Influence of phosphatidylserine on cognitive performance and cortical activity after induced stress. *Http://Dx.Doi.Org/10.1179/147683008X301478*, *11*(3), 103–110. https://doi.org/10.1179/147683008X301478
+
 ### Problems:
 
 find the initial loss is too huge and does not change afterwards. Guess it is because of too large initial loss or wrongly `loss.backward()`
@@ -1366,12 +1590,228 @@ guess I am meeting “dying ReLU” problem
 
 ### Objectives:
 
-try dynamic learning rate and interpolate 130 time points to be 800 time points without losing too much information.
+to try dynamic learning rate and interpolate 130 time points to be 800 time points without losing too much information.
 
 ### Solution:
+
+```python
+scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, 'max')
+
+scheduler.step(acc[-1]) #at last of each epoch training 
+```
+
+the update step: I use the dynamic learning rate when the valid loss approaches a plateau (function 4, where ![img](https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202208172102154.gif) represents learning decay and L represents valid loss). 
+
+![img](https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202208172102153.gif)
 
 Multilayer perceptron
 
 interpolate https://pytorch.org/docs/stable/generated/torch.nn.functional.interpolate.html
 
 Learning rate scheduling https://pytorch.org/docs/stable/optim.html
+
+# July 9th
+
+In order to make the input data the same shape as required, I use resample function `localiser_epochs.copy().resample(800, npad='auto')` to upsamle the data
+
+CBAM modules are added because the attention block is composed of 2 parts: the channel attention module and the spatial attention module. Two modules help model focus more on the important information: channel dimension and spatial dimension. First, for the channel attention module, input data process average pooling and max pooling separately, where the average pooling layer is used to aggregate spatial information and the max pooling layer is used to maintain more extensive and precise context information as images’ edges. 
+
+> Attention in Deep Learning, Alex Smola and Aston Zhang, Amazon Web Services (AWS), ICML 2019
+
+```python
+class SpatialAttention(nn.Module):
+    def __init__(self):
+        super(SpatialAttention, self).__init__()
+        self.compress = ChannelPool()
+        self.spatialAttention = nn.Sequential(
+            nn.Conv2d(2, 1, 7, 7, padding=3), #padding = (7-1)/2
+            )
+
+    def forward(self, x):
+        # print('x',x.shape)
+        x = self.compress(x)
+        x = self.spatialAttention(x)
+        # scale = F.sigmoid(x)
+        scale = torch.sigmoid(x)
+        
+        return x * scale
+    
+class Flatten_MEG(nn.Module):
+    def forward(self, x):
+        return x.view(x.size(0), -1)
+    
+class ChannelAttention(nn.Module):
+    """
+            Implementation of a channel attention module.
+        """
+    class Showsize(nn.Module):
+        def __init__(self):
+            super(ChannelAttention.Showsize, self).__init__()
+        def forward(self, x):
+            # print(x.shape)
+            return x
+
+    def __init__(self, shape, reduction_factor=16):
+
+        super(ChannelAttention, self).__init__()
+
+        _, in_channel, h, w = shape
+        self.mlp = nn.Sequential(
+            # self.Showsize(),
+            Flatten_MEG(),
+            # self.Showsize(),
+            nn.Linear(in_channel, in_channel // reduction_factor),
+            nn.ReLU(),
+            nn.Linear(in_channel // reduction_factor, in_channel),
+        )
+
+    def forward(self, x):
+        avg_pool = F.avg_pool2d( x, (x.size(2), x.size(3)), stride=(x.size(2), x.size(3)))
+        max_pool = F.max_pool2d( x, (x.size(2), x.size(3)), stride=(x.size(2), x.size(3)))
+        sum = self.mlp(avg_pool) + self.mlp(max_pool)
+        scale = (
+            torch.sigmoid(sum)
+            .unsqueeze(2)
+            .unsqueeze(3)
+            .expand_as(x)
+        )
+
+        return x * scale
+```
+
+# July 10th
+
+In order to find the rationality of extracting features of brain states under different stimuli. I draw the topographical maps of all stimuli at different time. It may suggest that stimulus representations are in the downstream temporal region or visual cortex. Thus, as the following training results showed, my model is an effective and reasonable approach to classifying these states.
+
+```python
+sti=[1,2,3,4,5,6,7,8,9,10,11,12,13,14]                     
+for stimuli in range (1,15):
+    epochs_standard = fname.get_epochs(sub=1)
+    for sub in [sub for sub in range (2,29) if sub not in [6, 12, 14 ,23]]:
+        if sub == 1:
+            epochs_standard = fname.get_epochs(sub=1)
+        else:
+            epochs = fname.get_epochs(sub)['stimulus_{}'.format(2*stimuli)]
+            epochs.info['dev_head_t'] = epochs_standard.info['dev_head_t']
+            epochs_standard = mne.concatenate_epochs([epochs_standard['stimulus_{}'.format(2*stimuli)], epochs['stimulus_{}'.format(2*stimuli)]])
+    exec('evoked_{} = epochs_standard.average()'.format(stimuli))
+        # evoked_standard = mne.concatenate_epochs([evoked_standard, evoked])
+
+```
+
+![image-20220817205119443](https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202208172051592.png)
+
+brain topographical map under different stimuli in the specific time (0.36 s, 0.79 s after giving the stimuli). The average brain states of all 24 subjects in all 14 stimuli are shown as the topographical map. The map shows these different brain states as an intensity map, where the red colour shows stronger intensity and blue shows weaker intensity.
+
+# July 12th
+
+The random prediction accuracy is expected to be 7.14% (1/14 = 7.14%). The classification accuracy of my model is around 23.07%, which is clearly higher than random chance. LSTM RNN gives an accuracy of about 15.38% while simple CNN only gives a mean accuracy of 11.53%. Compared with the other classification approach, my model exhibits the best classification performance (p = 6.8 × 10 –2 for LSTM RNN, p = 5.9 × 10 –2 for CNN, paired Wilcoxon signed-rank tests). The best classification accuracy of my model is able to reach 33.33%. 
+
+![image-20220817205549898](https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202208172055038.png)
+
+early stopping was finally adopted when the number of epochs reaches around 130 in case of overfitting:
+
+```python
+class EarlyStopping:
+
+    def __init__(self, patience=7, verbose=False, delta=0, path='checkpoint.pt', trace_func=print):
+
+        self.patience = patience
+        self.verbose = verbose
+        self.counter = 0
+        self.best_score = None
+        self.early_stop = False
+        self.val_loss_min = np.Inf
+        self.delta = delta
+        self.path = path
+        self.trace_func = trace_func
+
+    def __call__(self, val_loss, model):
+
+        score = -val_loss
+
+        if self.best_score is None:
+            self.best_score = score
+            self.save_checkpoint(val_loss, model)
+        elif score <= self.best_score + self.delta:
+            self.counter += 1
+            self.trace_func(f'EarlyStopping counter: {self.counter} out of {self.patience}')
+            if self.counter >= self.patience:
+                self.early_stop = True
+        else:
+            self.best_score = score
+            self.save_checkpoint(val_loss, model)
+            self.counter = 0
+            
+    def save_checkpoint(self, val_loss, model):
+        '''Saves model when validation loss decrease.'''
+        if self.verbose:
+            self.trace_func(f'Validation loss decreased ({self.val_loss_min:.4f} --> {val_loss:.4f}).  Saving model ...')
+        torch.save(model.state_dict(), self.path)
+        self.val_loss_min = val_loss
+```
+
+However, would early stopping necessarily prevent overfitting? There’s some interesting work showing that if you over-train the model it actually suddenly gets a lot better at some point (an approach referred to as “grokking” for some reason). It may be possible that more training doesn’t necessarily mean worse performance.
+
+# July 13th
+
+I want to visualize my model and data process steps.
+
+First save the model as .onnx file:
+
+```python
+x = torch.randn(64, 1, 272, 800).requires_grad_(True).cuda() 
+torch_out = rpsmnet(x)
+
+# Export the model
+torch.onnx.export(rpsmnet,               # model being run
+                  x,                         # model input (or a tuple for multiple inputs)
+                  "super_resolution.onnx",   # where to save the model (can be a file or file-like object)
+                  export_params=True,        # store the trained parameter weights inside the model file
+                  opset_version=10,          # the ONNX version to export the model to
+                  do_constant_folding=True,  # whether to execute constant folding for optimization
+                  input_names = ['input'],   # the model's input names
+                  output_names = ['output'], # the model's output names
+)
+```
+
+And I generate the flow chat of this model with Netron:
+
+![image-20220817210610588](https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202208172106759.png)
+
+Detailed configuration of my model. Cov: convolution; Relu: rectified linear unit; MaxPool: max pooling; AveragePool: average pooling; Concat: concatenation; Identity: stands for relative power spectrum; Gemm: general matrix multiply
+
+The steps data are processed is generated with following code: 
+
+```python
+import hiddenlayer as hl
+
+transforms = [ hl.transforms.Prune('Constant') ] # Removes Constant nodes from graph.
+
+graph = hl.build_graph(rpsmnet, torch.zeros(64,1,272,800).cuda())
+graph.theme = hl.graph.THEMES['blue'].copy()
+graph.save('ASRCnet_hiddenlayer', format='png')
+
+from torchviz import make_dot
+x = torch.randn(64, 1, 272, 800).requires_grad_(True).cuda() # 定义一个网络的输入值
+y = rpsmnet(x)    # 获取网络的预测值
+# y = y.cuda()
+MyConvNetVis = make_dot(y)#, params=dict(list(rpsmnet.named_parameters()) + [('x', x)]))
+MyConvNetVis.format = "png"
+# 指定文件生成的文件夹
+MyConvNetVis.directory = "data"
+# 生成文件
+MyConvNetVis.view()
+```
+
+![image-20220817210806647](https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202208172108920.png)
+
+
+
+# July 15th
+
+I want to visualize the pooling and convolution operations, so I use CAD to draw the illustrations:
+
+As shown in figure A, a kernel filter is applied to the input data pixel: after summing up input values and filter, a result value is generated and passed to the next step. With all similar processes conducted step by step, a feature map is generated. Afterwards, the max pooling step (figure B) comes to decrease the dimensions of data in order to keep more neurons activated which is reported to reduce the overfitting as well 
+
+![image-20220817211402695](https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202208172114867.png)
