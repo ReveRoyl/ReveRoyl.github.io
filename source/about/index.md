@@ -6,96 +6,77 @@ layout: "about"
 mathjax: true
 ---
 
-# About me
+# About me ([CV.pdf](https://github.com/ReveRoyl/PictureBed/raw/main/CV_Lei%20Luo.pdf)) 
 
-#  Here is [CV.pdf](https://github.com/ReveRoyl/PictureBed/raw/main/CV_Lei%20Luo.pdf) 
+**Lei Luo** 
 
-| **Lei Luo**                                                                                            |          |            |
-|--------------------------------------------------------------------------------------------------------| -------- | ---------- |
-| +86 18105509928丨 [k21116947@kcl.ac.uk](mailto:丨k21116947@kcl.ac.uk) 丨20 Glenfinlas way, SE5 0PW, London |          |            |
-| https://reveroyl.github.io/                                                                            |          |            |
-| **EDUCATION**                                                                                          |          |            |
-| **King’s College London**                                                                              | London   |            |
-| Neuroscience Master丨Institute of Psychiatry, Psychology & Neuroscience                                 | Sep 2021 | - Sep 2022 |
-| **Southern University of Science and Technology.**                                                     | Shenzhen |            |
-| Bioscience Bachelor丨College of Life Sciences                                                           | Sep 2018 | - Sep 2021 |
-| GPA: 3.5 /4.0                                                                                          |          |            |
++86 18105509928[ 丨k21116947@kcl.ac.uk ](mailto:%E4%B8%A8k21116947@kcl.ac.uk) 20 Glenfilnlas way, SE5 0PW, London https://reveroyl.github.io/ 
 
-Dissertation for degree: *Mechanism Inquiry of The Strategy of Pericyte Based on Medical Stimulation.*
+# **EDUCATION** 
 
-Now in the “3+1” Joint Undergraduate and Master Training Program at King’s College London and Southern University of Science and Technology.
+**King's College London**
 
-------
+Neuroscience Master Institute of Psychiatry, Psychology & Neuroscience  London "3+1" Joint Undergraduate  and Master Training Program at King's College London and Southern  Sep 2021  - Sep 2022 
 
-### PROFESSIONAL EXPERIENCE
+University of     Science and Technology. (Only 3 people were chosen and funded in 2021 at SUSTech) 
 
-#### Professor Hou Shengtao laboratory
+Dissertation: *"A novel convolutional neural network approach to classify aversive states reactivation"*.
 
-Internships Shenzhen Sep 2019 - Jun 2022
+**Southern University of Science and Technology.** 
 
-As the secondary contributing author, an article titled *40 Hz light flicker alters human brain EEG microstates and complexity implicated in brain diseases* is published on *Frontiers in Neuroscience* (IF: 4.501).
+Bioscience Bachelor College of Life Sciences  Shenzhen GPA: 3.5 /4.0  Sep 2018  - Sep 2021 Dissertation: "*Strategy and mechanism of calcium level changes in vascular pericytes under potassium-stimulation" .* 
 
-(from June 2021 to Oct 2021, Internship)
+# **PROFESSIONAL EXPERIENCE (listed by end date)**
 
-Try to extract, isolate and culture pericytes from mice and build a system for recognizing pericytes from all cells by neural network deep machine learning.
+**Dr Toby Wise laboratory**  London Master project Mar 2022 - Sep 2022 
 
-(from Aug 2020 to April 2021, internship)
+- Optimized the MEG aversive state reactivation model (Logistic regression).
+- Applied CNN, LSTM RNN and transfer learning to predict human's aversive state reactivation (on cuda in HPC).
 
-The National College Student Innovation and Entrepreneurship Training Program in China, with the topic *rhythmic flicking can save hippocampal γ and protect ischemic neurons by affecting pericytes.*
+**Professor Hou Shengtao laboratory**  Shenzhen Internships  Sep 2019 - Jun 2022 
 
-(from April 2020, Internship)
+- As the secondary contributing author, published an article titled *"40 Hz light flicker alters human brain EEG microstates and complexity implicated in brain diseases"*  on Frontiers in Neuroscience. Data was collected with EEG and analyzed with Python (mne).
+- Extract, isolate  and culture  pericytes  from mice and try to build a system for recognizing  pericytes  from all cells  with deep neural network.
+- The National College Student Innovation and Entrepreneurship Training Program in China, with the topic "*rhythmic flicking can save hippocampal γ and protect ischemic neurons by affecting pericytes*"*.*
+- Engaged in the  lipidomic  research  of  stroke.  Learned  cell  culture  techniques  and  experiment  with  calcium  imaging, immunofluorescence methods. Learned the cardiac perfusion techniques and construction method of creating mouse tMACO models.
+- Designed and did behavioral experiments for example water maze, Y maze, novel object recognition.
 
-The lipidomic research of stroke, learn cell culture techniques and experiment with calcium imaging, immunofluorescence methods. Learn the cardiac perfusion techniques and construction method of creating mouse tMACO models.
+**Southern University of Science and Technology - Queensland University Joint Neuroscience** **and Nervous Engineering Research Center**  Shenzhen  Oct 2019 - Oct 2021 
 
-(from Sep 2019 to Jan 2020, Internship)
+Student assistant 
 
-Behavioural experiments for example water maze, Y maze, novel object recognization. (from Sep 2019 to Nov 2019, Internship)
+- Cooperated to organize the national scientific seminars. Periodically biweekly contacted with researchers, typeset and post the announcement for each seminar.
 
-#### SUSTech and Queensland CNNE
+**Chinese Institute for Brain Research, Beijing** Beijing Camper  Jan 2021 - Feb 2021 
 
-Student assistant Shenzhen Oct 2019 - Oct 2021
+- Engaged in the winter camp of the Chinese Institute for Brain Research, Beijing and became an excellent camper. Attended a two-week course and gave a presentation with the group.
 
-Cooperate to organise the national scientific seminars. Periodically biweekly contact with researchers, typeset and post the announcement for each seminar.
+**Professor Xiao Guozhi laboratory**  Shenzhen Internships  Jun 2019 - Sep 2019 
 
-#### Chinese Institute for Brain Research, Beijing
+- Learned laboratory basic knowledge, a series of model animals’ experiments.
+- Made contributions to the main project by doing designed experiments weekly.
+- Determined my interest in neuroscience.
 
-Camper Beijing Jan 2021 - Feb 2021
+# **HONARS and AWARDS** 
 
-The winter camp of the Chinese Institute for Brain Research, Beijing and became an excellent camper. Attended a two-week course and gave a presentation with the group.
+**Publications**
 
-#### Professor Xiao Guozhi laboratory
+*40 Hz light flicker alters human brain EEG microstates and complexity implicated in brain diseases*  (as the secondary author, Frontiers in Neuroscience) (IF: 4.501) 
 
-Student assistant Shenzhen Jun 2019 - Sep 2019
+**Awards**
 
-Learned laboratory basic knowledge, a series of model animals experiments. Made contributions to the main project by doing designed experiments weekly. Determined my interest in neuroscience.
+The  Study Abroad  Program  Scholarships  for  Undergraduates  in Southern  University  of Science  and Technology (2021, 2022) 
 
-------
+Third Prize Scholarship in Zhicheng College of the Southern University of Science and  Technology (2019) The Third Prize of the National High School Mathematics  Competition (2018) 
 
-### HONARS and AWARDS
+# **SKILLS, CERTIFICATIONS & OTHERS** 
 
-#### Publications
+**Programming Skills:**  Python  and R (used in my previous and current research), Java (courses), html & ejs (blog), C and C++ (learning), Git, ssh, cuda
 
-*40 Hz light flicker alters human brain EEG microstates and complexity implicated in brain diseases* (as the secondary author, Frontiers in Neuroscience (IF: 4.501))
+**Packages experiences:** pandas, numpy, mne, matplotlib, haiku, Jax, TensorFlow, Pytorch, sklearn.
 
-#### Awards
+**Languages:**  Mandarin (Bilingual or native proficiency), Wu  (Bilingual  or  native  proficiency),  English (Complete professional competence), Cantonese (Limited working proficiency), German (Elementary proficiency) 
 
-The Study Abroad Program Scholarships for Undergraduates of the Southern University of Science and Technology (2021) 
+**Lab Skills:** EEG data collecting; electrophysiology experiments (patch-clamp);  calcium  imaging;  mouse  tMCAO model construction; neurons extraction; immunofluorescence; frozen and vibratome section; cardiac perfusion techniques; etc. 
 
-The Third Prize Scholarship in Zhicheng College of the Southern University of Science and Technology (2019)
-
-The Third Prize of the National High School Mathematics Competition (2018)
-
-------
-
-### SKILLS, CERTIFICATIONS & OTHERS
-
-**Programming Language:** Python and R (used in my previous research), Java (courses), html & ejs (blog), C and C++ (learning)
-
-**Certifications:** Mandarin (Bilingual or native proficiency), Wu (Bilingual or native proficiency), English (Complete professional competence), Cantonese (Limited working proficiency), German (Elementary proficiency) 
-
-**Languages**: Mandarin (Bilingual or native proficiency), Wu (Bilingual or native proficiency), English (Complete professional competence), Cantonese (Limited working proficiency), German (Elementary proficiency)
-
-**Lab Skills:** EEG; electrophysiology experiments (patch-clamp); calcium imaging; construction of mouse tMCAO model; neurons extraction; immunofluorescence; frozen and vibratome section; cardiac perfusion techniques; etc. 
-
-**Club: **Membership in the supercomputing and big data analytics centre for computational science and engineering in
-Southern University of Science and Technology.
+**Club:** Membership in the high performance computing and big data analytics center for computational science and engineering in Southern University of Science and Technology. 
