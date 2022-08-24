@@ -13,7 +13,7 @@ categories:
 - Neuroscience programming
 ---
 
-# A novel convolutional neural network approach for classifying brain states under image stimuli
+**A novel convolutional neural network approach for classifying brain states under image stimuli**
 
 Lei Luo
 
