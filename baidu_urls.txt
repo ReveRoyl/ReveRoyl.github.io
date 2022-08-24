@@ -1,3 +1,5 @@
+https://reveroyl.github.io/2022/08/24/thesis/
+https://reveroyl.github.io/2022/08/22/pandas/
 https://reveroyl.github.io/2022/07/12/installing-jupyter-lab/
 https://reveroyl.github.io/2022/05/16/master-project/
 https://reveroyl.github.io/2022/04/06/python-learning/
