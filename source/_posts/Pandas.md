@@ -1,5 +1,5 @@
 ---
-title: Cpp Learning
+title: Pandas
 top: false
 cover: false
 toc: true
@@ -12,6 +12,10 @@ tags:
 categories:
 - programming
 ---
+
+The objective is to calculate power spectrum for each frequencies and output data to excel files.
+
+First load packages:
 
 ```python
 import os
@@ -36,7 +40,7 @@ import sklearn
 import pandas as pd
 
 ```
-
+Then calculate power spectrum for each subject and frequency:
 ```python
 # for sub in [sub for sub in range (1,29) if sub not in [6, 12, 14 ,23]]:
 for sub in range(1,2):
@@ -76,7 +80,64 @@ for sub in range(1,2):
         exec('rel_{}.append(rel_power)'.format(sub))
         # print('Relative power: {:.4f}'.format(rel_power))
 ```
-
+Last, output calculated power spectrum as xmlx files:
+```python
+df1 = pd.DataFrame({'sub1':abs_1,
+                        'sub2':abs_2,
+                        'sub3':abs_3,
+                       'sub4':abs_4,
+                       'sub5':abs_5,
+                       'sub7':abs_7,
+                       'sub8':abs_8,
+                       'sub9':abs_9,
+                       'sub10':abs_10,
+                       'sub11':abs_11,
+                       'sub13':abs_13,
+                       'sub15':abs_15,
+                       'sub16':abs_16,
+                       'sub17':abs_17,
+                       'sub18':abs_18,
+                       'sub19':abs_19,
+                       'sub20':abs_20,
+                       'sub21':abs_21,
+                      'sub22':abs_22,
+                      'sub24':abs_24,
+                      'sub25':abs_25,
+                      'sub26':abs_26,
+                      'sub27':abs_27,
+                      'sub28':abs_28},)
+df1.to_excel('models/abs.xlsx', sheet_name='sheet1', index=False)
 ```
+
+```python
+df2 = pd.DataFrame({'sub1':rel_1,
+                        'sub2':rel_2,
+                        'sub3':rel_3,
+                       'sub4':rel_4,
+                       'sub5':rel_5,
+                       'sub7':rel_7,
+                       'sub8':rel_8,
+                       'sub9':rel_9,
+                       'sub10':rel_10,
+                       'sub11':rel_11,
+                       'sub13':rel_13,
+                       'sub15':rel_15,
+                       'sub16':rel_16,
+                       'sub17':rel_17,
+                       'sub18':rel_18,
+                       'sub19':rel_19,
+                       'sub20':rel_20,
+                       'sub21':rel_21,
+                      'sub22':rel_22,
+                      'sub24':rel_24,
+                      'sub25':rel_25,
+                      'sub26':rel_26,
+                      'sub27':rel_27,
+                      'sub28':rel_28},)
+df2.to_excel('models/rel.xlsx', sheet_name='sheet1', index=False)
 ```
 
+Hint: potential promotions are:
+
+1. to use wavelet instead of Fourier transformation;
+2. to use loop somehow pass data to DataFrame instead of listing them.
