@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Lei&#39;s Blog</title>
+  
+  <subtitle>Lei Luo</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://reveroyl.github.io/"/>
+  <updated>2022-08-24T17:54:18.706Z</updated>
+  <id>https://reveroyl.github.io/</id>
+  
+  <author>
+    <name>Lei Luo</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Thesis</title>
+    <link href="https://reveroyl.github.io/2022/08/24/thesis/"/>
+    <id>https://reveroyl.github.io/2022/08/24/thesis/</id>
+    <published>2022-08-24T16:29:00.000Z</published>
+    <updated>2022-08-24T17:54:18.706Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;A-novel-convolutional-neural-network-approach-for-classifying-brain-states-under-image-stimuli&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="Neuroscience programming" scheme="https://reveroyl.github.io/categories/Neuroscience-programming/"/>
+    
+    
+      <category term="project" scheme="https://reveroyl.github.io/tags/project/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Pandas</title>
+    <link href="https://reveroyl.github.io/2022/08/22/pandas/"/>
+    <id>https://reveroyl.github.io/2022/08/22/pandas/</id>
+    <published>2022-08-22T13:37:00.000Z</published>
+    <updated>2022-08-24T17:08:39.370Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;The objective is to calculate power spectrum for each frequencies and output data to excel files.&lt;/p&gt;
+&lt;p&gt;First load packages:&lt;/p&gt;
+&lt;pre
+        
+      
+    
+    </summary>
+    
+      <category term="programming" scheme="https://reveroyl.github.io/categories/programming/"/>
+    
+    
+      <category term="Pandas" scheme="https://reveroyl.github.io/tags/Pandas/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Installing Jupyter lab</title>
+    <link href="https://reveroyl.github.io/2022/07/12/installing-jupyter-lab/"/>
+    <id>https://reveroyl.github.io/2022/07/12/installing-jupyter-lab/</id>
+    <published>2022-07-12T13:51:00.000Z</published>
+    <updated>2022-08-24T17:08:39.362Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Installing-Jupyter-lab&quot;&gt;&lt;a href=&quot;#Installing-Jupyter-lab&quot; class=&quot;headerlink&quot; title=&quot;Installing Jupyter lab&quot;&gt;&lt;/a&gt;Installing Jupyter
+        
+      
+    
+    </summary>
+    
+      <category term="Neruroscience programming" scheme="https://reveroyl.github.io/categories/Neruroscience-programming/"/>
+    
+    
+      <category term="project" scheme="https://reveroyl.github.io/tags/project/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>master project</title>
+    <link href="https://reveroyl.github.io/2022/05/16/master-project/"/>
+    <id>https://reveroyl.github.io/2022/05/16/master-project/</id>
+    <published>2022-05-16T13:00:00.000Z</published>
+    <updated>2022-08-24T17:08:39.384Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Table-of-content&quot;&gt;&lt;a href=&quot;#Table-of-content&quot; class=&quot;headerlink&quot; title=&quot;Table of content&quot;&gt;&lt;/a&gt;Table of content&lt;/h1&gt;&lt;p&gt;[Toc]&lt;/p&gt;
+&lt;h1
+        
+      
+    
+    </summary>
+    
+      <category term="Neuroscience programming" scheme="https://reveroyl.github.io/categories/Neuroscience-programming/"/>
+    
+    
+      <category term="project" scheme="https://reveroyl.github.io/tags/project/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Tutorial for PyCharm</title>
+    <link href="https://reveroyl.github.io/2022/04/06/python-learning/"/>
+    <id>https://reveroyl.github.io/2022/04/06/python-learning/</id>
+    <published>2022-04-06T21:58:00.000Z</published>
+    <updated>2022-08-24T17:08:39.375Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Tutorial-for-PyCharm&quot;&gt;&lt;a href=&quot;#Tutorial-for-PyCharm&quot; class=&quot;headerlink&quot; title=&quot;Tutorial for PyCharm&quot;&gt;&lt;/a&gt;Tutorial for
+        
+      
+    
+    </summary>
+    
+      <category term="programming" scheme="https://reveroyl.github.io/categories/programming/"/>
+    
+    
+      <category term="python" scheme="https://reveroyl.github.io/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Cpp Learning</title>
+    <link href="https://reveroyl.github.io/2022/04/05/cpp-learning/"/>
+    <id>https://reveroyl.github.io/2022/04/05/cpp-learning/</id>
+    <published>2022-04-05T21:32:00.000Z</published>
+    <updated>2022-08-24T17:48:38.611Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;OpenCV&quot;&gt;&lt;a href=&quot;#OpenCV&quot; class=&quot;headerlink&quot; title=&quot;OpenCV&quot;&gt;&lt;/a&gt;OpenCV&lt;/h2&gt;&lt;p&gt;OpenCV is a good computer vision and machine learning
+        
+      
+    
+    </summary>
+    
+      <category term="programming" scheme="https://reveroyl.github.io/categories/programming/"/>
+    
+    
+      <category term="Cpp" scheme="https://reveroyl.github.io/tags/Cpp/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>DLL injection</title>
+    <link href="https://reveroyl.github.io/2022/04/04/dll-injection/"/>
+    <id>https://reveroyl.github.io/2022/04/04/dll-injection/</id>
+    <published>2022-04-04T06:17:00.000Z</published>
+    <updated>2022-08-24T17:49:30.811Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;DLL-injection&quot;&gt;&lt;a href=&quot;#DLL-injection&quot; class=&quot;headerlink&quot; title=&quot;DLL injection&quot;&gt;&lt;/a&gt;DLL injection&lt;/h1&gt;&lt;p&gt;Commonly used by hackers
+        
+      
+    
+    </summary>
+    
+      <category term="Neuroscience programming" scheme="https://reveroyl.github.io/categories/Neuroscience-programming/"/>
+    
+    
+      <category term="DLL" scheme="https://reveroyl.github.io/tags/DLL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Tips for programming</title>
+    <link href="https://reveroyl.github.io/2022/04/04/tips-for-programming/"/>
+    <id>https://reveroyl.github.io/2022/04/04/tips-for-programming/</id>
+    <published>2022-04-04T05:41:00.000Z</published>
+    <updated>2022-08-24T17:47:33.445Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Packaging&quot;&gt;&lt;a href=&quot;#Packaging&quot; class=&quot;headerlink&quot; title=&quot;Packaging&quot;&gt;&lt;/a&gt;Packaging&lt;/h1&gt;&lt;h2 id=&quot;Aim&quot;&gt;&lt;a href=&quot;#Aim&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="programming" scheme="https://reveroyl.github.io/categories/programming/"/>
+    
+    
+      <category term="tips" scheme="https://reveroyl.github.io/tags/tips/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>machine learning</title>
+    <link href="https://reveroyl.github.io/2022/04/03/machine-learning/"/>
+    <id>https://reveroyl.github.io/2022/04/03/machine-learning/</id>
+    <published>2022-04-03T03:04:00.000Z</published>
+    <updated>2022-08-24T17:51:38.399Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Machine-Learning-for-League-of-Legend-mini-map&quot;&gt;&lt;a href=&quot;#Machine-Learning-for-League-of-Legend-mini-map&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="programming" scheme="https://reveroyl.github.io/categories/programming/"/>
+    
+    
+      <category term="ML" scheme="https://reveroyl.github.io/tags/ML/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Backup blog source files</title>
+    <link href="https://reveroyl.github.io/2022/03/13/13-03-22backup-blog-source-files/"/>
+    <id>https://reveroyl.github.io/2022/03/13/13-03-22backup-blog-source-files/</id>
+    <published>2022-03-13T19:09:00.000Z</published>
+    <updated>2022-08-24T17:08:39.316Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Backup-blog-source-files&quot;&gt;&lt;a href=&quot;#Backup-blog-source-files&quot; class=&quot;headerlink&quot; title=&quot;Backup blog source files&quot;&gt;&lt;/a&gt;Backup blog
+        
+      
+    
+    </summary>
+    
+      <category term="programming" scheme="https://reveroyl.github.io/categories/programming/"/>
+    
+    
+      <category term="blog building" scheme="https://reveroyl.github.io/tags/blog-building/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Lecture Notes 11/03/22</title>
+    <link href="https://reveroyl.github.io/2022/03/11/11-03-22/"/>
+    <id>https://reveroyl.github.io/2022/03/11/11-03-22/</id>
+    <published>2022-03-11T10:00:00.000Z</published>
+    <updated>2022-08-24T17:08:39.312Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;What-can-functional-connectivity-tell-us-about-cognition-and-behaviour&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="Neuroscience" scheme="https://reveroyl.github.io/categories/Neuroscience/"/>
+    
+    
+      <category term="Lecture Note" scheme="https://reveroyl.github.io/tags/Lecture-Note/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Lecture Notes 10/03/22</title>
+    <link href="https://reveroyl.github.io/2022/03/10/10-03-22/"/>
+    <id>https://reveroyl.github.io/2022/03/10/10-03-22/</id>
+    <published>2022-03-10T13:00:00.000Z</published>
+    <updated>2022-08-24T17:08:39.307Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Mind-wandering-in-ADHD&quot;&gt;&lt;a href=&quot;#Mind-wandering-in-ADHD&quot; class=&quot;headerlink&quot; title=&quot;Mind wandering in ADHD&quot;&gt;&lt;/a&gt;Mind wandering in
+        
+      
+    
+    </summary>
+    
+      <category term="Neuroscience" scheme="https://reveroyl.github.io/categories/Neuroscience/"/>
+    
+    
+      <category term="Lecture Note" scheme="https://reveroyl.github.io/tags/Lecture-Note/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Lecture Notes 08/03/22</title>
+    <link href="https://reveroyl.github.io/2022/03/08/08-03-22/"/>
+    <id>https://reveroyl.github.io/2022/03/08/08-03-22/</id>
+    <published>2022-03-08T10:00:00.000Z</published>
+    <updated>2022-08-24T17:08:39.302Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;EEG-Oscillations&quot;&gt;&lt;a href=&quot;#EEG-Oscillations&quot; class=&quot;headerlink&quot; title=&quot;EEG Oscillations&quot;&gt;&lt;/a&gt;EEG Oscillations&lt;/h1&gt;&lt;p&gt;There are
+        
+      
+    
+    </summary>
+    
+      <category term="Neuroscience" scheme="https://reveroyl.github.io/categories/Neuroscience/"/>
+    
+    
+      <category term="Lecture Note" scheme="https://reveroyl.github.io/tags/Lecture-Note/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Lecture Notes 07/03/22</title>
+    <link href="https://reveroyl.github.io/2022/03/07/07-03-22/"/>
+    <id>https://reveroyl.github.io/2022/03/07/07-03-22/</id>
+    <published>2022-03-07T12:30:00.000Z</published>
+    <updated>2022-08-24T17:08:39.296Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Mocap&quot;&gt;&lt;a href=&quot;#Mocap&quot; class=&quot;headerlink&quot; title=&quot;Mocap&quot;&gt;&lt;/a&gt;Mocap&lt;/h1&gt;&lt;h2 id=&quot;Objective&quot;&gt;&lt;a href=&quot;#Objective&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Neuroscience" scheme="https://reveroyl.github.io/categories/Neuroscience/"/>
+    
+    
+      <category term="Lecture Note" scheme="https://reveroyl.github.io/tags/Lecture-Note/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Lecture Notes 03/03/22</title>
+    <link href="https://reveroyl.github.io/2022/03/03/03-03-22/"/>
+    <id>https://reveroyl.github.io/2022/03/03/03-03-22/</id>
+    <published>2022-03-03T11:00:00.000Z</published>
+    <updated>2022-08-24T17:08:39.290Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Introduction-of-schizophrenia&quot;&gt;&lt;a href=&quot;#Introduction-of-schizophrenia&quot; class=&quot;headerlink&quot; title=&quot;Introduction of
+        
+      
+    
+    </summary>
+    
+      <category term="Neuroscience" scheme="https://reveroyl.github.io/categories/Neuroscience/"/>
+    
+    
+      <category term="Lecture Note" scheme="https://reveroyl.github.io/tags/Lecture-Note/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Lecture Notes 02/03/22</title>
+    <link href="https://reveroyl.github.io/2022/03/02/02-03-22/"/>
+    <id>https://reveroyl.github.io/2022/03/02/02-03-22/</id>
+    <published>2022-03-02T09:30:00.000Z</published>
+    <updated>2022-08-24T17:08:39.284Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;PsychoPy&quot;&gt;&lt;a href=&quot;#PsychoPy&quot; class=&quot;headerlink&quot; title=&quot;PsychoPy&quot;&gt;&lt;/a&gt;PsychoPy&lt;/h2&gt;&lt;p&gt;There is a online version: &lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="Neuroscience" scheme="https://reveroyl.github.io/categories/Neuroscience/"/>
+    
+    
+      <category term="Lecture Note" scheme="https://reveroyl.github.io/tags/Lecture-Note/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Lecture Notes 01/03/22</title>
+    <link href="https://reveroyl.github.io/2022/03/01/01-03-22/"/>
+    <id>https://reveroyl.github.io/2022/03/01/01-03-22/</id>
+    <published>2022-03-01T10:00:00.000Z</published>
+    <updated>2022-08-24T17:08:39.283Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Mock-abstract-exam&quot;&gt;&lt;a href=&quot;#Mock-abstract-exam&quot; class=&quot;headerlink&quot; title=&quot;Mock abstract exam&quot;&gt;&lt;/a&gt;Mock abstract exam&lt;/h1&gt;&lt;h2
+        
+      
+    
+    </summary>
+    
+      <category term="Neuroscience" scheme="https://reveroyl.github.io/categories/Neuroscience/"/>
+    
+    
+      <category term="Lecture Note" scheme="https://reveroyl.github.io/tags/Lecture-Note/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Lecture Notes 28/02/22</title>
+    <link href="https://reveroyl.github.io/2022/02/28/28-02-22/"/>
+    <id>https://reveroyl.github.io/2022/02/28/28-02-22/</id>
+    <published>2022-02-28T10:00:00.000Z</published>
+    <updated>2022-08-24T17:08:39.344Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Normal-brain-development&quot;&gt;&lt;a href=&quot;#Normal-brain-development&quot; class=&quot;headerlink&quot; title=&quot;Normal brain development&quot;&gt;&lt;/a&gt;Normal brain
+        
+      
+    
+    </summary>
+    
+      <category term="Neuroscience" scheme="https://reveroyl.github.io/categories/Neuroscience/"/>
+    
+    
+      <category term="Lecture Note" scheme="https://reveroyl.github.io/tags/Lecture-Note/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Update for RSS subscription and music player</title>
+    <link href="https://reveroyl.github.io/2022/02/24/24-02-22update-for-rss-subscription-and-music-player/"/>
+    <id>https://reveroyl.github.io/2022/02/24/24-02-22update-for-rss-subscription-and-music-player/</id>
+    <published>2022-02-24T21:58:00.000Z</published>
+    <updated>2022-08-24T17:08:39.338Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;RSS-subscription&quot;&gt;&lt;a href=&quot;#RSS-subscription&quot; class=&quot;headerlink&quot; title=&quot;RSS subscription&quot;&gt;&lt;/a&gt;RSS subscription&lt;/h3&gt;&lt;p&gt;本主题中还使用到了 &lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="programming" scheme="https://reveroyl.github.io/categories/programming/"/>
+    
+    
+      <category term="blog building" scheme="https://reveroyl.github.io/tags/blog-building/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Lecture Notes 17/02/22</title>
+    <link href="https://reveroyl.github.io/2022/02/17/17-02-22/"/>
+    <id>https://reveroyl.github.io/2022/02/17/17-02-22/</id>
+    <published>2022-02-17T15:00:00.000Z</published>
+    <updated>2022-08-24T17:08:39.331Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Emotion-processing-gaze-and-arousal-mechanisms&quot;&gt;&lt;a href=&quot;#Emotion-processing-gaze-and-arousal-mechanisms&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Neuroscience" scheme="https://reveroyl.github.io/categories/Neuroscience/"/>
+    
+    
+      <category term="Lecture Note" scheme="https://reveroyl.github.io/tags/Lecture-Note/"/>
+    
+  </entry>
+  
+</feed>
