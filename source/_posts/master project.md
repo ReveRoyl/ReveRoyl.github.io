@@ -10,7 +10,7 @@ summary:
 tags:
 - project
 categories:
-- Neruroscience programming
+- Neuroscience programming
 ---
 
 # Table of content 

@@ -1,3 +1,18 @@
+---
+title: A novel convolutional neural network approach for classifying brain states under image stimuli
+top: false
+cover: false
+toc: true
+mathjax: true
+date: 2022-08-24 17:29
+password: 2022
+summary:
+tags:
+- project
+categories:
+- Neuroscience programming
+---
+
 **A novel convolutional neural network approach for classifying brain states under image stimuli**
 
 Lei Luo
