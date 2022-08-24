@@ -5,7 +5,7 @@ cover: false
 toc: true
 mathjax: true
 date: 2022-08-24 17:29
-password:
+password: 2022
 summary:
 tags:
 - project
