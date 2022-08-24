@@ -4,12 +4,12 @@ top: false
 cover: false
 toc: true
 mathjax: true
-data: 2022-04-04 06:41
+date: 2022-04-04 06:41
 password:
-summary: 
+summary:
 tags:
-- Tips
-categories
+- tips
+categories:
 - programming
 ---
 

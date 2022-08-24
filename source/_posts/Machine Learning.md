@@ -1,15 +1,15 @@
 ---
-title: Deep Learning
+title: machine learning
 top: false
 cover: false
 toc: true
 mathjax: true
-data: 2022-04-03 04:04
+date: 2022-04-03 04:04
 password:
-summary: 
+summary:
 tags:
-- Machine-Learning
-categories
+- ML
+categories:
 - programming
 ---
 

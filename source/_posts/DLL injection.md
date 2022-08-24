@@ -1,16 +1,16 @@
 ---
-title: Theory of programming
+title: DLL injection
 top: false
 cover: false
 toc: true
 mathjax: true
-data: 2022-04-04 07:17
+date: 2022-04-04 07:17
 password:
-summary: 
+summary:
 tags:
-- Theory
-categories
-- programming
+- DLL
+categories:
+- Neuroscience programming
 ---
 
 # DLL injection

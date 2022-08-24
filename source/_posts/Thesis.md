@@ -1,11 +1,11 @@
 ---
-title: A novel convolutional neural network approach for classifying brain states under image stimuli
+title: Thesis
 top: false
 cover: false
 toc: true
 mathjax: true
 date: 2022-08-24 17:29
-password: 
+password:
 summary:
 tags:
 - project
@@ -13,7 +13,7 @@ categories:
 - Neuroscience programming
 ---
 
-**A novel convolutional neural network approach for classifying brain states under image stimuli**
+# A novel convolutional neural network approach for classifying brain states under image stimuli
 
 Lei Luo
 
@@ -30,11 +30,11 @@ University of London
 
 The study was designed by Lei Luo under the supervision of Dr. Toby Wise. MEG data was from Wise et al. (2021). The thesis was written entirely by Lei Luo, with language corrections and suggestions from Dr. Toby wise. Any research or work mentioned in the paper has been fully and accurately cited. Computation resource is provided by King\'s Computational Research, Engineering and Technology Environment (CREATE) (King's College London, 2022). The neural network code is using machine learning library Pytorch (Paszke et al., 2017). Statistics are done with IBM Spss. Topographical maps are generated using library MNE-Python. Code availability: MEG data used in this research in available at https://openneuro.org/datasets/ds003682; and all analysis code in available at https://github.com/ReveRoyl/MT_ML_Decoding.
 
-# **Table of Contents** {#table-of-contents .TOC-Heading}
+# **Table of Contents**
 
 [toc]
 
-# Abbreviations 
+# Abbreviations
 
 CBAM Convolutional block attention module
 
@@ -90,7 +90,7 @@ The aversive state is critical for harm avoidance, playing a vital role in wilde
 
 Recent works have shown that neural replay and reactivation are prior important in avoidance behaviour (Wu et al., 2017), which may provide individuals with a prospective prediction based on the possible consequence simulation (Doll et al., 2015). Since then, it is known "which" correlates to the aversive state, the following step is figuring out to what extent neuronal activity is associated with behaviour. Naturally, it encourages researchers to try predicting one's avoidance behaviour with the neuroimaging data recording. In recent years, more and more studies start to use neuroimaging classification to look for the inner mechanisms of brain states' reactivation (Belal et al., 2018; Eichenlaub et al., 2020; Roscow et al., 2021). If we want to look at memory reactivation, what we need is really good decoding methods with neuroimaging data recordings. So, it's important to optimise existing decoding methods as far as possible, which will set the scene for future related work.
 
-## Magnetoencephalography 
+## Magnetoencephalography
 
 Magnetoencephalography (MEG) is useful for detecting brain states and evaluating the behavioural response. It allows us to map and locate specific brain areas and ongoing functions (Bunge & Kahn, 2009). The principle of MEG is based on magnetic induction. It is widely known that when neurons are activated, electrical signals will be generated synchronously. According to the magnetic induction principle, when the electrical fields change, secondary magnetic fields are generated. The brain-evoked magnetic field strength is usually in the range of femto-tesla to pico-tesla, i.e., 10--15 to 10-12 tesla (Singh, 2014). With the precise MEG device and mathematical preprocessing methods, these tiny signals are able to be separated from the noise and collected. MEG records magnetic fields, from which can be inferred changes in the transmission of postsynaptic current between cortical neurons.
 
