@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://reveroyl.github.io/"/>
-  <updated>2022-08-24T19:58:36.219Z</updated>
+  <updated>2022-08-24T17:08:39.370Z</updated>
   <id>https://reveroyl.github.io/</id>
   
   <author>
@@ -15,33 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>Thesis</title>
-    <link href="https://reveroyl.github.io/2022/08/24/thesis/"/>
-    <id>https://reveroyl.github.io/2022/08/24/thesis/</id>
-    <published>2022-08-24T16:29:00.000Z</published>
-    <updated>2022-08-24T19:58:36.219Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;&lt;strong&gt;A novel convolutional neural network approach for classifying brain states under image stimuli&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Lei
-        
-      
-    
-    </summary>
-    
-      <category term="Neuroscience programming" scheme="https://reveroyl.github.io/categories/Neuroscience-programming/"/>
-    
-    
-      <category term="project" scheme="https://reveroyl.github.io/tags/project/"/>
-    
-  </entry>
   
   <entry>
     <title>Pandas</title>
@@ -537,6 +510,32 @@
     
     
       <category term="Lecture Note" scheme="https://reveroyl.github.io/tags/Lecture-Note/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Update of theme</title>
+    <link href="https://reveroyl.github.io/2022/02/16/16-02-22update-of-theme/"/>
+    <id>https://reveroyl.github.io/2022/02/16/16-02-22update-of-theme/</id>
+    <published>2022-02-16T22:41:29.000Z</published>
+    <updated>2022-08-24T17:08:39.327Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Update-of-theme&quot;&gt;&lt;a href=&quot;#Update-of-theme&quot; class=&quot;headerlink&quot; title=&quot;Update of theme&quot;&gt;&lt;/a&gt;Update of theme&lt;/h1&gt;&lt;p&gt;Yesterday, I
+        
+      
+    
+    </summary>
+    
+      <category term="programming" scheme="https://reveroyl.github.io/categories/programming/"/>
+    
+    
+      <category term="blog building" scheme="https://reveroyl.github.io/tags/blog-building/"/>
     
   </entry>
   
