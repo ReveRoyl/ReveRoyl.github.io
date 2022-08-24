@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://reveroyl.github.io/"/>
-  <updated>2022-08-24T17:08:39.370Z</updated>
+  <updated>2022-08-24T17:08:39.362Z</updated>
   <id>https://reveroyl.github.io/</id>
   
   <author>
@@ -15,34 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>Pandas</title>
-    <link href="https://reveroyl.github.io/2022/08/22/pandas/"/>
-    <id>https://reveroyl.github.io/2022/08/22/pandas/</id>
-    <published>2022-08-22T13:37:00.000Z</published>
-    <updated>2022-08-24T17:08:39.370Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;The objective is to calculate power spectrum for each frequencies and output data to excel files.&lt;/p&gt;
-&lt;p&gt;First load packages:&lt;/p&gt;
-&lt;pre
-        
-      
-    
-    </summary>
-    
-      <category term="programming" scheme="https://reveroyl.github.io/categories/programming/"/>
-    
-    
-      <category term="Pandas" scheme="https://reveroyl.github.io/tags/Pandas/"/>
-    
-  </entry>
   
   <entry>
     <title>Installing Jupyter lab</title>
@@ -536,6 +508,32 @@
     
     
       <category term="blog building" scheme="https://reveroyl.github.io/tags/blog-building/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Lecture Notes 16/02/22</title>
+    <link href="https://reveroyl.github.io/2022/02/16/16-02-22/"/>
+    <id>https://reveroyl.github.io/2022/02/16/16-02-22/</id>
+    <published>2022-02-16T19:00:00.000Z</published>
+    <updated>2022-08-24T17:08:39.327Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Cognitive-process-can-be-measured&quot;&gt;&lt;a href=&quot;#Cognitive-process-can-be-measured&quot; class=&quot;headerlink&quot; title=&quot;Cognitive process can be
+        
+      
+    
+    </summary>
+    
+      <category term="Neuroscience" scheme="https://reveroyl.github.io/categories/Neuroscience/"/>
+    
+    
+      <category term="Lecture Note" scheme="https://reveroyl.github.io/tags/Lecture-Note/"/>
     
   </entry>
   
