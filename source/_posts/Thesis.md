@@ -13,6 +13,8 @@ categories:
 - Neuroscience programming
 ---
 
+![LuoLei_Poster2022_Page_2](https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202208251426116.png)
+
 **A novel convolutional neural network approach for classifying brain states under image stimuli**
 
 Lei Luo
@@ -29,10 +31,6 @@ University of London
 # Personal Statement:
 
 The study was designed by Lei Luo under the supervision of Dr. Toby Wise. MEG data was from Wise et al. (2021). The thesis was written entirely by Lei Luo, with language corrections and suggestions from Dr. Toby wise. Any research or work mentioned in the paper has been fully and accurately cited. Computation resource is provided by King\'s Computational Research, Engineering and Technology Environment (CREATE) (King's College London, 2022). The neural network code is using machine learning library Pytorch (Paszke et al., 2017). Statistics are done with IBM Spss. Topographical maps are generated using library MNE-Python. Code availability: MEG data used in this research in available at https://openneuro.org/datasets/ds003682; and all analysis code in available at https://github.com/ReveRoyl/MT_ML_Decoding.
-
-# **Table of Contents**
-
-[toc]
 
 # Abbreviations
 

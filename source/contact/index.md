@@ -11,7 +11,7 @@ GitHub: <a href="https://github.com/ReveRoyl">ReveRoyl</a>
 
 email: <a href="mailto:k21116947@kcl.ac.uk">k21116947@kcl.ac.uk</a>
 
-Facebook: <a href="https://www.facebook.com/LeiLuo">Lei Luo</a>
+Facebook: <a href="https://www.facebook.com/people/Lei-Luo/100045483159494/">Lei Luo</a>
 
 Twitter: <a href="https://twitter.com/ReveRoyl">ReveRoyl</a>
 
