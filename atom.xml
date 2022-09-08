@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://reveroyl.github.io/"/>
-  <updated>2022-08-25T13:27:07.127Z</updated>
+  <updated>2022-09-08T00:44:51.846Z</updated>
   <id>https://reveroyl.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Albania 7 days</title>
+    <link href="https://reveroyl.github.io/2022/09/08/albania/"/>
+    <id>https://reveroyl.github.io/2022/09/08/albania/</id>
+    <published>2022-09-08T00:41:00.000Z</published>
+    <updated>2022-09-08T00:44:51.846Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;阿尔巴尼亚&quot;&gt;&lt;a href=&quot;#阿尔巴尼亚&quot; class=&quot;headerlink&quot; title=&quot;阿尔巴尼亚&quot;&gt;&lt;/a&gt;阿尔巴尼亚&lt;/h1&gt;&lt;h2 id=&quot;前期准备&quot;&gt;&lt;a href=&quot;#前期准备&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Traveling" scheme="https://reveroyl.github.io/categories/Traveling/"/>
+    
+    
+      <category term="Albania" scheme="https://reveroyl.github.io/tags/Albania/"/>
+    
+  </entry>
   
   <entry>
     <title>Thesis</title>
@@ -510,32 +536,6 @@
     
     
       <category term="blog building" scheme="https://reveroyl.github.io/tags/blog-building/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Lecture Notes 17/02/22</title>
-    <link href="https://reveroyl.github.io/2022/02/17/17-02-22/"/>
-    <id>https://reveroyl.github.io/2022/02/17/17-02-22/</id>
-    <published>2022-02-17T15:00:00.000Z</published>
-    <updated>2022-08-24T17:08:39.331Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;Emotion-processing-gaze-and-arousal-mechanisms&quot;&gt;&lt;a href=&quot;#Emotion-processing-gaze-and-arousal-mechanisms&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="Neuroscience" scheme="https://reveroyl.github.io/categories/Neuroscience/"/>
-    
-    
-      <category term="Lecture Note" scheme="https://reveroyl.github.io/tags/Lecture-Note/"/>
     
   </entry>
   
