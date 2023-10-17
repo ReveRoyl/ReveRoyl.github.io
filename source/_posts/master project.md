@@ -1401,7 +1401,7 @@ jupyter lab --no-browser --port=9998 --ip="*"
 3. **Open a separate connection** to CREATE that connects to the node where Jupyter Lab is running using the port you specified earlier. (Problems known with VScode terminal)
 
 ```
-ssh -m hmac-sha2-512 -o ProxyCommand="ssh -m hmac-sha2-512 -W %h:%p k21116947@bastion.er.kcl.ac.uk" -L 9998:erc-hpc-comp033:9998 k21116947@hpc.create.kcl.ac.uk
+ssh -m hmac-sha2-512 -o ProxyCommand="ssh -m hmac-sha2-512 -W %h:%p k21116947@bastion.er.kcl.ac.uk" -L 9998:erc-hpc-comp031:9998 k21116947@hpc.create.kcl.ac.uk
 ```
 
 - Note:
@@ -1412,7 +1412,7 @@ ssh -m hmac-sha2-512 -o ProxyCommand="ssh -m hmac-sha2-512 -W %h:%p k21116947@ba
 
 4. Start notebook in http://localhost:9998/lab
 
-5. VS code part: set the Jupyter server as remote:
+5. VS code part: set the Jupyter server as remote :
 
    ```
    http://localhost:9998/lab?token=XXX
