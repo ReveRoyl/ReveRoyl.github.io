@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://reveroyl.github.io/"/>
-  <updated>2023-03-20T06:18:48.306Z</updated>
+  <updated>2023-10-17T07:16:40.672Z</updated>
   <id>https://reveroyl.github.io/</id>
   
   <author>
@@ -17,10 +17,62 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Mylove</title>
+    <link href="https://reveroyl.github.io/2023/10/17/mylove/"/>
+    <id>https://reveroyl.github.io/2023/10/17/mylove/</id>
+    <published>2023-10-17T04:42:00.000Z</published>
+    <updated>2023-10-17T07:16:40.672Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;给我的宝宝画心形图：&quot;&gt;&lt;a href=&quot;#给我的宝宝画心形图：&quot; class=&quot;headerlink&quot; title=&quot;给我的宝宝画心形图：&quot;&gt;&lt;/a&gt;给我的宝宝画心形图：&lt;/h1&gt;&lt;h2 id=&quot;绘制心形图的轨迹&quot;&gt;&lt;a href=&quot;#绘制心形图的轨迹&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="life" scheme="https://reveroyl.github.io/categories/life/"/>
+    
+    
+      <category term="Mylove" scheme="https://reveroyl.github.io/tags/Mylove/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PhD journey</title>
+    <link href="https://reveroyl.github.io/2023/10/13/phd-career/"/>
+    <id>https://reveroyl.github.io/2023/10/13/phd-career/</id>
+    <published>2023-10-13T04:22:00.000Z</published>
+    <updated>2023-10-16T19:09:38.363Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;13-10-2023&quot;&gt;&lt;a href=&quot;#13-10-2023&quot; class=&quot;headerlink&quot; title=&quot;13/10/2023&quot;&gt;&lt;/a&gt;13/10/2023&lt;/h1&gt;&lt;p&gt;[Important documents][&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="PhD" scheme="https://reveroyl.github.io/categories/PhD/"/>
+    
+    
+      <category term="PhD" scheme="https://reveroyl.github.io/tags/PhD/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Chengdu 5 days</title>
     <link href="https://reveroyl.github.io/2023/03/20/chengdu/"/>
     <id>https://reveroyl.github.io/2023/03/20/chengdu/</id>
-    <published>2023-03-20T06:11:00.000Z</published>
+    <published>2023-03-20T14:11:00.000Z</published>
     <updated>2023-03-20T06:18:48.306Z</updated>
     
     <summary type="html">
@@ -44,9 +96,9 @@
   
   <entry>
     <title>ChatGpt使用心得</title>
-    <link href="https://reveroyl.github.io/2023/03/20/tips-for-programming-fu-ben/"/>
-    <id>https://reveroyl.github.io/2023/03/20/tips-for-programming-fu-ben/</id>
-    <published>2023-03-20T06:05:00.000Z</published>
+    <link href="https://reveroyl.github.io/2023/03/20/chatgpt/"/>
+    <id>https://reveroyl.github.io/2023/03/20/chatgpt/</id>
+    <published>2023-03-20T14:05:00.000Z</published>
     <updated>2023-03-20T06:12:38.469Z</updated>
     
     <summary type="html">
@@ -74,7 +126,7 @@
     <title>春去秋来</title>
     <link href="https://reveroyl.github.io/2022/09/21/2022-09-21-chun-qu-qiu-lai/"/>
     <id>https://reveroyl.github.io/2022/09/21/2022-09-21-chun-qu-qiu-lai/</id>
-    <published>2022-09-21T02:00:00.000Z</published>
+    <published>2022-09-21T09:00:00.000Z</published>
     <updated>2022-09-21T15:27:47.042Z</updated>
     
     <summary type="html">
@@ -100,7 +152,7 @@
     <title>Albania 7 days</title>
     <link href="https://reveroyl.github.io/2022/09/08/albania/"/>
     <id>https://reveroyl.github.io/2022/09/08/albania/</id>
-    <published>2022-09-07T17:41:00.000Z</published>
+    <published>2022-09-08T00:41:00.000Z</published>
     <updated>2022-09-08T15:21:22.016Z</updated>
     
     <summary type="html">
@@ -126,7 +178,7 @@
     <title>Thesis</title>
     <link href="https://reveroyl.github.io/2022/08/24/thesis/"/>
     <id>https://reveroyl.github.io/2022/08/24/thesis/</id>
-    <published>2022-08-24T09:29:00.000Z</published>
+    <published>2022-08-24T16:29:00.000Z</published>
     <updated>2022-08-25T13:27:07.127Z</updated>
     
     <summary type="html">
@@ -152,7 +204,7 @@
     <title>Pandas</title>
     <link href="https://reveroyl.github.io/2022/08/22/pandas/"/>
     <id>https://reveroyl.github.io/2022/08/22/pandas/</id>
-    <published>2022-08-22T06:37:00.000Z</published>
+    <published>2022-08-22T13:37:00.000Z</published>
     <updated>2022-08-25T13:18:04.757Z</updated>
     
     <summary type="html">
@@ -180,7 +232,7 @@
     <title>Installing Jupyter lab</title>
     <link href="https://reveroyl.github.io/2022/07/12/installing-jupyter-lab/"/>
     <id>https://reveroyl.github.io/2022/07/12/installing-jupyter-lab/</id>
-    <published>2022-07-12T06:51:00.000Z</published>
+    <published>2022-07-12T13:51:00.000Z</published>
     <updated>2022-08-24T17:08:39.362Z</updated>
     
     <summary type="html">
@@ -206,8 +258,8 @@
     <title>master project</title>
     <link href="https://reveroyl.github.io/2022/05/16/master-project/"/>
     <id>https://reveroyl.github.io/2022/05/16/master-project/</id>
-    <published>2022-05-16T06:00:00.000Z</published>
-    <updated>2022-08-24T17:08:39.384Z</updated>
+    <published>2022-05-16T13:00:00.000Z</published>
+    <updated>2023-10-16T05:24:43.840Z</updated>
     
     <summary type="html">
     
@@ -233,7 +285,7 @@
     <title>Tutorial for PyCharm</title>
     <link href="https://reveroyl.github.io/2022/04/06/python-learning/"/>
     <id>https://reveroyl.github.io/2022/04/06/python-learning/</id>
-    <published>2022-04-06T14:58:00.000Z</published>
+    <published>2022-04-06T21:58:00.000Z</published>
     <updated>2022-08-24T17:08:39.375Z</updated>
     
     <summary type="html">
@@ -259,7 +311,7 @@
     <title>Cpp Learning</title>
     <link href="https://reveroyl.github.io/2022/04/05/cpp-learning/"/>
     <id>https://reveroyl.github.io/2022/04/05/cpp-learning/</id>
-    <published>2022-04-05T14:32:00.000Z</published>
+    <published>2022-04-05T21:32:00.000Z</published>
     <updated>2022-08-24T17:48:38.611Z</updated>
     
     <summary type="html">
@@ -285,7 +337,7 @@
     <title>DLL injection</title>
     <link href="https://reveroyl.github.io/2022/04/04/dll-injection/"/>
     <id>https://reveroyl.github.io/2022/04/04/dll-injection/</id>
-    <published>2022-04-03T23:17:00.000Z</published>
+    <published>2022-04-04T06:17:00.000Z</published>
     <updated>2022-08-24T17:49:30.811Z</updated>
     
     <summary type="html">
@@ -311,7 +363,7 @@
     <title>Tips for programming</title>
     <link href="https://reveroyl.github.io/2022/04/04/tips-for-programming/"/>
     <id>https://reveroyl.github.io/2022/04/04/tips-for-programming/</id>
-    <published>2022-04-03T22:41:00.000Z</published>
+    <published>2022-04-04T05:41:00.000Z</published>
     <updated>2022-08-24T17:47:33.445Z</updated>
     
     <summary type="html">
@@ -337,7 +389,7 @@
     <title>machine learning</title>
     <link href="https://reveroyl.github.io/2022/04/03/machine-learning/"/>
     <id>https://reveroyl.github.io/2022/04/03/machine-learning/</id>
-    <published>2022-04-02T20:04:00.000Z</published>
+    <published>2022-04-03T03:04:00.000Z</published>
     <updated>2022-08-24T17:51:38.399Z</updated>
     
     <summary type="html">
@@ -363,7 +415,7 @@
     <title>Backup blog source files</title>
     <link href="https://reveroyl.github.io/2022/03/13/13-03-22backup-blog-source-files/"/>
     <id>https://reveroyl.github.io/2022/03/13/13-03-22backup-blog-source-files/</id>
-    <published>2022-03-13T11:09:00.000Z</published>
+    <published>2022-03-13T19:09:00.000Z</published>
     <updated>2022-08-24T17:08:39.316Z</updated>
     
     <summary type="html">
@@ -389,7 +441,7 @@
     <title>Lecture Notes 11/03/22</title>
     <link href="https://reveroyl.github.io/2022/03/11/11-03-22/"/>
     <id>https://reveroyl.github.io/2022/03/11/11-03-22/</id>
-    <published>2022-03-11T02:00:00.000Z</published>
+    <published>2022-03-11T10:00:00.000Z</published>
     <updated>2022-08-24T17:08:39.312Z</updated>
     
     <summary type="html">
@@ -415,7 +467,7 @@
     <title>Lecture Notes 10/03/22</title>
     <link href="https://reveroyl.github.io/2022/03/10/10-03-22/"/>
     <id>https://reveroyl.github.io/2022/03/10/10-03-22/</id>
-    <published>2022-03-10T05:00:00.000Z</published>
+    <published>2022-03-10T13:00:00.000Z</published>
     <updated>2022-08-24T17:08:39.307Z</updated>
     
     <summary type="html">
@@ -441,7 +493,7 @@
     <title>Lecture Notes 08/03/22</title>
     <link href="https://reveroyl.github.io/2022/03/08/08-03-22/"/>
     <id>https://reveroyl.github.io/2022/03/08/08-03-22/</id>
-    <published>2022-03-08T02:00:00.000Z</published>
+    <published>2022-03-08T10:00:00.000Z</published>
     <updated>2022-08-24T17:08:39.302Z</updated>
     
     <summary type="html">
@@ -467,7 +519,7 @@
     <title>Lecture Notes 07/03/22</title>
     <link href="https://reveroyl.github.io/2022/03/07/07-03-22/"/>
     <id>https://reveroyl.github.io/2022/03/07/07-03-22/</id>
-    <published>2022-03-07T04:30:00.000Z</published>
+    <published>2022-03-07T12:30:00.000Z</published>
     <updated>2022-08-24T17:08:39.296Z</updated>
     
     <summary type="html">
@@ -477,58 +529,6 @@
         
         
           &lt;h1 id=&quot;Mocap&quot;&gt;&lt;a href=&quot;#Mocap&quot; class=&quot;headerlink&quot; title=&quot;Mocap&quot;&gt;&lt;/a&gt;Mocap&lt;/h1&gt;&lt;h2 id=&quot;Objective&quot;&gt;&lt;a href=&quot;#Objective&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="Neuroscience" scheme="https://reveroyl.github.io/categories/Neuroscience/"/>
-    
-    
-      <category term="Lecture Note" scheme="https://reveroyl.github.io/tags/Lecture-Note/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Lecture Notes 03/03/22</title>
-    <link href="https://reveroyl.github.io/2022/03/03/03-03-22/"/>
-    <id>https://reveroyl.github.io/2022/03/03/03-03-22/</id>
-    <published>2022-03-03T03:00:00.000Z</published>
-    <updated>2022-08-24T17:08:39.290Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;Introduction-of-schizophrenia&quot;&gt;&lt;a href=&quot;#Introduction-of-schizophrenia&quot; class=&quot;headerlink&quot; title=&quot;Introduction of
-        
-      
-    
-    </summary>
-    
-      <category term="Neuroscience" scheme="https://reveroyl.github.io/categories/Neuroscience/"/>
-    
-    
-      <category term="Lecture Note" scheme="https://reveroyl.github.io/tags/Lecture-Note/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Lecture Notes 02/03/22</title>
-    <link href="https://reveroyl.github.io/2022/03/02/02-03-22/"/>
-    <id>https://reveroyl.github.io/2022/03/02/02-03-22/</id>
-    <published>2022-03-02T01:30:00.000Z</published>
-    <updated>2022-08-24T17:08:39.284Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;PsychoPy&quot;&gt;&lt;a href=&quot;#PsychoPy&quot; class=&quot;headerlink&quot; title=&quot;PsychoPy&quot;&gt;&lt;/a&gt;PsychoPy&lt;/h2&gt;&lt;p&gt;There is a online version: &lt;a
         
       
     
