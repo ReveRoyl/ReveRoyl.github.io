@@ -37,7 +37,7 @@ python -mconda notebook --no-browser --port=9998 --ip="*" # if the above line do
 6.  **Open a separate connection** to CREATE that connects to the node where Jupyter Lab is running using the port you specified earlier. (Problems known with VScode terminal)
 
 ```
-ssh -m hmac-sha2-512 -o ProxyCommand="ssh -m hmac-sha2-512 -W %h:%p k21116947@bastion.er.kcl.ac.uk" -L 9998:erc-hpc-comp034:9998 k21116947@hpc.create.kcl.ac.uk
+ssh -m hmac-sha2-512 -o ProxyCommand="ssh -m hmac-sha2-512 -W %h:%p k21116947@bastion.er.kcl.ac.uk" -L 9998:erc-hpc-comp037:9998 k21116947@hpc.create.kcl.ac.uk
 ```
 
 ## SCP Transferring files
