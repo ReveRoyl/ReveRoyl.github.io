@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://reveroyl.github.io/"/>
-  <updated>2024-10-26T23:12:23.870Z</updated>
+  <updated>2024-12-01T17:39:17.557Z</updated>
   <id>https://reveroyl.github.io/</id>
   
   <author>
@@ -17,11 +17,37 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Taiwan 7 days</title>
+    <link href="https://reveroyl.github.io/2024/10/25/tai-wan-lu-you-gong-lue/"/>
+    <id>https://reveroyl.github.io/2024/10/25/tai-wan-lu-you-gong-lue/</id>
+    <published>2024-10-25T17:21:00.000Z</published>
+    <updated>2024-12-01T17:39:17.557Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;台湾旅游攻略&quot;&gt;&lt;a href=&quot;#台湾旅游攻略&quot; class=&quot;headerlink&quot; title=&quot;台湾旅游攻略&quot;&gt;&lt;/a&gt;台湾旅游攻略&lt;/h1&gt;&lt;h2 id=&quot;To-do-list&quot;&gt;&lt;a href=&quot;#To-do-list&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Traveling" scheme="https://reveroyl.github.io/categories/Traveling/"/>
+    
+    
+      <category term="Taiwan" scheme="https://reveroyl.github.io/tags/Taiwan/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Handbook</title>
     <link href="https://reveroyl.github.io/2024/10/25/handbook/"/>
     <id>https://reveroyl.github.io/2024/10/25/handbook/</id>
     <published>2024-10-25T17:21:00.000Z</published>
-    <updated>2024-10-26T23:12:23.870Z</updated>
+    <updated>2025-11-23T15:50:40.694Z</updated>
     
     <summary type="html">
     
@@ -214,8 +240,7 @@
         
         
           &lt;p&gt;The objective is to calculate power spectrum for each frequencies and output data to excel files.&lt;/p&gt;
-&lt;p&gt;First load packages:&lt;/p&gt;
-&lt;pre
+&lt;p&gt;First load
         
       
     
@@ -503,32 +528,6 @@
         
         
           &lt;h1 id=&quot;EEG-Oscillations&quot;&gt;&lt;a href=&quot;#EEG-Oscillations&quot; class=&quot;headerlink&quot; title=&quot;EEG Oscillations&quot;&gt;&lt;/a&gt;EEG Oscillations&lt;/h1&gt;&lt;p&gt;There are
-        
-      
-    
-    </summary>
-    
-      <category term="Neuroscience" scheme="https://reveroyl.github.io/categories/Neuroscience/"/>
-    
-    
-      <category term="Lecture Note" scheme="https://reveroyl.github.io/tags/Lecture-Note/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Lecture Notes 07/03/22</title>
-    <link href="https://reveroyl.github.io/2022/03/07/07-03-22/"/>
-    <id>https://reveroyl.github.io/2022/03/07/07-03-22/</id>
-    <published>2022-03-07T12:30:00.000Z</published>
-    <updated>2022-08-24T17:08:39.296Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;Mocap&quot;&gt;&lt;a href=&quot;#Mocap&quot; class=&quot;headerlink&quot; title=&quot;Mocap&quot;&gt;&lt;/a&gt;Mocap&lt;/h1&gt;&lt;h2 id=&quot;Objective&quot;&gt;&lt;a href=&quot;#Objective&quot; class=&quot;headerlink&quot;
         
       
     

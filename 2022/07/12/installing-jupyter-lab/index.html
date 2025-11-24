@@ -2,12 +2,12 @@
 <html lang="default,zh-CN,default">
 
 
-<head><meta name="generator" content="Hexo 3.9.0">
+<head>
     <meta charset="utf-8">
     <meta name="keywords" content="Installing Jupyter lab, Lei">
-    <meta name="baidu-site-verification" content="fmlEuI34ir">
-    <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48">
-    <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7">
+    <meta name="baidu-site-verification" content="fmlEuI34ir" />
+    <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48" />
+    <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7" />
     <meta name="description" content="Installing Jupyter lab
 If you haven’t already, install anaconda/miniconda
 
@@ -69,7 +69,7 @@ wget https://repo.anaconda.com/miniconda/Mini">
         })();
     </script>
 
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<meta name="generator" content="Hexo 8.1.1"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
 <link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 <body>
@@ -314,7 +314,7 @@ wget https://repo.anaconda.com/miniconda/Mini">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/27.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/26.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -495,37 +495,44 @@ wget https://repo.anaconda.com/miniconda/Mini">
                 <h2 id="Installing-Jupyter-lab"><a href="#Installing-Jupyter-lab" class="headerlink" title="Installing Jupyter lab"></a>Installing Jupyter lab</h2><ol>
 <li>If you haven’t already, install anaconda/miniconda</li>
 </ol>
-<pre><code>wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
-chmod +x Miniconda3-latest-Linux-x86_64.sh
-./Miniconda3-latest-Linux-x86_64.sh</code></pre><ol start="2">
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh</span><br><span class="line">chmod +x Miniconda3-latest-Linux-x86_64.sh</span><br><span class="line">./Miniconda3-latest-Linux-x86_64.sh</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
 <li>Create a new environment </li>
 </ol>
-<pre><code>conda create -n CNN</code></pre><ol start="3">
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">conda create -n CNN</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
 <li>Activate the environment and install Jupyter lab</li>
 </ol>
 <p><code>bash</code> to restart the shell</p>
-<pre><code>conda activate CNN
-pip install jupyterlab</code></pre><h3 id="Connecting-to-Jupyter-Lab-through-an-SSH-tunnel"><a href="#Connecting-to-Jupyter-Lab-through-an-SSH-tunnel" class="headerlink" title="Connecting to Jupyter Lab through an SSH tunnel"></a>Connecting to Jupyter Lab through an SSH tunnel</h3><ol start="4">
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">conda activate CNN</span><br><span class="line">pip install jupyterlab</span><br></pre></td></tr></table></figure>
+
+<h3 id="Connecting-to-Jupyter-Lab-through-an-SSH-tunnel"><a href="#Connecting-to-Jupyter-Lab-through-an-SSH-tunnel" class="headerlink" title="Connecting to Jupyter Lab through an SSH tunnel"></a>Connecting to Jupyter Lab through an SSH tunnel</h3><ol start="4">
 <li>Start an interactive session</li>
 </ol>
-<pre><code>srun -p gpu --pty -t 8:00:00 --mem=30GB --gres=gpu /bin/bash</code></pre><p><strong>Make a note of the node you’re connected to, e.g. erc-hpc-comp001</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">srun -p gpu --pty -t 8:00:00 --mem=30GB --gres=gpu /bin/bash</span><br></pre></td></tr></table></figure>
+
+<p><strong>Make a note of the node you’re connected to, e.g. erc-hpc-comp001</strong></p>
 <ol start="5">
 <li>Within this session, start Jupyter lab without the display on a specific port (here this is port 9998)</li>
 </ol>
-<pre><code>conda activate CNN
-jupyter lab --no-browser --port=9998 --ip=&quot;*&quot;
-python -m notebook --no-browser --port=9998 --ip=&quot;*&quot; # if the above line does not work</code></pre><ol start="6">
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">conda activate CNN</span><br><span class="line">jupyter lab --no-browser --port=9998 --ip=&quot;*&quot;</span><br><span class="line">python -m notebook --no-browser --port=9998 --ip=&quot;*&quot; # if the above line does not work</span><br></pre></td></tr></table></figure>
+
+<ol start="6">
 <li><strong>Open a separate connection</strong> to CREATE that connects to the node where Jupyter Lab is running using the port you specified earlier. (Problems known with VScode terminal)</li>
 </ol>
-<pre><code>ssh -m hmac-sha2-512 -o ProxyCommand=&quot;ssh -m hmac-sha2-512 -W %h:%p k21116947@bastion.er.kcl.ac.uk&quot; -L 9998:erc-hpc-comp031:9998 k21116947@hpc.create.kcl.ac.uk</code></pre><p><strong>Note:</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ssh -m hmac-sha2-512 -o ProxyCommand=&quot;ssh -m hmac-sha2-512 -W %h:%p k21116947@bastion.er.kcl.ac.uk&quot; -L 9998:erc-hpc-comp031:9998 k21116947@hpc.create.kcl.ac.uk</span><br></pre></td></tr></table></figure>
+
+<p><strong>Note:</strong></p>
 <ul>
 <li>k12345678 should be replaced with your username.</li>
 <li>erc-hpc-comp001 should be replaced with the name of node where Jupyter lab is running</li>
 <li>9998 should be replaced with the port you specified when running Jupyter lab (using e.g. <code>--port=9998</code>)</li>
-<li>authorize via <a href="https://portal.er.kcl.ac.uk/mfa/" target="_blank" rel="noopener">https://portal.er.kcl.ac.uk/mfa/</a></li>
+<li>authorize via <a href="https://portal.er.kcl.ac.uk/mfa/">https://portal.er.kcl.ac.uk/mfa/</a></li>
 </ul>
 <ol start="7">
-<li>Go to <a href="http://localhost:9998/lab" target="_blank" rel="noopener">http://localhost:9998/lab</a> (assuming you had specified port 9998 earlier, if not replace this with the port you used)</li>
+<li>Go to <a href="http://localhost:9998/lab">http://localhost:9998/lab</a> (assuming you had specified port 9998 earlier, if not replace this with the port you used)</li>
 </ol>
 <p><img src="https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202207110151407.png" alt="image-20220711015129051"></p>
 
@@ -874,7 +881,7 @@ python -m notebook --no-browser --port=9998 --ip=&quot;*&quot; # if the above li
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="Pandas">
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="Pandas">
                         
                         <span class="card-title">Pandas</span>
                     </div>
@@ -925,7 +932,7 @@ i
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="master project">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="master project">
                         
                         <span class="card-title">master project</span>
                     </div>
@@ -1131,7 +1138,7 @@ April 12thFirst meetingObjective:to find out which data we are going to use and 
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;Total words:&nbsp;
-            <span class="white-color">50.8k</span>
+            <span class="white-color">52.1k</span>
             
 
             <br>

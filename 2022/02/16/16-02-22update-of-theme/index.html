@@ -2,12 +2,12 @@
 <html lang="default,zh-CN,default">
 
 
-<head><meta name="generator" content="Hexo 3.9.0">
+<head>
     <meta charset="utf-8">
     <meta name="keywords" content="Update of theme, Lei">
-    <meta name="baidu-site-verification" content="fmlEuI34ir">
-    <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48">
-    <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7">
+    <meta name="baidu-site-verification" content="fmlEuI34ir" />
+    <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48" />
+    <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7" />
     <meta name="description" content="Update of themeYesterday, I changed my blog from the jekyll version into hexo version. A new theme suddenly got me. Thus">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -66,7 +66,7 @@
         })();
     </script>
 
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<meta name="generator" content="Hexo 8.1.1"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
 <link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 <body>
@@ -311,7 +311,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/2.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -466,7 +466,7 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    719
+                    726
                 </div>
                 
 
@@ -491,19 +491,18 @@
             <div id="articleContent">
                 <h1 id="Update-of-theme"><a href="#Update-of-theme" class="headerlink" title="Update of theme"></a>Update of theme</h1><p>Yesterday, I changed my blog from the jekyll version into hexo version. A new theme suddenly got me. Thus, I decide to change my theme from plane to the volume, from 2d to 3d. Here is my records for the process:</p>
 <h2 id="Install-Node-js"><a href="#Install-Node-js" class="headerlink" title="Install Node.js"></a>Install Node.js</h2><p>Before install</p>
-<pre class="line-numbers language-cmd"><code class="language-cmd">npm ls -g --depth=0   //check if there is a earlier relesaed node installed<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>Then download from <a href="https://nodejs.org/en/" target="_blank" rel="noopener">https://nodejs.org/en/</a> for a stable version</p>
+<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">npm ls -g --depth=<span class="number">0</span>   //check <span class="keyword">if</span> there is a earlier relesaed node installed</span><br></pre></td></tr></table></figure>
+<p>Then download from <a href="https://nodejs.org/en/">https://nodejs.org/en/</a> for a stable version</p>
 <p>downgrade the npm into certain version (if you installed it before):</p>
-<pre class="line-numbers language-cmd"><code class="language-cmd">npm install npm@6.14.14 -g<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">npm install npm@<span class="number">6</span>.<span class="number">14</span>.<span class="number">14</span> -g</span><br></pre></td></tr></table></figure>
+
 <p>Check the version:</p>
-<pre class="line-numbers language-cmd"><code class="language-cmd">C:\Users\{yourusername}>node -v
-v12.0.0
-C:\Users\{yourusername}>npm -v
-6.9.0<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line"><span class="function">C:\<span class="title">Users</span>\&#123;<span class="title">yourusername</span>&#125;&gt;<span class="title">node</span> -<span class="title">v</span></span></span><br><span class="line"><span class="function"><span class="title">v12</span>.0.0</span></span><br><span class="line"><span class="function"><span class="title">C</span>:\<span class="title">Users</span>\&#123;<span class="title">yourusername</span>&#125;&gt;<span class="title">npm</span> -<span class="title">v</span></span></span><br><span class="line"><span class="function">6.9.0</span></span><br></pre></td></tr></table></figure>
+
 <p>You may want to restart at last.</p>
 <p><strong>Tips</strong>: At first I installed the latest version, but eventually find it do not support my “.js” files. After several trails, here is the stable version.</p>
 <h2 id="Version-control"><a href="#Version-control" class="headerlink" title="Version control"></a>Version control</h2><p>Here is a useful distributed revision control tool: Git</p>
-<p><a href="https://git-scm.com/download/win" target="_blank" rel="noopener">https://git-scm.com/download/win</a></p>
+<p><a href="https://git-scm.com/download/win">https://git-scm.com/download/win</a></p>
 <p>For the last install step, choose <code>Use Git from the Windows Command Prompt</code></p>
 <h2 id="New-a-repository"><a href="#New-a-repository" class="headerlink" title="New a repository"></a>New a repository</h2><p>New a initialized (with readme.md) repository in your Github library.</p>
 <h2 id="Install-Hexo"><a href="#Install-Hexo" class="headerlink" title="Install Hexo"></a>Install Hexo</h2><p>Create a new folder in a suitable place to store your own blog files. For example, my blog files are stored in<code>D:\blog</code>。</p>
@@ -513,7 +512,7 @@ C:\Users\{yourusername}>npm -v
 <p>Then we need to initialize our website, type down<code>hexo init</code>to initialize the folder, and then type down<code>npm install</code> to install the necessary components.</p>
 <p>Until now, the local website configuration is also done.</p>
 <p>Type down <code>hexo g</code> to generate a static webpage, then type down <code>hexo s</code> to open the local server.</p>
-<p>Finally open the browser [<a href="http://localhost:4000/]" target="_blank" rel="noopener">http://localhost:4000/]</a>(<a href="https://link" target="_blank" rel="noopener">https://link</a>. zhihu.com/?target=http%3A//localhost%3A4000/), you can see your blog</p>
+<p>Finally open the browser [<a href="http://localhost:4000/]">http://localhost:4000/]</a>(<a href="https://link">https://link</a>. zhihu.com/?target=http%3A//localhost%3A4000/), you can see your blog</p>
 <p>You can press ctrl+c to shut down the local server.</p>
 <h2 id="Connect-Github-with-local"><a href="#Connect-Github-with-local" class="headerlink" title="Connect Github with local"></a>Connect Github with local</h2><p>This is a important step which can help you deploy your blog to the cloud (I got stuck in this step for a while night).</p>
 <p>First right-click to open git bash, and then enter the following command:</p>
@@ -527,10 +526,7 @@ git config --global user.email &quot;{youremailaddress}&quot;</code></p>
 <p>Enter <code>ssh -T git@github.com</code>, if your username appears as shown in the figure below, congratulations, you succeed.</p>
 <p>Open the _config.yml file in the root directory of the blog, which is the configuration file of the blog, where you can modify various information related to the blog.</p>
 <p>Modify the configuration on the last line:</p>
-<pre class="line-numbers language-bash"><code class="language-bash">deploy:
-  type: <span class="token function">git</span>
-  repository: https://github.com/<span class="token punctuation">{</span>yourusername<span class="token punctuation">}</span>/<span class="token punctuation">{</span>yourusername<span class="token punctuation">}</span>.github.io.git
-  branch: master<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repository: https://github.com/&#123;yourusername&#125;/&#123;yourusername&#125;.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
 <p><strong>Tips:</strong> Remember to set the branch master as default or you can change the master into main in above code. Because the rule is changed after Nov, 2020: the master branch has been changed into main.  It may be used to avoid the term: “master slave”.</p>
 <h2 id="write-articles-publish-articles"><a href="#write-articles-publish-articles" class="headerlink" title="write articles, publish articles"></a>write articles, publish articles</h2><p>First, right-click in the blog root directory to open git bash and install an extension </p>
 <p><code>npm i hexo-deployer-git</code></p>
@@ -884,7 +880,7 @@ git config --global user.email &quot;{youremailaddress}&quot;</code></p>
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="Lecture Notes 17/02/22">
+                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="Lecture Notes 17/02/22">
                         
                         <span class="card-title">Lecture Notes 17/02/22</span>
                     </div>
@@ -934,7 +930,7 @@ Gain familiarity with prevailing and novel accounts of atypica
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="Lecture Notes 16/02/22">
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="Lecture Notes 16/02/22">
                         
                         <span class="card-title">Lecture Notes 16/02/22</span>
                     </div>
@@ -1140,7 +1136,7 @@ What need be be discussed1. definitionattention: focusing, sust
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;Total words:&nbsp;
-            <span class="white-color">50.8k</span>
+            <span class="white-color">52.1k</span>
             
 
             <br>

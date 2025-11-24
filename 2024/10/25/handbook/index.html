@@ -2,16 +2,16 @@
 <html lang="default,zh-CN,default">
 
 
-<head><meta name="generator" content="Hexo 3.9.0">
+<head>
     <meta charset="utf-8">
     <meta name="keywords" content="Handbook, Lei">
-    <meta name="baidu-site-verification" content="fmlEuI34ir">
-    <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48">
-    <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7">
-    <meta name="description" content="1. CREATE clusterConnecting to Jupyter Lab through an SSH tunnel
+    <meta name="baidu-site-verification" content="fmlEuI34ir" />
+    <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48" />
+    <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7" />
+    <meta name="description" content="1. CREATE clusterJupyter Connecting to Jupyter Lab through an SSH tunnel
 Start an interactive session
 
-ssh -m hmac-sha2-512 k211">
+ssh -m hmac-sha2-">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -69,7 +69,7 @@ ssh -m hmac-sha2-512 k211">
         })();
     </script>
 
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<meta name="generator" content="Hexo 8.1.1"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
 <link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 <body>
@@ -314,7 +314,7 @@ ssh -m hmac-sha2-512 k211">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/24.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/25.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -469,14 +469,14 @@ ssh -m hmac-sha2-512 k211">
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    567
+                    1.1k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>Read Times:&nbsp;&nbsp;
-                    3 Min
+                    6 Min
                 </div>
                 
                 
@@ -492,68 +492,98 @@ ssh -m hmac-sha2-512 k211">
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="1-CREATE-cluster"><a href="#1-CREATE-cluster" class="headerlink" title="1. CREATE cluster"></a>1. CREATE cluster</h1><h2 id="Connecting-to-Jupyter-Lab-through-an-SSH-tunnel"><a href="#Connecting-to-Jupyter-Lab-through-an-SSH-tunnel" class="headerlink" title="Connecting to Jupyter Lab through an SSH tunnel"></a>Connecting to Jupyter Lab through an SSH tunnel</h2><ol start="4">
+                <h1 id="1-CREATE-cluster"><a href="#1-CREATE-cluster" class="headerlink" title="1. CREATE cluster"></a>1. CREATE cluster</h1><h2 id="Jupyter-Connecting-to-Jupyter-Lab-through-an-SSH-tunnel"><a href="#Jupyter-Connecting-to-Jupyter-Lab-through-an-SSH-tunnel" class="headerlink" title="Jupyter Connecting to Jupyter Lab through an SSH tunnel"></a>Jupyter Connecting to Jupyter Lab through an SSH tunnel</h2><ol start="4">
 <li>Start an interactive session</li>
 </ol>
-<pre><code>ssh -m hmac-sha2-512 k21116947@hpc.create.kcl.ac.uk
-srun -p gpu --pty -t 4:00:00 --mem=30GB --gres=gpu /bin/bash</code></pre><p><strong>Make a note of the node you’re connected to, e.g. erc-hpc-comp001</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ssh -m hmac-sha2-512 k21116947@hpc.create.kcl.ac.uk</span><br><span class="line">srun -p gpu --pty -t 4:00:00 --mem=30GB --gres=gpu /bin/bash</span><br></pre></td></tr></table></figure>
+
+<p><strong>Make a note of the node you’re connected to, e.g. erc-hpc-comp001</strong></p>
 <ol start="5">
 <li>Within this session, start Jupyter lab without the display on a specific port (here this is port 9998)</li>
 </ol>
-<pre><code>conda activate PhD 
-jupyter lab --no-browser --port=9998 --ip=&quot;*&quot;
-python -mcon&#39;da notebook --no-browser --port=9998 --ip=&quot;*&quot; # if the above line does not work</code></pre><ol start="6">
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">conda activate PhD </span><br><span class="line">jupyter lab --no-browser --port=9998 --ip=&quot;*&quot;</span><br><span class="line">python -mconda notebook --no-browser --port=9998 --ip=&quot;*&quot; # if the above line does not work</span><br></pre></td></tr></table></figure>
+
+<ol start="6">
 <li><strong>Open a separate connection</strong> to CREATE that connects to the node where Jupyter Lab is running using the port you specified earlier. (Problems known with VScode terminal)</li>
 </ol>
-<pre><code>ssh -m hmac-sha2-512 -o ProxyCommand=&quot;ssh -m hmac-sha2-512 -W %h:%p k21116947@bastion.er.kcl.ac.uk&quot; -L 9998:erc-hpc-comp036:9998 k21116947@hpc.create.kcl.ac.uk</code></pre><h2 id="Transferring-files"><a href="#Transferring-files" class="headerlink" title="Transferring files"></a>Transferring files</h2><p>Download: use shift + right click to open PowerShell of the location, and use scp to copy files from the server to local, here is an example:</p>
-<pre class="line-numbers language-sh"><code class="language-sh">scp -o MACs=hmac-sha2-512 create:/users/k21116947/1.py /1/loc.py<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ssh -m hmac-sha2-512 -o ProxyCommand=&quot;ssh -m hmac-sha2-512 -W %h:%p k21116947@bastion.er.kcl.ac.uk&quot; -L 9998:erc-hpc-comp034:9998 k21116947@hpc.create.kcl.ac.uk</span><br></pre></td></tr></table></figure>
+
+<h2 id="SCP-Transferring-files"><a href="#SCP-Transferring-files" class="headerlink" title="SCP Transferring files"></a>SCP Transferring files</h2><p>Download: use shift + right click to open PowerShell of the location, and use scp to copy files from the server to local, here is an example:</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">scp -o MACs=hmac-sha2-512 create:/users/k21116947/1.py /1/loc.py</span><br></pre></td></tr></table></figure>
+
 <p>Upload:</p>
-<pre class="line-numbers language-sh"><code class="language-sh">scp -o MACs=hmac-sha2-512 1.py create:/users/k21116947/1.py<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">scp -o MACs=hmac-sha2-512 1.py create:/users/k21116947/1.py</span><br></pre></td></tr></table></figure>
+
 <p>If it is a folder:</p>
-<pre><code>scp -o MACs=hmac-sha2-512 -r create:/users/k21116947/ABCD/trail4 /trail</code></pre><p>What else, <code>rm</code> is used to delete files.</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">scp -o MACs=hmac-sha2-512 -r create:/users/k21116947/ABCD/trail4 /trail</span><br><span class="line">scp -o MACs=hmac-sha2-512 -r /trail create:/users/k21116947/Autoencoder</span><br></pre></td></tr></table></figure>
+
+<p>What else, <code>rm</code> is used to delete files.</p>
 <h2 id="Submitting-a-job-via-sbatch"><a href="#Submitting-a-job-via-sbatch" class="headerlink" title="Submitting a job via sbatch"></a>Submitting a job via sbatch</h2><p>cd to the location, then use: </p>
-<pre class="line-numbers language-sh"><code class="language-sh">sbatch -p cpu helloworld.sh<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sbatch -p cpu helloworld.sh</span><br></pre></td></tr></table></figure>
+
 <p>or </p>
-<pre class="line-numbers language-sh"><code class="language-sh">sbatch helloworld.sh<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sbatch helloworld.sh</span><br></pre></td></tr></table></figure>
+
+<h3 id="Issue-SLURM-Job-Exits-After-a-Few-Seconds"><a href="#Issue-SLURM-Job-Exits-After-a-Few-Seconds" class="headerlink" title="Issue: SLURM Job Exits After a Few Seconds"></a><strong>Issue: SLURM Job Exits After a Few Seconds</strong></h3><h4 id="Symptom"><a href="#Symptom" class="headerlink" title="Symptom"></a><strong>Symptom</strong></h4><p>When submitting the <code>sbatch run.sh</code> job using SLURM, the job runs for only a few seconds before exiting. However, running <code>bash run.sh</code> directly works fine.</p>
+<h4 id="Cause-Analysis"><a href="#Cause-Analysis" class="headerlink" title="Cause Analysis"></a><strong>Cause Analysis</strong></h4><ol>
+<li><strong>Working Directory Issue</strong>:<ul>
+<li>The default working directory for <code>sbatch</code> might be different from the expected one, causing files like <code>config.yml</code> and <code>search_space.json</code> to be inaccessible.</li>
+</ul>
+</li>
+<li><strong>Conda Environment Not Activated Properly</strong>:<ul>
+<li>SLURM jobs do not automatically inherit environment variables from the interactive shell, which may result in <code>nnictl</code> being unable to find Python and its dependencies.</li>
+</ul>
+</li>
+<li><strong>NNI Task Running in the Background Without Blocking the Process</strong>:<ul>
+<li><code>nnictl create --config config.yml</code> starts the NNI task, but since <code>run.sh</code> completes execution immediately after, the SLURM job exits prematurely.</li>
+</ul>
+</li>
+</ol>
+<h4 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a><strong>Solution</strong></h4><p>Modify <code>run.sh</code> as follows:</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">bash复制编辑#!/bin/bash</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">SBATCH --job-name=batch_nni_experiment  <span class="comment"># Job name</span></span></span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">SBATCH --output=output/batch_output_%j.log  <span class="comment"># Output file name</span></span></span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">SBATCH --error=output/batch_error_%j.log    <span class="comment"># Error file name</span></span></span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">SBATCH --ntasks=1</span></span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">SBATCH --partition=gpu</span></span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">SBATCH --<span class="keyword">time</span>=4:00:00</span></span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">SBATCH --gpus=1</span></span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">SBATCH --cpus-per-gpu=16</span></span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">SBATCH --mem-per-gpu=32G</span></span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">Ensure the correct working directory</span></span><br><span class="line">cd /users/k21116947/Autoencoder || exit 1</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">Activate Conda environment</span></span><br><span class="line">source ~/miniconda3/bin/activate ABCD</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">Verify Python and NNI availability</span></span><br><span class="line">which python</span><br><span class="line">python --version</span><br><span class="line">which nnictl</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">Stop all previous NNI tasks (to avoid conflicts)</span></span><br><span class="line">nnictl stop --all</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">Start a new NNI task</span></span><br><span class="line">nnictl create --config config.yml</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">Retrieve experiment ID</span></span><br><span class="line">EXPERIMENT_ID=$(nnictl get | awk &#x27;NR==2 &#123;print $1&#125;&#x27;)</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">Prevent the SLURM job from exiting immediately</span></span><br><span class="line">while true; do</span><br><span class="line">    sleep Infinity </span><br><span class="line">done</span><br></pre></td></tr></table></figure>
+
+<p>This ensures:</p>
+<ul>
+<li>The correct working directory is used.</li>
+<li>The Conda environment is properly activated.</li>
+<li>The script does not exit prematurely, allowing NNI to run until the SLURM job times out or is manually stopped.</li>
+</ul>
+<h3 id="Issue-shell-contain-n"><a href="#Issue-shell-contain-n" class="headerlink" title="Issue: shell contain \n"></a>Issue: shell contain \n</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sbatch: error: Batch script contains DOS line breaks (\r\n)</span><br><span class="line">sbatch: error: instead of expected UNIX line breaks (\n).</span><br></pre></td></tr></table></figure>
+
+<p>Solution: dos2unix job.sh</p>
+<h3 id="Submit-with-nohup"><a href="#Submit-with-nohup" class="headerlink" title="Submit with nohup"></a>Submit with nohup</h3><p>It allows you to automatically submit your job in avoiding failure because of job numbers’ limitation.</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="built_in">nohup</span> bash -c <span class="string">&#x27;</span></span><br><span class="line"><span class="string">while true; do</span></span><br><span class="line"><span class="string">    echo &quot;Try submit at $(date)&quot; &gt;&gt; /scratch/users/k21116947/project/trail/logs/auto_submit_dim3.log</span></span><br><span class="line"><span class="string">    sbatch -p gpu /scratch/users/k21116947/project/trail/train_model-dimension3.sh &amp;&amp; &#123;</span></span><br><span class="line"><span class="string">        echo &quot;Submitted successfully at $(date)&quot; &gt;&gt; /scratch/users/k21116947/project/trail/logs/auto_submit_dim3.log</span></span><br><span class="line"><span class="string">        break</span></span><br><span class="line"><span class="string">    &#125;</span></span><br><span class="line"><span class="string">    echo &quot;Submit failed, sleep 1800s...&quot; &gt;&gt; /scratch/users/k21116947/project/trail/logs/auto_submit_dim3.log</span></span><br><span class="line"><span class="string">    sleep 1800</span></span><br><span class="line"><span class="string">done</span></span><br><span class="line"><span class="string">&#x27;</span> &gt;/dev/null 2&gt;&amp;1 &amp;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="monitoring-job"><a href="#monitoring-job" class="headerlink" title="monitoring job"></a>monitoring job</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">squeue -u k1234567</span><br><span class="line">scancel &lt;job ID&gt; #cancel the job</span><br></pre></td></tr></table></figure>
+
 <h2 id="Setting-working-directory-for-the-job"><a href="#Setting-working-directory-for-the-job" class="headerlink" title="Setting working directory for the job"></a>Setting working directory for the job</h2><p>add the following commands in .sh file</p>
-<pre class="line-numbers language-sh"><code class="language-sh">#!/bin/bash -l
-#SBATCH --output=/scratch/users/%u/%j.out
-#SBATCH --job-name=Job1
-#SBATCH --gres=gpu
-#SBATCH --time=0-2:00
-#SBATCH --chdir=/scratch/k21116947/PhD<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash -l</span></span><br><span class="line"><span class="comment">#SBATCH --output=/scratch/users/%u/%j.out</span></span><br><span class="line"><span class="comment">#SBATCH --job-name=Job1</span></span><br><span class="line"><span class="comment">#SBATCH --gres=gpu</span></span><br><span class="line"><span class="comment">#SBATCH --time=0-2:00</span></span><br><span class="line"><span class="comment">#SBATCH --chdir=/scratch/k21116947/PhD</span></span><br></pre></td></tr></table></figure>
+
 <h2 id="Loading-module"><a href="#Loading-module" class="headerlink" title="Loading module"></a>Loading module</h2><p>such as with TensorFlow:</p>
-<pre class="line-numbers language-sh"><code class="language-sh">module load cuda/11.8.0-gcc-13.2.0
-module load cudnn/8.7.0.84-11.8-gcc-13.2.0
-module load py-tensorflow/2.14.0-gcc-11.4.0-cuda-python-3.11.6
-module load py-pandas/1.5.3-gcc-13.2.0-python-3.11.6<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<h1 id="2-Jupyter"><a href="#2-Jupyter" class="headerlink" title="2. Jupyter"></a>2. Jupyter</h1><h2 id="Install-kernel-for-ipynb"><a href="#Install-kernel-for-ipynb" class="headerlink" title="Install kernel for ipynb:"></a>Install kernel for ipynb:</h2><pre><code>conda activate NN
-pip install jupyterlab
-pip install ipykernel
-python -m ipykernel install --user --name NN --display-name &quot;Python3.11 NN&quot;</code></pre><h1 id="3-Quick-command"><a href="#3-Quick-command" class="headerlink" title="3. Quick command"></a>3. Quick command</h1><p><code>nano</code> can be used to edit file in command line</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">module load python/3.11.6-gcc-13.2.0</span><br><span class="line">module load cuda/11.8.0-gcc-13.2.0</span><br><span class="line">module load cudnn/8.7.0.84-11.8-gcc-13.2.0</span><br><span class="line">module load py-tensorflow/2.14.0-gcc-11.4.0-cuda-python-3.11.6</span><br><span class="line">module load py-pandas/1.5.3-gcc-13.2.0-python-3.11.6</span><br></pre></td></tr></table></figure>
+
+<h2 id="Singularity"><a href="#Singularity" class="headerlink" title="Singularity"></a>Singularity</h2><p>check BIDS:</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">singularity run -B /scratch/users/k21116947:/mnt docker://bids/validator /mnt/abcd-mproc-release5</span><br></pre></td></tr></table></figure>
+
+<p>ignore the motion.ts</p>
+<h2 id="Pipeline-for-running-fmriprep-in-cluster"><a href="#Pipeline-for-running-fmriprep-in-cluster" class="headerlink" title="Pipeline for running fmriprep in cluster"></a>Pipeline for running fmriprep in cluster</h2><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> /scratch/users/k21116947 </span><br><span class="line">module load parallel</span><br><span class="line"><span class="built_in">cat</span> subject_list.txt | parallel -j 4 sbatch run_fmriprep_one.sh &#123;&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="2-Jupyter"><a href="#2-Jupyter" class="headerlink" title="2. Jupyter"></a>2. Jupyter</h1><h2 id="Install-kernel-for-ipynb"><a href="#Install-kernel-for-ipynb" class="headerlink" title="Install kernel for ipynb:"></a>Install kernel for ipynb:</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">conda activate NN</span><br><span class="line">pip install jupyterlab</span><br><span class="line">pip install ipykernel</span><br><span class="line">python -m ipykernel install --user --name NN --display-name &quot;Python3.11 NN&quot;</span><br></pre></td></tr></table></figure>
+
+<h1 id="3-Quick-command"><a href="#3-Quick-command" class="headerlink" title="3. Quick command"></a>3. Quick command</h1><p><code>nano</code> can be used to edit file in command line</p>
 <h1 id="4-Python"><a href="#4-Python" class="headerlink" title="4. Python"></a>4. Python</h1><p><code>.iloc[]</code> is used to list a dataframe, such as:</p>
 <p> <img src="https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202410251207265.png" alt="image-20241025120723937"></p>
 <p>where : represent all rows, and 0 represent the first column</p>
 <p><code>~</code> 是取反运算符：示例：对于 <code>[True, False, False, True]</code>，应用 <code>~</code> 后变成 <code>[False, True, True, False]</code></p>
 <h1 id="5-Github"><a href="#5-Github" class="headerlink" title="5. Github"></a>5. Github</h1><p>上传时忽略文件：</p>
 <p>在根目录下创建 .gitignore 文件，文件中添加要忽略的文件，如：</p>
-<pre class="line-numbers language-sh"><code class="language-sh"># 忽略单个文件
-my_secret_file.txt
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 忽略单个文件</span></span><br><span class="line">my_secret_file.txt</span><br><span class="line"></span><br><span class="line"><span class="comment"># 忽略文件夹</span></span><br><span class="line">my_folder/</span><br><span class="line"></span><br><span class="line"><span class="comment"># 忽略特定类型的文件（如所有的 .log 文件）</span></span><br><span class="line">*.<span class="built_in">log</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 忽略多个文件夹中的特定文件</span></span><br><span class="line">my_folder/*.tmp</span><br><span class="line"></span><br><span class="line"><span class="comment"># 忽略某个文件夹内的所有文件，但不忽略其中的一个文件</span></span><br><span class="line">my_folder/*</span><br><span class="line">!my_folder/keep_this_file.txt</span><br></pre></td></tr></table></figure>
 
-# 忽略文件夹
-my_folder/
-
-# 忽略特定类型的文件（如所有的 .log 文件）
-*.log
-
-# 忽略多个文件夹中的特定文件
-my_folder/*.tmp
-
-# 忽略某个文件夹内的所有文件，但不忽略其中的一个文件
-my_folder/*
-!my_folder/keep_this_file.txt<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h1 id="6-Graph"><a href="#6-Graph" class="headerlink" title="6. Graph"></a>6. Graph</h1><p>Python graph gallery contains some examples</p>
 <p>if python does not work, you may turn to D3.js</p>
+<h1 id="7-Tips-for-ChatGPT"><a href="#7-Tips-for-ChatGPT" class="headerlink" title="7. Tips for ChatGPT"></a>7. Tips for ChatGPT</h1><p>I’m writing a paper on 【topic】 for a leading 【discipline】 academic journal. What I tried to say in the following section is 【specific point】. Please rephrase it for clarity, coherence and conciseness, ensuring each paragraph flows into the next. Remove jargon. Use a professional tone</p>
 
             </div>
             <hr />
@@ -892,51 +922,66 @@ my_folder/*
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-dot-circle-o"></i>&nbsp;Current
-            </div>
+                <i class="fa fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2024/10/25/handbook/">
+                <a href="/2024/10/25/tai-wan-lu-you-gong-lue/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/24.jpg" class="responsive-img" alt="Handbook">
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="Taiwan 7 days">
                         
-                        <span class="card-title">Handbook</span>
+                        <span class="card-title">Taiwan 7 days</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1. CREATE clusterConnecting to Jupyter Lab through an SSH tunnel
-Start an interactive session
+                            台湾旅游攻略To do list
+ 提前彩印
+ 机票
+ 住宿
+ 交通卡
+ 电话卡
+ 金福气
 
-ssh -m hmac-sha2-512 k211
+地图
+
+
+旅游地点
+
+
+地点
+游玩项目
+
+
+
+台北
+台北101：曾是世界最高建筑，设有观景台，可俯瞰台北全景。开放时间 9:00 - 22:00。
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2024-10-25
-                            </span>
+                        <span class="publish-date">
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2024-10-25
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/programming/" class="post-category" target="_blank">
-                                    programming
+                            <a href="/categories/Traveling/" class="post-category" target="_blank">
+                                    Traveling
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/PhD/" target="_blank">
-                        <span class="chip bg-color">PhD</span>
+                    <a href="/tags/Taiwan/" target="_blank">
+                        <span class="chip bg-color">Taiwan</span>
                     </a>
                     
                 </div>
@@ -954,7 +999,7 @@ ssh -m hmac-sha2-512 k211
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="Mylove">
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="Mylove">
                         
                         <span class="card-title">Mylove</span>
                     </div>
@@ -1159,7 +1204,7 @@ ssh -m hmac-sha2-512 k211
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;Total words:&nbsp;
-            <span class="white-color">50.8k</span>
+            <span class="white-color">52.1k</span>
             
 
             <br>
