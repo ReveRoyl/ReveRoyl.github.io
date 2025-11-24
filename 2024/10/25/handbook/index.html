@@ -506,7 +506,7 @@ ssh -m hmac-sha2-">
 <ol start="6">
 <li><strong>Open a separate connection</strong> to CREATE that connects to the node where Jupyter Lab is running using the port you specified earlier. (Problems known with VScode terminal)</li>
 </ol>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ssh -m hmac-sha2-512 -o ProxyCommand=&quot;ssh -m hmac-sha2-512 -W %h:%p k21116947@bastion.er.kcl.ac.uk&quot; -L 9998:erc-hpc-comp034:9998 k21116947@hpc.create.kcl.ac.uk</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ssh -m hmac-sha2-512 -o ProxyCommand=&quot;ssh -m hmac-sha2-512 -W %h:%p k21116947@bastion.er.kcl.ac.uk&quot; -L 9998:erc-hpc-comp037:9998 k21116947@hpc.create.kcl.ac.uk</span><br></pre></td></tr></table></figure>
 
 <h2 id="SCP-Transferring-files"><a href="#SCP-Transferring-files" class="headerlink" title="SCP Transferring files"></a>SCP Transferring files</h2><p>Download: use shift + right click to open PowerShell of the location, and use scp to copy files from the server to local, here is an example:</p>
 <figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">scp -o MACs=hmac-sha2-512 create:/users/k21116947/1.py /1/loc.py</span><br></pre></td></tr></table></figure>
@@ -922,9 +922,63 @@ ssh -m hmac-sha2-">
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;Current
+            </div>
+            <div class="card">
+                <a href="/2024/10/25/handbook/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/25.jpg" class="responsive-img" alt="Handbook">
+                        
+                        <span class="card-title">Handbook</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            1. CREATE clusterJupyter Connecting to Jupyter Lab through an SSH tunnel
+Start an interactive session
+
+ssh -m hmac-sha2-
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2024-10-25
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/programming/" class="post-category" target="_blank">
+                                    programming
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/PhD/" target="_blank">
+                        <span class="chip bg-color">PhD</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fa fa-chevron-right"></i>
+            </div>
             <div class="card">
                 <a href="/2024/10/25/tai-wan-lu-you-gong-lue/">
                     <div class="card-image">
@@ -962,9 +1016,9 @@ ssh -m hmac-sha2-">
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2024-10-25
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2024-10-25
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -982,55 +1036,6 @@ ssh -m hmac-sha2-">
                     
                     <a href="/tags/Taiwan/" target="_blank">
                         <span class="chip bg-color">Taiwan</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                Next&nbsp;<i class="fa fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2023/10/17/mylove/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="Mylove">
-                        
-                        <span class="card-title">Mylove</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            梦境内容：苏州旅游 听周密的livehouse 他又忘词了但是全场很嗨中场休息大家去自助奶茶区打饮料(茉沏) 遇到一个小姐姐是本地人 对我起级好 给我打奶茶加料超丰富 还加了很多奶盖 就这样认识了后面逛街又遇到 她邀请我一起去吃饭到了饭桌上
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2023-10-17
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fa fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/life/" class="post-category" target="_blank">
-                                    life
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/Mylove/" target="_blank">
-                        <span class="chip bg-color">Mylove</span>
                     </a>
                     
                 </div>
