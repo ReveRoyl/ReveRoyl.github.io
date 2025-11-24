@@ -4,3 +4,4 @@ hexo d
 git add -A
 git commit -m update
 git push origin Run
+sleep 30
