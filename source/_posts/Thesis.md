@@ -104,7 +104,7 @@ G\lbrack m,\ n\rbrack = \ (f*k)\lbrack m,\ n\rbrack = \ \sum_{i = 1}^{m}\ \sum_{
 
 As shown in figure 2 (A), a kernel filter is applied to the input data pixel: after summing up input values and filter, a result value is generated and passed to the next step. With all similar processes conducted step by step, a feature map is generated. Afterwards, the max pooling step (figure 2 (B)) comes to decrease the dimensions of data in order to keep more neurons activated which is reported to reduce the overfitting as well (Y. Huang et al., 2015).
 
-![image-20220824171734112](https://raw.githubusercontent.com/ReveRoyl/PictureBed/main/BlogImg/202208241717167.png)
+![image-20220824171734112]()
 
 **Figure 1.** A simple CNN architecture illustration (5 convolutional layers and pooling layers, 3 fully connected layers)
 
